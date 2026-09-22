@@ -1,0 +1,4704 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://addons/layer_lab/minimal_character_maker/demo/minimal_main.gd" id="1_8av53"]
+[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/map/sample_map.png" id="2_boa5g"]
+[ext_resource type="PackedScene" path="res://addons/layer_lab/minimal_character_maker/character/minimal_character.tscn" id="3_c1c08"]
+[ext_resource type="Script" path="res://addons/layer_lab/minimal_character_maker/runtime/minimal_character.gd" id="4_mi0df"]
+[ext_resource type="FontFile" path="res://addons/layer_lab/minimal_character_maker/demo/fonts/art_maker_ui_bitmap_outline_64.fnt" id="5_362oy"]
+[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/sns_discord.png" id="6_14rie"]
+[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/sns_facebook.png" id="7_v3dmn"]
+[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/sns_youtube.png" id="8_xgfp0"]
+[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/parts_panel_bg.png" id="9_lmeum"]
+[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/parts_slot_bg_select.png" id="10_lemcx"]
+[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/icon_hair.png" id="11_xloob"]
+[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_016.png" id="12_gf2m4"]
+[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/parts_slot_activeself_on.png" id="13_ste86"]
+[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/icon_eye.png" id="14_x2jr0"]
+[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/eye/body_eye_001.png" id="15_sxq0e"]
+[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/parts_slot_bg_empty.png" id="16_6k423"]
+[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/icon_beard.png" id="17_qn1m1"]
+[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/beard/body_beard_001.png" id="18_hk2yq"]
+[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/icon_skin.png" id="19_meeli"]
+[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/skin/skin1.png" id="20_oxm27"]
+[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/icon_helmet.png" id="21_yjkg4"]
+[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/helmet/fa_helmet_001_brown.png" id="22_8avo4"]
+[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/icon_chest.png" id="23_w8yps"]
+[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/chest/fa_chest_026_silver.png" id="24_3kut1"]
+[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/icon_hand_right.png" id="25_w6or1"]
+[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/bow/fa_wp_main_bow_008_red.png" id="26_pcj6w"]
+[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/icon_hand_left.png" id="27_xblji"]
+[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/shield/fa_wp_sub_shield_006_gold.png" id="28_eabtx"]
+[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/parts_slot_icon_arrow_left.png" id="29_nrhov"]
+[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/parts_slot_icon_arrow_right.png" id="30_3fuh4"]
+[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/parts_slot_item_select_frame.png" id="31_kxh68"]
+[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/preset_previous.png" id="32_t4b8x"]
+[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/preset_bg.png" id="33_gpkwh"]
+[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/preset_next.png" id="34_gciob"]
+[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/button_dice_white.png" id="35_0g5qu"]
+[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/button_small_blue.png" id="36_dpm31"]
+[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/parts_panel_bg_default.png" id="37_hdcye"]
+[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/button_reset.png" id="38_nfhox"]
+[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_001.png" id="39_074pe"]
+[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_002.png" id="40_p3bmg"]
+[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_003.png" id="41_qtssc"]
+[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_004.png" id="42_16o7y"]
+[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_005.png" id="43_4525o"]
+[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_006.png" id="44_olgu4"]
+[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_007.png" id="45_44w21"]
+[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_008.png" id="46_8vc70"]
+[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_009.png" id="47_nxnsc"]
+[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_010.png" id="48_hs8ux"]
+[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_011.png" id="49_e46xo"]
+[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_012.png" id="50_wkn8l"]
+[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_013.png" id="51_aw8wv"]
+[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_014.png" id="52_blxql"]
+[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_015.png" id="53_x4k5m"]
+[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/parts_list_select.png" id="54_2ob38"]
+[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_017.png" id="55_u8f7q"]
+[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_018.png" id="56_ar6bu"]
+[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_019.png" id="57_mt7d7"]
+[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_020.png" id="58_gwx25"]
+[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_021.png" id="59_a4bs5"]
+[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_022.png" id="60_7cv7h"]
+[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_023.png" id="61_n0p41"]
+[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_024.png" id="62_2hrpb"]
+[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_025.png" id="63_mh5r2"]
+[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_026.png" id="64_5ne02"]
+[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/picker_pointer.png" id="65_m0vmr"]
+[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/picker_color_bar.png" id="66_jd803"]
+[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/picker_slider_pointer.png" id="67_djdpc"]
+[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/picker_favorite_inputfield_bg.png" id="68_3ygbk"]
+[ext_resource type="FontFile" path="res://addons/layer_lab/minimal_character_maker/demo/fonts/art_maker_ui_bitmap_64.fnt" id="69_wb4m4"]
+[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/picker_favorite_button_copy.png" id="70_74u82"]
+[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/picker_favorite_button_coloradd.png" id="71_wsvde"]
+[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/picker_favorite_button_colordelete.png" id="72_53hvq"]
+[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/picker_favorite_slot_empty.png" id="73_omhns"]
+[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/picker_favorite_focus.png" id="74_pseod"]
+[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/button_animation_f.png" id="75_nvm0q"]
+[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/button_animaiton_n.png" id="76_koyxq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4wh2h"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7x4bn"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xu4su"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_u41op"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ofd2y"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_r40va"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tjgo7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nj061"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xe715"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("36_dpm31")
+texture_margin_left = 16.0
+texture_margin_top = 24.0
+texture_margin_right = 17.0
+texture_margin_bottom = 21.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_nnunc"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("36_dpm31")
+texture_margin_left = 16.0
+texture_margin_top = 24.0
+texture_margin_right = 17.0
+texture_margin_bottom = 21.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0idpc"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("36_dpm31")
+texture_margin_left = 16.0
+texture_margin_top = 24.0
+texture_margin_right = 17.0
+texture_margin_bottom = 21.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_k4hmx"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("36_dpm31")
+texture_margin_left = 16.0
+texture_margin_top = 24.0
+texture_margin_right = 17.0
+texture_margin_bottom = 21.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_khkhe"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("36_dpm31")
+texture_margin_left = 16.0
+texture_margin_top = 24.0
+texture_margin_right = 17.0
+texture_margin_bottom = 21.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gowol"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fjtlu"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ml4dt"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ee30m"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7mkhl"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gimww"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ub2r5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_f11wd"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_posa0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yq3vu"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_woxe3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_icod1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nhory"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tef50"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_y3cvp"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xeoyd"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yx4ml"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2fi13"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_a5d26"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wrov0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_y5dho"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_debko"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_m4sy0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_u8iam"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_e2x3t"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lelbx"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gxa7b"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0rvns"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ckqoh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lsvvy"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_juash"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_givek"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qj3g4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fpesq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pmphu"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7nc6r"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_m6xby"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vsgfm"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_kw1c7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mh6t3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_f8s0e"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bnows"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_juhqb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4ojv1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yebvu"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_iwt1l"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_k718o"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3ii80"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2i3lw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_02lcf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1memb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3uy28"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gp8m1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_iff2s"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_acrpt"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yvcs4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_afndx"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8xc1f"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_egw1q"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8l0ui"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xcntq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tq6cd"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_y1g2v"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_64y1f"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2cinb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yfj6n"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_a6wh6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_x5hpi"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3umxw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vnw8r"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_k460r"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rq53y"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7owhj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vapg2"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dy5ws"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xufnn"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_o0awy"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_i6bme"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8auqs"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dvq7h"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bxa0n"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6vkrh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yap5t"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_kbjvx"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gs7jc"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3y6l6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1ukfb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xdb6w"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6j3s6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vti1y"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ih8nl"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dclmo"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0bb3t"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_g46i5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_o3n8s"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_p74qw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xkatk"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ij2lv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ruwaa"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tkpwx"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_30tla"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_sf500"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_v6khq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_kjipv"]
+
+[sub_resource type="Shader" id="Shader_f1uut"]
+code = "shader_type canvas_item;
+uniform float hue = 0.0;
+vec3 hsv2rgb(vec3 c) {
+	vec4 K = vec4(1.0, 2.0 / 3.0, 1.0 / 3.0, 3.0);
+	vec3 p = abs(fract(c.xxx + K.xyz) * 6.0 - K.www);
+	return c.z * mix(K.xxx, clamp(p - K.xxx, 0.0, 1.0), c.y);
+}
+void fragment() {
+	COLOR = vec4(hsv2rgb(vec3(hue, UV.x, 1.0 - UV.y)), 1.0);
+}
+"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_tjs6d"]
+shader = SubResource("Shader_f1uut")
+shader_parameter/hue = 0.39835414
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4imvn"]
+bg_color = Color(0.13333334, 0.12941177, 0.12941177, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_etuqg"]
+bg_color = Color(0.34901962, 0.18039216, 0.18431373, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_c66h7"]
+bg_color = Color(0.3764706, 0.27058825, 0.20784314, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lhi1t"]
+bg_color = Color(0.54901963, 0.47843137, 0.45490196, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mws3x"]
+bg_color = Color(0.54901963, 0.47843137, 0.45490196, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oqo36"]
+bg_color = Color(0.78039217, 0.63529414, 0.45882353, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xgxso"]
+bg_color = Color(0.9529412, 0.72156864, 0.2509804, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ge5m5"]
+bg_color = Color(0.9882353, 0.99215686, 0.92941177, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xa3fi"]
+bg_color = Color(0.8980392, 0.44313726, 0.1882353, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_b6vnr"]
+bg_color = Color(0.6, 0.13333334, 0.05490196, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xu6c2"]
+bg_color = Color(0.8901961, 0.23529412, 0.46666667, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8dre5"]
+bg_color = Color(0.9372549, 0.61960787, 0.80784315, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1r1ql"]
+bg_color = Color(0.5294118, 0.35686275, 0.94509804, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vjkqt"]
+bg_color = Color(0.19607843, 0.32156864, 0.6745098, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vw1e5"]
+bg_color = Color(0.5176471, 0.7254902, 0.94509804, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4seoa"]
+bg_color = Color(0.22745098, 0.47843137, 0.36862746, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_b3ew5"]
+bg_color = Color(0.98039216, 0.7882353, 0.6745098, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vj7le"]
+bg_color = Color(0.91764706, 0.65882355, 0.53333336, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wsu6n"]
+bg_color = Color(0.85882354, 0.654902, 0.48235294, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_48wje"]
+bg_color = Color(0.7490196, 0.5254902, 0.4392157, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_biu70"]
+bg_color = Color(0.84313726, 0.46666667, 0.38431373, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_t5elh"]
+bg_color = Color(0.70980394, 0.5019608, 0.37254903, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jc6oq"]
+bg_color = Color(0.64705884, 0.47058824, 0.3764706, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xi5h4"]
+bg_color = Color(0.7058824, 0.4117647, 0.25490198, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_myf7f"]
+bg_color = Color(0.45490196, 0.3019608, 0.27058825, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mnqwh"]
+bg_color = Color(0.40392157, 0.2509804, 0.23137255, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xi3b8"]
+bg_color = Color(0.5764706, 0.69803923, 0.41568628, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dcnbn"]
+bg_color = Color(0.6431373, 0.7882353, 0.85490197, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_87ony"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_okppx"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wi5tg"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_28irv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rw37w"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_y2idd"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tv6hs"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3lho7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_b1inv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jqren"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ux5jp"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5a2i0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8hw81"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yhuaw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_elahr"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qwvv3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_c5vt5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_obc87"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_h0mkj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fpnny"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gyu6r"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_q2a6x"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_b7n7c"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6rs5m"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_trhdn"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wx5qh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4qjjh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_brmbk"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0xcpo"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7gnjx"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lbhom"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rjdtp"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fxib2"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4mmfq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_kigec"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3vb3e"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hs6la"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_k85ec"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ghbhv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ac3rl"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rq2iq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_e7d0c"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1xbmh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_j7m3t"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mv5k0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_scti1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vptdh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rmc2n"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dwa4i"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_c1jk2"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8mhpq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rprsh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_f68mt"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_n0nrn"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_l862w"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xver4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2w07a"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_n0q6g"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_o6bi3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_y0cha"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cm0in"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_h20up"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rbncs"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xhvnc"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_52l68"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ea8s8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5x8uy"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ralad"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qan5i"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6cxhh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8klpg"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mpd1b"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_omnws"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ryc8u"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wms2a"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_s35l5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rk721"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2yjw0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tmwwt"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_unuru"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7vg5q"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_khc5u"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_y5ktv"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_pr8x1"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("75_nvm0q")
+texture_margin_left = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6udl4"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("75_nvm0q")
+texture_margin_left = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xlbx1"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("75_nvm0q")
+texture_margin_left = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5vgy6"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("75_nvm0q")
+texture_margin_left = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4wn57"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("75_nvm0q")
+texture_margin_left = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4cmxj"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("76_koyxq")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hy17o"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("76_koyxq")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hrik0"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("76_koyxq")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_2wmkf"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("76_koyxq")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_h1ls8"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("76_koyxq")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_madg0"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("76_koyxq")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_kiocq"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("76_koyxq")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_lr672"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("76_koyxq")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4xsf5"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("76_koyxq")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_omjec"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("76_koyxq")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_bjji6"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("76_koyxq")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ctd0r"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("76_koyxq")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_pw8cw"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("76_koyxq")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_66btw"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("76_koyxq")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gafx5"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("76_koyxq")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_g5uwl"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("76_koyxq")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_nrt12"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("76_koyxq")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_85y68"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("76_koyxq")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jt451"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("76_koyxq")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_160a5"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("76_koyxq")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ofoea"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("76_koyxq")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_c6a0h"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("76_koyxq")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_w1qo2"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("76_koyxq")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_2vf16"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("76_koyxq")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4kvjm"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("76_koyxq")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7f2ck"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("76_koyxq")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ec2os"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("76_koyxq")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hnpba"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("76_koyxq")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_nvjs7"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("76_koyxq")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3ocl2"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("76_koyxq")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ds1jc"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("76_koyxq")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_br0ak"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("76_koyxq")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4xjam"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("76_koyxq")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1h8fj"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("76_koyxq")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ik25q"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("76_koyxq")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_inu2d"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("76_koyxq")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_2ykn6"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("76_koyxq")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_pch13"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("76_koyxq")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_y7wvf"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("76_koyxq")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jgfyp"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("76_koyxq")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0adb6"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("76_koyxq")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jnsc2"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("76_koyxq")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_e1kam"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("76_koyxq")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wyg8f"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("76_koyxq")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_pcnhy"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("76_koyxq")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_doo7j"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("76_koyxq")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8ml1i"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("76_koyxq")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_p1dhh"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("76_koyxq")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1oy32"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("76_koyxq")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_pd5cn"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("76_koyxq")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dtt42"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("76_koyxq")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fyfkb"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("76_koyxq")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6uty0"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("76_koyxq")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_kgyrn"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("76_koyxq")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8dyi8"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("76_koyxq")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cwkag"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("76_koyxq")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_pgynh"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("76_koyxq")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6cjeh"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("76_koyxq")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hqee8"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("76_koyxq")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_a2uf0"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("76_koyxq")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8324v"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("76_koyxq")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_f8wdg"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("76_koyxq")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jrbw0"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("76_koyxq")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8xjn3"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("76_koyxq")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_bdvbx"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("76_koyxq")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ulw18"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("76_koyxq")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_sbhae"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("76_koyxq")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_g56hg"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("76_koyxq")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ao4et"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("76_koyxq")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vdjt4"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("76_koyxq")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_bldkt"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("76_koyxq")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1gkg6"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("76_koyxq")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8lufb"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("76_koyxq")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dlbnu"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("76_koyxq")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qrkxo"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("76_koyxq")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+
+[node name="MinimalCharacterMakerDemo" type="Node2D"]
+script = ExtResource("1_8av53")
+
+[node name="Map" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(952.44, 544.32)
+scale = Vector2(1.08, 1.08)
+texture = ExtResource("2_boa5g")
+
+[node name="Character" type="Node2D" parent="." instance=ExtResource("3_c1c08")]
+position = Vector2(790.44, 631.8)
+scale = Vector2(2.254176, 2.254176)
+script = ExtResource("4_mi0df")
+default_animation = &""
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="Canvas" type="Control" parent="UI"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+mouse_filter = 2
+
+[node name="TextTitle" type="Label" parent="UI/Canvas"]
+layout_mode = 0
+offset_left = 33.46
+offset_top = 18.049997
+offset_right = 329.94
+offset_bottom = 65.380005
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 12
+theme_override_constants/shadow_outline_size = 1
+theme_override_fonts/font = ExtResource("5_362oy")
+theme_override_font_sizes/font_size = 36
+text = "2D MINIMAL"
+
+[node name="TextSub" type="Label" parent="UI/Canvas"]
+layout_mode = 0
+offset_left = 33.46
+offset_top = 62.63
+offset_right = 329.94
+offset_bottom = 95.97
+theme_override_colors/font_color = Color(0.9372549, 0.75686276, 0.37254903, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 12
+theme_override_constants/shadow_outline_size = 1
+theme_override_fonts/font = ExtResource("5_362oy")
+theme_override_font_sizes/font_size = 22
+text = "CHARACTER MAKER"
+
+[node name="ButtonDiscord" type="TextureButton" parent="UI/Canvas"]
+layout_mode = 0
+offset_left = 1685.99
+offset_top = 25.07
+offset_right = 1733.99
+offset_bottom = 73.07
+pivot_offset = Vector2(24, 24)
+tooltip_text = "Open the Layer Lab Discord page."
+texture_normal = ExtResource("6_14rie")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="ButtonFacebook" type="TextureButton" parent="UI/Canvas"]
+layout_mode = 0
+offset_left = 1739.99
+offset_top = 25.07
+offset_right = 1787.99
+offset_bottom = 73.07
+pivot_offset = Vector2(24, 24)
+tooltip_text = "Open the Layer Lab Facebook page."
+texture_normal = ExtResource("7_v3dmn")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="ButtonYouTube" type="TextureButton" parent="UI/Canvas"]
+layout_mode = 0
+offset_left = 1793.99
+offset_top = 25.07
+offset_right = 1841.99
+offset_bottom = 73.07
+pivot_offset = Vector2(24, 24)
+tooltip_text = "Open the Layer Lab YouTube page."
+texture_normal = ExtResource("8_xgfp0")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="PanelParts" type="NinePatchRect" parent="UI/Canvas"]
+layout_mode = 0
+offset_left = 1292.75
+offset_top = 160.71
+offset_right = 1641.53
+offset_bottom = 961.79004
+texture = ExtResource("9_lmeum")
+patch_margin_left = 86
+patch_margin_top = 144
+patch_margin_right = 60
+patch_margin_bottom = 87
+
+[node name="TextBody" type="Label" parent="UI/Canvas"]
+layout_mode = 0
+offset_left = 1314.47
+offset_top = 177.305
+offset_right = 1434.77
+offset_bottom = 200.305
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 12
+theme_override_constants/shadow_outline_size = 1
+theme_override_fonts/font = ExtResource("5_362oy")
+theme_override_font_sizes/font_size = 16
+text = "BODY"
+vertical_alignment = 1
+
+[node name="TextEquip" type="Label" parent="UI/Canvas"]
+layout_mode = 0
+offset_left = 1314.47
+offset_top = 432.505
+offset_right = 1434.77
+offset_bottom = 455.505
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 12
+theme_override_constants/shadow_outline_size = 1
+theme_override_fonts/font = ExtResource("5_362oy")
+theme_override_font_sizes/font_size = 16
+text = "EQUIP"
+vertical_alignment = 1
+
+[node name="SlotHair" type="Control" parent="UI/Canvas"]
+anchors_preset = 0
+offset_left = 1314.97
+offset_top = 206.02
+offset_right = 1410.97
+offset_bottom = 304.02002
+mouse_filter = 2
+
+[node name="Select" type="TextureButton" parent="UI/Canvas/SlotHair"]
+layout_mode = 0
+offset_right = 96.0
+offset_bottom = 98.0
+pivot_offset = Vector2(48, 49)
+tooltip_text = "Open the hair part list."
+texture_normal = ExtResource("10_lemcx")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Icon" type="TextureRect" parent="UI/Canvas/SlotHair"]
+visible = false
+layout_mode = 0
+offset_left = 14.5
+offset_top = 26.5
+offset_right = 81.5
+offset_bottom = 71.5
+mouse_filter = 2
+texture = ExtResource("11_xloob")
+expand_mode = 1
+
+[node name="Item" type="TextureRect" parent="UI/Canvas/SlotHair"]
+modulate = Color(0.49145108, 0.90865034, 0.65421087, 1)
+layout_mode = 0
+offset_left = 3.2
+offset_top = 4.2
+offset_right = 92.799995
+offset_bottom = 93.799995
+mouse_filter = 2
+texture = ExtResource("12_gf2m4")
+expand_mode = 1
+
+[node name="VisibilityButton" type="TextureButton" parent="UI/Canvas/SlotHair"]
+layout_mode = 0
+offset_left = 68.8
+offset_top = 5.4
+offset_right = 91.8
+offset_bottom = 23.4
+pivot_offset = Vector2(11.5, 9)
+tooltip_text = "Hide or show the hair part."
+texture_normal = ExtResource("13_ste86")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="SlotEye" type="Control" parent="UI/Canvas"]
+anchors_preset = 0
+offset_left = 1418.97
+offset_top = 206.02
+offset_right = 1514.97
+offset_bottom = 304.02002
+mouse_filter = 2
+
+[node name="Select" type="TextureButton" parent="UI/Canvas/SlotEye"]
+layout_mode = 0
+offset_right = 96.0
+offset_bottom = 98.0
+pivot_offset = Vector2(48, 49)
+tooltip_text = "Open the eye part list."
+texture_normal = ExtResource("10_lemcx")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Icon" type="TextureRect" parent="UI/Canvas/SlotEye"]
+visible = false
+layout_mode = 0
+offset_left = 18.5
+offset_top = 28.5
+offset_right = 77.5
+offset_bottom = 69.5
+mouse_filter = 2
+texture = ExtResource("14_x2jr0")
+expand_mode = 1
+
+[node name="Item" type="TextureRect" parent="UI/Canvas/SlotEye"]
+layout_mode = 0
+offset_left = 3.2
+offset_top = 4.2
+offset_right = 92.799995
+offset_bottom = 93.799995
+mouse_filter = 2
+texture = ExtResource("15_sxq0e")
+expand_mode = 1
+
+[node name="VisibilityButton" type="TextureButton" parent="UI/Canvas/SlotEye"]
+visible = false
+layout_mode = 0
+offset_left = 68.8
+offset_top = 5.4
+offset_right = 91.8
+offset_bottom = 23.4
+pivot_offset = Vector2(11.5, 9)
+tooltip_text = "Hide or show the eye part."
+texture_normal = ExtResource("13_ste86")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="SlotBeard" type="Control" parent="UI/Canvas"]
+anchors_preset = 0
+offset_left = 1522.97
+offset_top = 206.02
+offset_right = 1618.97
+offset_bottom = 304.02002
+mouse_filter = 2
+
+[node name="Select" type="TextureButton" parent="UI/Canvas/SlotBeard"]
+layout_mode = 0
+offset_right = 96.0
+offset_bottom = 98.0
+pivot_offset = Vector2(48, 49)
+tooltip_text = "Open the beard part list."
+texture_normal = ExtResource("16_6k423")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Icon" type="TextureRect" parent="UI/Canvas/SlotBeard"]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 34.0
+offset_right = 83.0
+offset_bottom = 64.0
+mouse_filter = 2
+texture = ExtResource("17_qn1m1")
+expand_mode = 1
+
+[node name="Item" type="TextureRect" parent="UI/Canvas/SlotBeard"]
+visible = false
+layout_mode = 0
+offset_left = 3.2
+offset_top = 4.2
+offset_right = 92.799995
+offset_bottom = 93.799995
+mouse_filter = 2
+texture = ExtResource("18_hk2yq")
+expand_mode = 1
+
+[node name="VisibilityButton" type="TextureButton" parent="UI/Canvas/SlotBeard"]
+visible = false
+layout_mode = 0
+offset_left = 68.8
+offset_top = 5.4
+offset_right = 91.8
+offset_bottom = 23.4
+pivot_offset = Vector2(11.5, 9)
+tooltip_text = "Hide or show the beard part."
+texture_normal = ExtResource("13_ste86")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="SlotSkin" type="Control" parent="UI/Canvas"]
+anchors_preset = 0
+offset_left = 1314.97
+offset_top = 312.02
+offset_right = 1410.97
+offset_bottom = 410.02
+mouse_filter = 2
+
+[node name="Select" type="TextureButton" parent="UI/Canvas/SlotSkin"]
+layout_mode = 0
+offset_right = 96.0
+offset_bottom = 98.0
+pivot_offset = Vector2(48, 49)
+tooltip_text = "Open the skin part list."
+texture_normal = ExtResource("10_lemcx")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Icon" type="TextureRect" parent="UI/Canvas/SlotSkin"]
+visible = false
+layout_mode = 0
+offset_left = 15.5
+offset_top = 24.0
+offset_right = 80.5
+offset_bottom = 74.0
+mouse_filter = 2
+texture = ExtResource("19_meeli")
+expand_mode = 1
+
+[node name="Item" type="TextureRect" parent="UI/Canvas/SlotSkin"]
+modulate = Color(0.98039216, 0.7882353, 0.6745098, 1)
+layout_mode = 0
+offset_left = 3.2
+offset_top = 4.2
+offset_right = 92.799995
+offset_bottom = 93.799995
+mouse_filter = 2
+texture = ExtResource("20_oxm27")
+expand_mode = 1
+
+[node name="VisibilityButton" type="TextureButton" parent="UI/Canvas/SlotSkin"]
+visible = false
+layout_mode = 0
+offset_left = 68.8
+offset_top = 5.4
+offset_right = 91.8
+offset_bottom = 23.4
+pivot_offset = Vector2(11.5, 9)
+tooltip_text = "Hide or show the skin part."
+texture_normal = ExtResource("13_ste86")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="SlotHelmet" type="Control" parent="UI/Canvas"]
+anchors_preset = 0
+offset_left = 1314.97
+offset_top = 463.22
+offset_right = 1410.97
+offset_bottom = 561.22
+mouse_filter = 2
+
+[node name="Select" type="TextureButton" parent="UI/Canvas/SlotHelmet"]
+layout_mode = 0
+offset_right = 96.0
+offset_bottom = 98.0
+pivot_offset = Vector2(48, 49)
+tooltip_text = "Open the helmet part list."
+texture_normal = ExtResource("16_6k423")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Icon" type="TextureRect" parent="UI/Canvas/SlotHelmet"]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 21.5
+offset_right = 76.0
+offset_bottom = 76.5
+mouse_filter = 2
+texture = ExtResource("21_yjkg4")
+expand_mode = 1
+
+[node name="Item" type="TextureRect" parent="UI/Canvas/SlotHelmet"]
+visible = false
+layout_mode = 0
+offset_left = 3.2
+offset_top = 4.2
+offset_right = 92.799995
+offset_bottom = 93.799995
+mouse_filter = 2
+texture = ExtResource("22_8avo4")
+expand_mode = 1
+
+[node name="VisibilityButton" type="TextureButton" parent="UI/Canvas/SlotHelmet"]
+visible = false
+layout_mode = 0
+offset_left = 68.8
+offset_top = 5.4
+offset_right = 91.8
+offset_bottom = 23.4
+pivot_offset = Vector2(11.5, 9)
+tooltip_text = "Hide or show the helmet part."
+texture_normal = ExtResource("13_ste86")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="SlotChest" type="Control" parent="UI/Canvas"]
+anchors_preset = 0
+offset_left = 1418.97
+offset_top = 463.22
+offset_right = 1514.97
+offset_bottom = 561.22
+mouse_filter = 2
+
+[node name="Select" type="TextureButton" parent="UI/Canvas/SlotChest"]
+layout_mode = 0
+offset_right = 96.0
+offset_bottom = 98.0
+pivot_offset = Vector2(48, 49)
+tooltip_text = "Open the chest part list."
+texture_normal = ExtResource("10_lemcx")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Icon" type="TextureRect" parent="UI/Canvas/SlotChest"]
+visible = false
+layout_mode = 0
+offset_left = 14.0
+offset_top = 23.5
+offset_right = 82.0
+offset_bottom = 74.5
+mouse_filter = 2
+texture = ExtResource("23_w8yps")
+expand_mode = 1
+
+[node name="Item" type="TextureRect" parent="UI/Canvas/SlotChest"]
+layout_mode = 0
+offset_left = 3.2
+offset_top = 4.2
+offset_right = 92.799995
+offset_bottom = 93.799995
+mouse_filter = 2
+texture = ExtResource("24_3kut1")
+expand_mode = 1
+
+[node name="VisibilityButton" type="TextureButton" parent="UI/Canvas/SlotChest"]
+layout_mode = 0
+offset_left = 68.8
+offset_top = 5.4
+offset_right = 91.8
+offset_bottom = 23.4
+pivot_offset = Vector2(11.5, 9)
+tooltip_text = "Hide or show the chest part."
+texture_normal = ExtResource("13_ste86")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="SlotHandRight" type="Control" parent="UI/Canvas"]
+anchors_preset = 0
+offset_left = 1522.97
+offset_top = 463.22
+offset_right = 1618.97
+offset_bottom = 561.22
+mouse_filter = 2
+
+[node name="Select" type="TextureButton" parent="UI/Canvas/SlotHandRight"]
+layout_mode = 0
+offset_right = 96.0
+offset_bottom = 98.0
+pivot_offset = Vector2(48, 49)
+tooltip_text = "Open the hand right part list."
+texture_normal = ExtResource("10_lemcx")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Icon" type="TextureRect" parent="UI/Canvas/SlotHandRight"]
+visible = false
+layout_mode = 0
+offset_left = 21.0
+offset_top = 23.0
+offset_right = 75.0
+offset_bottom = 75.0
+mouse_filter = 2
+texture = ExtResource("25_w6or1")
+expand_mode = 1
+
+[node name="Item" type="TextureRect" parent="UI/Canvas/SlotHandRight"]
+layout_mode = 0
+offset_left = 3.2
+offset_top = 4.2
+offset_right = 92.799995
+offset_bottom = 93.799995
+mouse_filter = 2
+texture = ExtResource("26_pcj6w")
+expand_mode = 1
+
+[node name="VisibilityButton" type="TextureButton" parent="UI/Canvas/SlotHandRight"]
+layout_mode = 0
+offset_left = 68.8
+offset_top = 5.4
+offset_right = 91.8
+offset_bottom = 23.4
+pivot_offset = Vector2(11.5, 9)
+tooltip_text = "Hide or show the hand right part."
+texture_normal = ExtResource("13_ste86")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="SlotHandLeft" type="Control" parent="UI/Canvas"]
+anchors_preset = 0
+offset_left = 1314.97
+offset_top = 569.22
+offset_right = 1410.97
+offset_bottom = 667.22
+mouse_filter = 2
+
+[node name="Select" type="TextureButton" parent="UI/Canvas/SlotHandLeft"]
+layout_mode = 0
+offset_right = 96.0
+offset_bottom = 98.0
+pivot_offset = Vector2(48, 49)
+tooltip_text = "Open the hand left part list."
+texture_normal = ExtResource("10_lemcx")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Icon" type="TextureRect" parent="UI/Canvas/SlotHandLeft"]
+visible = false
+layout_mode = 0
+offset_left = 20.5
+offset_top = 21.5
+offset_right = 75.5
+offset_bottom = 76.5
+mouse_filter = 2
+texture = ExtResource("27_xblji")
+expand_mode = 1
+
+[node name="Item" type="TextureRect" parent="UI/Canvas/SlotHandLeft"]
+layout_mode = 0
+offset_left = 3.2
+offset_top = 4.2
+offset_right = 92.799995
+offset_bottom = 93.799995
+mouse_filter = 2
+texture = ExtResource("28_eabtx")
+expand_mode = 1
+
+[node name="VisibilityButton" type="TextureButton" parent="UI/Canvas/SlotHandLeft"]
+layout_mode = 0
+offset_left = 68.8
+offset_top = 5.4
+offset_right = 91.8
+offset_bottom = 23.4
+pivot_offset = Vector2(11.5, 9)
+tooltip_text = "Hide or show the hand left part."
+texture_normal = ExtResource("13_ste86")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="ArrowPrevious" type="Control" parent="UI/Canvas"]
+visible = false
+anchors_preset = 0
+offset_right = 18.6
+offset_bottom = 44.05
+mouse_filter = 2
+metadata/cell_offset = Vector2(-2.11, 29.92)
+
+[node name="HitArea" type="Button" parent="UI/Canvas/ArrowPrevious"]
+layout_mode = 0
+offset_right = 18.6
+offset_bottom = 44.05
+pivot_offset = Vector2(9.3, 22.025)
+tooltip_text = "Select the previous part."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_4wh2h")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_7x4bn")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_xu4su")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_u41op")
+flat = true
+
+[node name="Icon" type="TextureRect" parent="UI/Canvas/ArrowPrevious"]
+layout_mode = 0
+offset_left = 2.3
+offset_top = 8.58
+offset_right = 16.3
+offset_bottom = 29.58
+mouse_filter = 2
+texture = ExtResource("29_nrhov")
+expand_mode = 1
+
+[node name="ArrowNext" type="Control" parent="UI/Canvas"]
+visible = false
+anchors_preset = 0
+offset_right = 18.6
+offset_bottom = 44.05
+mouse_filter = 2
+metadata/cell_offset = Vector2(85.689995, 29.92)
+
+[node name="HitArea" type="Button" parent="UI/Canvas/ArrowNext"]
+layout_mode = 0
+offset_right = 18.6
+offset_bottom = 44.05
+pivot_offset = Vector2(9.3, 22.025)
+tooltip_text = "Select the next part."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ofd2y")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_r40va")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_tjgo7")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_nj061")
+flat = true
+
+[node name="Icon" type="TextureRect" parent="UI/Canvas/ArrowNext"]
+layout_mode = 0
+offset_left = 2.3
+offset_top = 8.58
+offset_right = 17.3
+offset_bottom = 29.58
+mouse_filter = 2
+texture = ExtResource("30_3fuh4")
+expand_mode = 1
+
+[node name="FocusFrame" type="NinePatchRect" parent="UI/Canvas"]
+visible = false
+layout_mode = 0
+offset_right = 91.19
+offset_bottom = 91.67
+texture = ExtResource("31_kxh68")
+patch_margin_left = 21
+patch_margin_top = 26
+patch_margin_right = 21
+patch_margin_bottom = 26
+
+[node name="SelectFrame" type="NinePatchRect" parent="UI/Canvas"]
+modulate = Color(0.7176471, 1, 0.5294118, 1)
+layout_mode = 0
+offset_left = 1317.375
+offset_top = 209.185
+offset_right = 1408.565
+offset_bottom = 300.85498
+texture = ExtResource("31_kxh68")
+patch_margin_left = 21
+patch_margin_top = 26
+patch_margin_right = 21
+patch_margin_bottom = 26
+
+[node name="TextPreset" type="Label" parent="UI/Canvas"]
+layout_mode = 0
+offset_left = 1316.65
+offset_top = 787.92
+offset_right = 1436.9501
+offset_bottom = 813.51996
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 12
+theme_override_constants/shadow_outline_size = 1
+theme_override_fonts/font = ExtResource("5_362oy")
+theme_override_font_sizes/font_size = 16
+text = "PRESET"
+vertical_alignment = 1
+
+[node name="PresetPrevious" type="TextureButton" parent="UI/Canvas"]
+layout_mode = 0
+offset_left = 1314.94
+offset_top = 821.72
+offset_right = 1357.94
+offset_bottom = 866.72
+pivot_offset = Vector2(21.5, 22.5)
+tooltip_text = "Apply the previous preset slot."
+texture_normal = ExtResource("32_t4b8x")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="PresetMiddle" type="TextureRect" parent="UI/Canvas"]
+layout_mode = 0
+offset_left = 1357.94
+offset_top = 824.53
+offset_right = 1575.34
+offset_bottom = 863.91003
+mouse_filter = 2
+texture = ExtResource("33_gpkwh")
+expand_mode = 1
+
+[node name="PresetNumber" type="Label" parent="UI/Canvas"]
+layout_mode = 0
+offset_left = 1366.64
+offset_top = 832.72
+offset_right = 1566.64
+offset_bottom = 855.72
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 4
+theme_override_constants/shadow_outline_size = 1
+theme_override_fonts/font = ExtResource("5_362oy")
+theme_override_font_sizes/font_size = 15
+text = "01"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PresetNext" type="TextureButton" parent="UI/Canvas"]
+layout_mode = 0
+offset_left = 1575.34
+offset_top = 821.72
+offset_right = 1618.34
+offset_bottom = 866.72
+pivot_offset = Vector2(21.5, 22.5)
+tooltip_text = "Apply the next preset slot."
+texture_normal = ExtResource("34_gciob")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="ButtonRandom" type="TextureButton" parent="UI/Canvas"]
+layout_mode = 0
+offset_left = 1311.85
+offset_top = 897.65
+offset_right = 1351.85
+offset_bottom = 943.89
+pivot_offset = Vector2(20, 23.119995)
+tooltip_text = "Randomize every part and the skin, hair and beard colors."
+texture_normal = ExtResource("35_0g5qu")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="ButtonSaveCharacter" type="Button" parent="UI/Canvas"]
+layout_mode = 0
+offset_left = 1373.21
+offset_top = 897.65
+offset_right = 1627.6799
+offset_bottom = 943.89
+pivot_offset = Vector2(127.234985, 23.119995)
+tooltip_text = "Save the current character as a reusable scene with a 512x512 preview (Godot editor only)."
+focus_mode = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_disabled_color = Color(1, 1, 1, 0.5)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("5_362oy")
+theme_override_font_sizes/font_size = 16
+theme_override_styles/normal = SubResource("StyleBoxTexture_xe715")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_nnunc")
+theme_override_styles/hover = SubResource("StyleBoxTexture_0idpc")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_k4hmx")
+theme_override_styles/focus = SubResource("StyleBoxTexture_khkhe")
+text = "Save Character"
+
+[node name="PanelPartsList" type="NinePatchRect" parent="UI/Canvas"]
+modulate = Color(0.18431373, 0.2, 0.24705882, 1)
+layout_mode = 0
+offset_left = 1641.53
+offset_top = 160.71
+offset_right = 1920.0
+offset_bottom = 961.94
+texture = ExtResource("37_hdcye")
+patch_margin_left = 9
+patch_margin_top = 9
+patch_margin_right = 3
+patch_margin_bottom = 9
+
+[node name="ListTitle" type="Label" parent="UI/Canvas"]
+layout_mode = 0
+offset_left = 1657.39
+offset_top = 175.93001
+offset_right = 1892.74
+offset_bottom = 198.93001
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 12
+theme_override_constants/shadow_outline_size = 1
+theme_override_fonts/font = ExtResource("5_362oy")
+theme_override_font_sizes/font_size = 16
+text = "HAIR"
+vertical_alignment = 1
+
+[node name="ListBackground" type="ColorRect" parent="UI/Canvas"]
+layout_mode = 0
+offset_left = 1642.56
+offset_top = 211.28
+offset_right = 1918.9701
+offset_bottom = 677.94
+mouse_filter = 2
+color = Color(0.13725491, 0.14901961, 0.1882353, 1)
+
+[node name="ListScroll" type="ScrollContainer" parent="UI/Canvas"]
+layout_mode = 0
+offset_left = 1642.56
+offset_top = 211.28
+offset_right = 1918.9701
+offset_bottom = 677.94
+horizontal_scroll_mode = 0
+vertical_scroll_mode = 3
+
+[node name="ListMargin" type="MarginContainer" parent="UI/Canvas/ListScroll"]
+layout_mode = 2
+theme_override_constants/margin_left = 11
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 0
+theme_override_constants/margin_bottom = 20
+
+[node name="ListGrid" type="GridContainer" parent="UI/Canvas/ListScroll/ListMargin"]
+layout_mode = 2
+theme_override_constants/h_separation = 10
+theme_override_constants/v_separation = 10
+columns = 3
+
+[node name="ListReset" type="TextureButton" parent="UI/Canvas/ListScroll/ListMargin/ListGrid"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+tooltip_text = "Unequip this part."
+texture_normal = ExtResource("38_nfhox")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="ListCell_Hair_0" type="Button" parent="UI/Canvas/ListScroll/ListMargin/ListGrid"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+tooltip_text = "Equip Hair 1."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_gowol")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_fjtlu")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_ml4dt")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ee30m")
+
+[node name="Image" type="TextureRect" parent="UI/Canvas/ListScroll/ListMargin/ListGrid/ListCell_Hair_0"]
+modulate = Color(0.49145108, 0.90865034, 0.65421087, 1)
+layout_mode = 0
+offset_left = 1.6
+offset_top = 1.6
+offset_right = 78.4
+offset_bottom = 78.4
+mouse_filter = 2
+texture = ExtResource("39_074pe")
+expand_mode = 1
+
+[node name="ListCell_Hair_1" type="Button" parent="UI/Canvas/ListScroll/ListMargin/ListGrid"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+tooltip_text = "Equip Hair 2."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_7mkhl")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_gimww")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_ub2r5")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_f11wd")
+
+[node name="Image" type="TextureRect" parent="UI/Canvas/ListScroll/ListMargin/ListGrid/ListCell_Hair_1"]
+modulate = Color(0.49145108, 0.90865034, 0.65421087, 1)
+layout_mode = 0
+offset_left = 1.6
+offset_top = 1.6
+offset_right = 78.4
+offset_bottom = 78.4
+mouse_filter = 2
+texture = ExtResource("40_p3bmg")
+expand_mode = 1
+
+[node name="ListCell_Hair_2" type="Button" parent="UI/Canvas/ListScroll/ListMargin/ListGrid"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+tooltip_text = "Equip Hair 3."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_posa0")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_yq3vu")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_woxe3")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_icod1")
+
+[node name="Image" type="TextureRect" parent="UI/Canvas/ListScroll/ListMargin/ListGrid/ListCell_Hair_2"]
+modulate = Color(0.49145108, 0.90865034, 0.65421087, 1)
+layout_mode = 0
+offset_left = 1.6
+offset_top = 1.6
+offset_right = 78.4
+offset_bottom = 78.4
+mouse_filter = 2
+texture = ExtResource("41_qtssc")
+expand_mode = 1
+
+[node name="ListCell_Hair_3" type="Button" parent="UI/Canvas/ListScroll/ListMargin/ListGrid"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+tooltip_text = "Equip Hair 4."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_nhory")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_tef50")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_y3cvp")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_xeoyd")
+
+[node name="Image" type="TextureRect" parent="UI/Canvas/ListScroll/ListMargin/ListGrid/ListCell_Hair_3"]
+modulate = Color(0.49145108, 0.90865034, 0.65421087, 1)
+layout_mode = 0
+offset_left = 1.6
+offset_top = 1.6
+offset_right = 78.4
+offset_bottom = 78.4
+mouse_filter = 2
+texture = ExtResource("42_16o7y")
+expand_mode = 1
+
+[node name="ListCell_Hair_4" type="Button" parent="UI/Canvas/ListScroll/ListMargin/ListGrid"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+tooltip_text = "Equip Hair 5."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_yx4ml")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_2fi13")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_a5d26")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_wrov0")
+
+[node name="Image" type="TextureRect" parent="UI/Canvas/ListScroll/ListMargin/ListGrid/ListCell_Hair_4"]
+modulate = Color(0.49145108, 0.90865034, 0.65421087, 1)
+layout_mode = 0
+offset_left = 1.6
+offset_top = 1.6
+offset_right = 78.4
+offset_bottom = 78.4
+mouse_filter = 2
+texture = ExtResource("43_4525o")
+expand_mode = 1
+
+[node name="ListCell_Hair_5" type="Button" parent="UI/Canvas/ListScroll/ListMargin/ListGrid"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+tooltip_text = "Equip Hair 6."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_y5dho")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_debko")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_m4sy0")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_u8iam")
+
+[node name="Image" type="TextureRect" parent="UI/Canvas/ListScroll/ListMargin/ListGrid/ListCell_Hair_5"]
+modulate = Color(0.49145108, 0.90865034, 0.65421087, 1)
+layout_mode = 0
+offset_left = 1.6
+offset_top = 1.6
+offset_right = 78.4
+offset_bottom = 78.4
+mouse_filter = 2
+texture = ExtResource("44_olgu4")
+expand_mode = 1
+
+[node name="ListCell_Hair_6" type="Button" parent="UI/Canvas/ListScroll/ListMargin/ListGrid"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+tooltip_text = "Equip Hair 7."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_e2x3t")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_lelbx")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_gxa7b")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_0rvns")
+
+[node name="Image" type="TextureRect" parent="UI/Canvas/ListScroll/ListMargin/ListGrid/ListCell_Hair_6"]
+modulate = Color(0.49145108, 0.90865034, 0.65421087, 1)
+layout_mode = 0
+offset_left = 1.6
+offset_top = 1.6
+offset_right = 78.4
+offset_bottom = 78.4
+mouse_filter = 2
+texture = ExtResource("45_44w21")
+expand_mode = 1
+
+[node name="ListCell_Hair_7" type="Button" parent="UI/Canvas/ListScroll/ListMargin/ListGrid"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+tooltip_text = "Equip Hair 8."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ckqoh")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_lsvvy")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_juash")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_givek")
+
+[node name="Image" type="TextureRect" parent="UI/Canvas/ListScroll/ListMargin/ListGrid/ListCell_Hair_7"]
+modulate = Color(0.49145108, 0.90865034, 0.65421087, 1)
+layout_mode = 0
+offset_left = 1.6
+offset_top = 1.6
+offset_right = 78.4
+offset_bottom = 78.4
+mouse_filter = 2
+texture = ExtResource("46_8vc70")
+expand_mode = 1
+
+[node name="ListCell_Hair_8" type="Button" parent="UI/Canvas/ListScroll/ListMargin/ListGrid"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+tooltip_text = "Equip Hair 9."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_qj3g4")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_fpesq")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_pmphu")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_7nc6r")
+
+[node name="Image" type="TextureRect" parent="UI/Canvas/ListScroll/ListMargin/ListGrid/ListCell_Hair_8"]
+modulate = Color(0.49145108, 0.90865034, 0.65421087, 1)
+layout_mode = 0
+offset_left = 1.6
+offset_top = 1.6
+offset_right = 78.4
+offset_bottom = 78.4
+mouse_filter = 2
+texture = ExtResource("47_nxnsc")
+expand_mode = 1
+
+[node name="ListCell_Hair_9" type="Button" parent="UI/Canvas/ListScroll/ListMargin/ListGrid"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+tooltip_text = "Equip Hair 10."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_m6xby")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_vsgfm")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_kw1c7")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_mh6t3")
+
+[node name="Image" type="TextureRect" parent="UI/Canvas/ListScroll/ListMargin/ListGrid/ListCell_Hair_9"]
+modulate = Color(0.49145108, 0.90865034, 0.65421087, 1)
+layout_mode = 0
+offset_left = 1.6
+offset_top = 1.6
+offset_right = 78.4
+offset_bottom = 78.4
+mouse_filter = 2
+texture = ExtResource("48_hs8ux")
+expand_mode = 1
+
+[node name="ListCell_Hair_10" type="Button" parent="UI/Canvas/ListScroll/ListMargin/ListGrid"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+tooltip_text = "Equip Hair 11."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_f8s0e")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_bnows")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_juhqb")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_4ojv1")
+
+[node name="Image" type="TextureRect" parent="UI/Canvas/ListScroll/ListMargin/ListGrid/ListCell_Hair_10"]
+modulate = Color(0.49145108, 0.90865034, 0.65421087, 1)
+layout_mode = 0
+offset_left = 1.6
+offset_top = 1.6
+offset_right = 78.4
+offset_bottom = 78.4
+mouse_filter = 2
+texture = ExtResource("49_e46xo")
+expand_mode = 1
+
+[node name="ListCell_Hair_11" type="Button" parent="UI/Canvas/ListScroll/ListMargin/ListGrid"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+tooltip_text = "Equip Hair 12."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_yebvu")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_iwt1l")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_k718o")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_3ii80")
+
+[node name="Image" type="TextureRect" parent="UI/Canvas/ListScroll/ListMargin/ListGrid/ListCell_Hair_11"]
+modulate = Color(0.49145108, 0.90865034, 0.65421087, 1)
+layout_mode = 0
+offset_left = 1.6
+offset_top = 1.6
+offset_right = 78.4
+offset_bottom = 78.4
+mouse_filter = 2
+texture = ExtResource("50_wkn8l")
+expand_mode = 1
+
+[node name="ListCell_Hair_12" type="Button" parent="UI/Canvas/ListScroll/ListMargin/ListGrid"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+tooltip_text = "Equip Hair 13."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_2i3lw")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_02lcf")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_1memb")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_3uy28")
+
+[node name="Image" type="TextureRect" parent="UI/Canvas/ListScroll/ListMargin/ListGrid/ListCell_Hair_12"]
+modulate = Color(0.49145108, 0.90865034, 0.65421087, 1)
+layout_mode = 0
+offset_left = 1.6
+offset_top = 1.6
+offset_right = 78.4
+offset_bottom = 78.4
+mouse_filter = 2
+texture = ExtResource("51_aw8wv")
+expand_mode = 1
+
+[node name="ListCell_Hair_13" type="Button" parent="UI/Canvas/ListScroll/ListMargin/ListGrid"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+tooltip_text = "Equip Hair 14."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_gp8m1")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_iff2s")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_acrpt")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yvcs4")
+
+[node name="Image" type="TextureRect" parent="UI/Canvas/ListScroll/ListMargin/ListGrid/ListCell_Hair_13"]
+modulate = Color(0.49145108, 0.90865034, 0.65421087, 1)
+layout_mode = 0
+offset_left = 1.6
+offset_top = 1.6
+offset_right = 78.4
+offset_bottom = 78.4
+mouse_filter = 2
+texture = ExtResource("52_blxql")
+expand_mode = 1
+
+[node name="ListCell_Hair_14" type="Button" parent="UI/Canvas/ListScroll/ListMargin/ListGrid"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+tooltip_text = "Equip Hair 15."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_afndx")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_8xc1f")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_egw1q")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_8l0ui")
+
+[node name="Image" type="TextureRect" parent="UI/Canvas/ListScroll/ListMargin/ListGrid/ListCell_Hair_14"]
+modulate = Color(0.49145108, 0.90865034, 0.65421087, 1)
+layout_mode = 0
+offset_left = 1.6
+offset_top = 1.6
+offset_right = 78.4
+offset_bottom = 78.4
+mouse_filter = 2
+texture = ExtResource("53_x4k5m")
+expand_mode = 1
+
+[node name="ListCell_Hair_15" type="Button" parent="UI/Canvas/ListScroll/ListMargin/ListGrid"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+tooltip_text = "Equip Hair 16."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_xcntq")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_tq6cd")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_y1g2v")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_64y1f")
+
+[node name="ListSelectFrame" type="TextureRect" parent="UI/Canvas/ListScroll/ListMargin/ListGrid/ListCell_Hair_15"]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 1.0
+offset_right = 79.0
+offset_bottom = 79.0
+mouse_filter = 2
+texture = ExtResource("54_2ob38")
+expand_mode = 1
+
+[node name="Image" type="TextureRect" parent="UI/Canvas/ListScroll/ListMargin/ListGrid/ListCell_Hair_15"]
+modulate = Color(0.49145108, 0.90865034, 0.65421087, 1)
+layout_mode = 0
+offset_left = 1.6
+offset_top = 1.6
+offset_right = 78.4
+offset_bottom = 78.4
+mouse_filter = 2
+texture = ExtResource("12_gf2m4")
+expand_mode = 1
+
+[node name="ListCell_Hair_16" type="Button" parent="UI/Canvas/ListScroll/ListMargin/ListGrid"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+tooltip_text = "Equip Hair 17."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_2cinb")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_yfj6n")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_a6wh6")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_x5hpi")
+
+[node name="Image" type="TextureRect" parent="UI/Canvas/ListScroll/ListMargin/ListGrid/ListCell_Hair_16"]
+modulate = Color(0.49145108, 0.90865034, 0.65421087, 1)
+layout_mode = 0
+offset_left = 1.6
+offset_top = 1.6
+offset_right = 78.4
+offset_bottom = 78.4
+mouse_filter = 2
+texture = ExtResource("55_u8f7q")
+expand_mode = 1
+
+[node name="ListCell_Hair_17" type="Button" parent="UI/Canvas/ListScroll/ListMargin/ListGrid"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+tooltip_text = "Equip Hair 18."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_3umxw")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_vnw8r")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_k460r")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_rq53y")
+
+[node name="Image" type="TextureRect" parent="UI/Canvas/ListScroll/ListMargin/ListGrid/ListCell_Hair_17"]
+modulate = Color(0.49145108, 0.90865034, 0.65421087, 1)
+layout_mode = 0
+offset_left = 1.6
+offset_top = 1.6
+offset_right = 78.4
+offset_bottom = 78.4
+mouse_filter = 2
+texture = ExtResource("56_ar6bu")
+expand_mode = 1
+
+[node name="ListCell_Hair_18" type="Button" parent="UI/Canvas/ListScroll/ListMargin/ListGrid"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+tooltip_text = "Equip Hair 19."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_7owhj")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_vapg2")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_dy5ws")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_xufnn")
+
+[node name="Image" type="TextureRect" parent="UI/Canvas/ListScroll/ListMargin/ListGrid/ListCell_Hair_18"]
+modulate = Color(0.49145108, 0.90865034, 0.65421087, 1)
+layout_mode = 0
+offset_left = 1.6
+offset_top = 1.6
+offset_right = 78.4
+offset_bottom = 78.4
+mouse_filter = 2
+texture = ExtResource("57_mt7d7")
+expand_mode = 1
+
+[node name="ListCell_Hair_19" type="Button" parent="UI/Canvas/ListScroll/ListMargin/ListGrid"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+tooltip_text = "Equip Hair 20."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_o0awy")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_i6bme")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_8auqs")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_dvq7h")
+
+[node name="Image" type="TextureRect" parent="UI/Canvas/ListScroll/ListMargin/ListGrid/ListCell_Hair_19"]
+modulate = Color(0.49145108, 0.90865034, 0.65421087, 1)
+layout_mode = 0
+offset_left = 1.6
+offset_top = 1.6
+offset_right = 78.4
+offset_bottom = 78.4
+mouse_filter = 2
+texture = ExtResource("58_gwx25")
+expand_mode = 1
+
+[node name="ListCell_Hair_20" type="Button" parent="UI/Canvas/ListScroll/ListMargin/ListGrid"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+tooltip_text = "Equip Hair 21."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_bxa0n")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_6vkrh")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_yap5t")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_kbjvx")
+
+[node name="Image" type="TextureRect" parent="UI/Canvas/ListScroll/ListMargin/ListGrid/ListCell_Hair_20"]
+modulate = Color(0.49145108, 0.90865034, 0.65421087, 1)
+layout_mode = 0
+offset_left = 1.6
+offset_top = 1.6
+offset_right = 78.4
+offset_bottom = 78.4
+mouse_filter = 2
+texture = ExtResource("59_a4bs5")
+expand_mode = 1
+
+[node name="ListCell_Hair_21" type="Button" parent="UI/Canvas/ListScroll/ListMargin/ListGrid"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+tooltip_text = "Equip Hair 22."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_gs7jc")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_3y6l6")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_1ukfb")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_xdb6w")
+
+[node name="Image" type="TextureRect" parent="UI/Canvas/ListScroll/ListMargin/ListGrid/ListCell_Hair_21"]
+modulate = Color(0.49145108, 0.90865034, 0.65421087, 1)
+layout_mode = 0
+offset_left = 1.6
+offset_top = 1.6
+offset_right = 78.4
+offset_bottom = 78.4
+mouse_filter = 2
+texture = ExtResource("60_7cv7h")
+expand_mode = 1
+
+[node name="ListCell_Hair_22" type="Button" parent="UI/Canvas/ListScroll/ListMargin/ListGrid"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+tooltip_text = "Equip Hair 23."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_6j3s6")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_vti1y")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_ih8nl")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_dclmo")
+
+[node name="Image" type="TextureRect" parent="UI/Canvas/ListScroll/ListMargin/ListGrid/ListCell_Hair_22"]
+modulate = Color(0.49145108, 0.90865034, 0.65421087, 1)
+layout_mode = 0
+offset_left = 1.6
+offset_top = 1.6
+offset_right = 78.4
+offset_bottom = 78.4
+mouse_filter = 2
+texture = ExtResource("61_n0p41")
+expand_mode = 1
+
+[node name="ListCell_Hair_23" type="Button" parent="UI/Canvas/ListScroll/ListMargin/ListGrid"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+tooltip_text = "Equip Hair 24."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_0bb3t")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_g46i5")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_o3n8s")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_p74qw")
+
+[node name="Image" type="TextureRect" parent="UI/Canvas/ListScroll/ListMargin/ListGrid/ListCell_Hair_23"]
+modulate = Color(0.49145108, 0.90865034, 0.65421087, 1)
+layout_mode = 0
+offset_left = 1.6
+offset_top = 1.6
+offset_right = 78.4
+offset_bottom = 78.4
+mouse_filter = 2
+texture = ExtResource("62_2hrpb")
+expand_mode = 1
+
+[node name="ListCell_Hair_24" type="Button" parent="UI/Canvas/ListScroll/ListMargin/ListGrid"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+tooltip_text = "Equip Hair 25."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_xkatk")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_ij2lv")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_ruwaa")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_tkpwx")
+
+[node name="Image" type="TextureRect" parent="UI/Canvas/ListScroll/ListMargin/ListGrid/ListCell_Hair_24"]
+modulate = Color(0.49145108, 0.90865034, 0.65421087, 1)
+layout_mode = 0
+offset_left = 1.6
+offset_top = 1.6
+offset_right = 78.4
+offset_bottom = 78.4
+mouse_filter = 2
+texture = ExtResource("63_mh5r2")
+expand_mode = 1
+
+[node name="ListCell_Hair_25" type="Button" parent="UI/Canvas/ListScroll/ListMargin/ListGrid"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+tooltip_text = "Equip Hair 26."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_30tla")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_sf500")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_v6khq")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_kjipv")
+
+[node name="Image" type="TextureRect" parent="UI/Canvas/ListScroll/ListMargin/ListGrid/ListCell_Hair_25"]
+modulate = Color(0.49145108, 0.90865034, 0.65421087, 1)
+layout_mode = 0
+offset_left = 1.6
+offset_top = 1.6
+offset_right = 78.4
+offset_bottom = 78.4
+mouse_filter = 2
+texture = ExtResource("64_5ne02")
+expand_mode = 1
+
+[node name="ColorPicker" type="Control" parent="UI/Canvas"]
+anchors_preset = 0
+offset_left = 1642.17
+offset_top = 687.94
+offset_right = 1919.3601
+offset_bottom = 957.69
+mouse_filter = 2
+
+[node name="PickerShadow" type="ColorRect" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 13.3
+offset_top = 2.0
+offset_right = 167.09
+offset_bottom = 155.8
+mouse_filter = 2
+color = Color(0, 0, 0, 0.5)
+
+[node name="SaturationValue" type="ColorRect" parent="UI/Canvas/ColorPicker"]
+material = SubResource("ShaderMaterial_tjs6d")
+layout_mode = 0
+offset_left = 11.3
+offset_right = 165.09
+offset_bottom = 153.8
+
+[node name="SaturationValuePointer" type="TextureRect" parent="UI/Canvas/ColorPicker/SaturationValue"]
+layout_mode = 0
+offset_left = 65.111404
+offset_top = 8.549578
+offset_right = 76.111404
+offset_bottom = 19.549578
+mouse_filter = 2
+texture = ExtResource("65_m0vmr")
+expand_mode = 1
+
+[node name="HueBar" type="TextureRect" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 174.09
+offset_right = 180.09
+offset_bottom = 154.0
+mouse_filter = 2
+texture = ExtResource("66_jd803")
+expand_mode = 1
+
+[node name="HueHitArea" type="Control" parent="UI/Canvas/ColorPicker"]
+anchors_preset = 0
+offset_left = 165.09
+offset_right = 189.09
+offset_bottom = 154.0
+
+[node name="HuePointer" type="TextureRect" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 170.09
+offset_top = 85.653465
+offset_right = 184.09
+offset_bottom = 99.653465
+mouse_filter = 2
+texture = ExtResource("67_djdpc")
+expand_mode = 1
+
+[node name="ColorPreset0" type="Button" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 190.39001
+offset_top = 0.7999878
+offset_right = 208.39001
+offset_bottom = 18.799988
+pivot_offset = Vector2(9, 9)
+tooltip_text = "Apply preset color #222121."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_4imvn")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_4imvn")
+theme_override_styles/hover = SubResource("StyleBoxFlat_4imvn")
+theme_override_styles/focus = SubResource("StyleBoxFlat_4imvn")
+
+[node name="ColorPreset1" type="Button" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 210.39001
+offset_top = 0.7999878
+offset_right = 228.39001
+offset_bottom = 18.799988
+pivot_offset = Vector2(9, 9)
+tooltip_text = "Apply preset color #592E2F."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_etuqg")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_etuqg")
+theme_override_styles/hover = SubResource("StyleBoxFlat_etuqg")
+theme_override_styles/focus = SubResource("StyleBoxFlat_etuqg")
+
+[node name="ColorPreset2" type="Button" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 230.39001
+offset_top = 0.7999878
+offset_right = 248.39001
+offset_bottom = 18.799988
+pivot_offset = Vector2(9, 9)
+tooltip_text = "Apply preset color #604535."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_c66h7")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_c66h7")
+theme_override_styles/hover = SubResource("StyleBoxFlat_c66h7")
+theme_override_styles/focus = SubResource("StyleBoxFlat_c66h7")
+
+[node name="ColorPreset3" type="Button" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 250.39001
+offset_top = 0.7999878
+offset_right = 268.39
+offset_bottom = 18.799988
+pivot_offset = Vector2(9, 9)
+tooltip_text = "Apply preset color #8C7A74."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_lhi1t")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_lhi1t")
+theme_override_styles/hover = SubResource("StyleBoxFlat_lhi1t")
+theme_override_styles/focus = SubResource("StyleBoxFlat_lhi1t")
+
+[node name="ColorPreset4" type="Button" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 190.39001
+offset_top = 20.799988
+offset_right = 208.39001
+offset_bottom = 38.799988
+pivot_offset = Vector2(9, 9)
+tooltip_text = "Apply preset color #8C7A74."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_mws3x")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_mws3x")
+theme_override_styles/hover = SubResource("StyleBoxFlat_mws3x")
+theme_override_styles/focus = SubResource("StyleBoxFlat_mws3x")
+
+[node name="ColorPreset5" type="Button" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 210.39001
+offset_top = 20.799988
+offset_right = 228.39001
+offset_bottom = 38.799988
+pivot_offset = Vector2(9, 9)
+tooltip_text = "Apply preset color #C7A275."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_oqo36")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_oqo36")
+theme_override_styles/hover = SubResource("StyleBoxFlat_oqo36")
+theme_override_styles/focus = SubResource("StyleBoxFlat_oqo36")
+
+[node name="ColorPreset6" type="Button" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 230.39001
+offset_top = 20.799988
+offset_right = 248.39001
+offset_bottom = 38.799988
+pivot_offset = Vector2(9, 9)
+tooltip_text = "Apply preset color #F3B840."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_xgxso")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_xgxso")
+theme_override_styles/hover = SubResource("StyleBoxFlat_xgxso")
+theme_override_styles/focus = SubResource("StyleBoxFlat_xgxso")
+
+[node name="ColorPreset7" type="Button" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 250.39001
+offset_top = 20.799988
+offset_right = 268.39
+offset_bottom = 38.799988
+pivot_offset = Vector2(9, 9)
+tooltip_text = "Apply preset color #FCFDED."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_ge5m5")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ge5m5")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ge5m5")
+theme_override_styles/focus = SubResource("StyleBoxFlat_ge5m5")
+
+[node name="ColorPreset8" type="Button" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 190.39001
+offset_top = 40.799988
+offset_right = 208.39001
+offset_bottom = 58.799988
+pivot_offset = Vector2(9, 9)
+tooltip_text = "Apply preset color #E57130."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_xa3fi")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_xa3fi")
+theme_override_styles/hover = SubResource("StyleBoxFlat_xa3fi")
+theme_override_styles/focus = SubResource("StyleBoxFlat_xa3fi")
+
+[node name="ColorPreset9" type="Button" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 210.39001
+offset_top = 40.799988
+offset_right = 228.39001
+offset_bottom = 58.799988
+pivot_offset = Vector2(9, 9)
+tooltip_text = "Apply preset color #99220E."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_b6vnr")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_b6vnr")
+theme_override_styles/hover = SubResource("StyleBoxFlat_b6vnr")
+theme_override_styles/focus = SubResource("StyleBoxFlat_b6vnr")
+
+[node name="ColorPreset10" type="Button" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 230.39001
+offset_top = 40.799988
+offset_right = 248.39001
+offset_bottom = 58.799988
+pivot_offset = Vector2(9, 9)
+tooltip_text = "Apply preset color #E33C77."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_xu6c2")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_xu6c2")
+theme_override_styles/hover = SubResource("StyleBoxFlat_xu6c2")
+theme_override_styles/focus = SubResource("StyleBoxFlat_xu6c2")
+
+[node name="ColorPreset11" type="Button" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 250.39001
+offset_top = 40.799988
+offset_right = 268.39
+offset_bottom = 58.799988
+pivot_offset = Vector2(9, 9)
+tooltip_text = "Apply preset color #EF9ECE."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_8dre5")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_8dre5")
+theme_override_styles/hover = SubResource("StyleBoxFlat_8dre5")
+theme_override_styles/focus = SubResource("StyleBoxFlat_8dre5")
+
+[node name="ColorPreset12" type="Button" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 190.39001
+offset_top = 60.799988
+offset_right = 208.39001
+offset_bottom = 78.79999
+pivot_offset = Vector2(9, 9)
+tooltip_text = "Apply preset color #875BF1."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_1r1ql")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_1r1ql")
+theme_override_styles/hover = SubResource("StyleBoxFlat_1r1ql")
+theme_override_styles/focus = SubResource("StyleBoxFlat_1r1ql")
+
+[node name="ColorPreset13" type="Button" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 210.39001
+offset_top = 60.799988
+offset_right = 228.39001
+offset_bottom = 78.79999
+pivot_offset = Vector2(9, 9)
+tooltip_text = "Apply preset color #3252AC."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_vjkqt")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_vjkqt")
+theme_override_styles/hover = SubResource("StyleBoxFlat_vjkqt")
+theme_override_styles/focus = SubResource("StyleBoxFlat_vjkqt")
+
+[node name="ColorPreset14" type="Button" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 230.39001
+offset_top = 60.799988
+offset_right = 248.39001
+offset_bottom = 78.79999
+pivot_offset = Vector2(9, 9)
+tooltip_text = "Apply preset color #84B9F1."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_vw1e5")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_vw1e5")
+theme_override_styles/hover = SubResource("StyleBoxFlat_vw1e5")
+theme_override_styles/focus = SubResource("StyleBoxFlat_vw1e5")
+
+[node name="ColorPreset15" type="Button" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 250.39001
+offset_top = 60.799988
+offset_right = 268.39
+offset_bottom = 78.79999
+pivot_offset = Vector2(9, 9)
+tooltip_text = "Apply preset color #3A7A5E."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_4seoa")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_4seoa")
+theme_override_styles/hover = SubResource("StyleBoxFlat_4seoa")
+theme_override_styles/focus = SubResource("StyleBoxFlat_4seoa")
+
+[node name="ColorPreset16" type="Button" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 190.39001
+offset_top = 94.58002
+offset_right = 208.39001
+offset_bottom = 112.58002
+pivot_offset = Vector2(9, 9)
+tooltip_text = "Apply preset color #FAC9AC."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_b3ew5")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_b3ew5")
+theme_override_styles/hover = SubResource("StyleBoxFlat_b3ew5")
+theme_override_styles/focus = SubResource("StyleBoxFlat_b3ew5")
+
+[node name="ColorPreset17" type="Button" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 210.39001
+offset_top = 94.58002
+offset_right = 228.39001
+offset_bottom = 112.58002
+pivot_offset = Vector2(9, 9)
+tooltip_text = "Apply preset color #EAA888."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_vj7le")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_vj7le")
+theme_override_styles/hover = SubResource("StyleBoxFlat_vj7le")
+theme_override_styles/focus = SubResource("StyleBoxFlat_vj7le")
+
+[node name="ColorPreset18" type="Button" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 230.39001
+offset_top = 94.58002
+offset_right = 248.39001
+offset_bottom = 112.58002
+pivot_offset = Vector2(9, 9)
+tooltip_text = "Apply preset color #DBA77B."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_wsu6n")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_wsu6n")
+theme_override_styles/hover = SubResource("StyleBoxFlat_wsu6n")
+theme_override_styles/focus = SubResource("StyleBoxFlat_wsu6n")
+
+[node name="ColorPreset19" type="Button" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 250.39001
+offset_top = 94.58002
+offset_right = 268.39
+offset_bottom = 112.58002
+pivot_offset = Vector2(9, 9)
+tooltip_text = "Apply preset color #BF8670."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_48wje")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_48wje")
+theme_override_styles/hover = SubResource("StyleBoxFlat_48wje")
+theme_override_styles/focus = SubResource("StyleBoxFlat_48wje")
+
+[node name="ColorPreset20" type="Button" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 190.39001
+offset_top = 114.58002
+offset_right = 208.39001
+offset_bottom = 132.58002
+pivot_offset = Vector2(9, 9)
+tooltip_text = "Apply preset color #D77762."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_biu70")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_biu70")
+theme_override_styles/hover = SubResource("StyleBoxFlat_biu70")
+theme_override_styles/focus = SubResource("StyleBoxFlat_biu70")
+
+[node name="ColorPreset21" type="Button" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 210.39001
+offset_top = 114.58002
+offset_right = 228.39001
+offset_bottom = 132.58002
+pivot_offset = Vector2(9, 9)
+tooltip_text = "Apply preset color #B5805F."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_t5elh")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_t5elh")
+theme_override_styles/hover = SubResource("StyleBoxFlat_t5elh")
+theme_override_styles/focus = SubResource("StyleBoxFlat_t5elh")
+
+[node name="ColorPreset22" type="Button" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 230.39001
+offset_top = 114.58002
+offset_right = 248.39001
+offset_bottom = 132.58002
+pivot_offset = Vector2(9, 9)
+tooltip_text = "Apply preset color #A57860."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_jc6oq")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_jc6oq")
+theme_override_styles/hover = SubResource("StyleBoxFlat_jc6oq")
+theme_override_styles/focus = SubResource("StyleBoxFlat_jc6oq")
+
+[node name="ColorPreset23" type="Button" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 250.39001
+offset_top = 114.58002
+offset_right = 268.39
+offset_bottom = 132.58002
+pivot_offset = Vector2(9, 9)
+tooltip_text = "Apply preset color #B46941."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_xi5h4")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_xi5h4")
+theme_override_styles/hover = SubResource("StyleBoxFlat_xi5h4")
+theme_override_styles/focus = SubResource("StyleBoxFlat_xi5h4")
+
+[node name="ColorPreset24" type="Button" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 190.39001
+offset_top = 134.58002
+offset_right = 208.39001
+offset_bottom = 152.58002
+pivot_offset = Vector2(9, 9)
+tooltip_text = "Apply preset color #744D45."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_myf7f")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_myf7f")
+theme_override_styles/hover = SubResource("StyleBoxFlat_myf7f")
+theme_override_styles/focus = SubResource("StyleBoxFlat_myf7f")
+
+[node name="ColorPreset25" type="Button" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 210.39001
+offset_top = 134.58002
+offset_right = 228.39001
+offset_bottom = 152.58002
+pivot_offset = Vector2(9, 9)
+tooltip_text = "Apply preset color #67403B."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_mnqwh")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_mnqwh")
+theme_override_styles/hover = SubResource("StyleBoxFlat_mnqwh")
+theme_override_styles/focus = SubResource("StyleBoxFlat_mnqwh")
+
+[node name="ColorPreset26" type="Button" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 230.39001
+offset_top = 134.58002
+offset_right = 248.39001
+offset_bottom = 152.58002
+pivot_offset = Vector2(9, 9)
+tooltip_text = "Apply preset color #93B26A."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_xi3b8")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_xi3b8")
+theme_override_styles/hover = SubResource("StyleBoxFlat_xi3b8")
+theme_override_styles/focus = SubResource("StyleBoxFlat_xi3b8")
+
+[node name="ColorPreset27" type="Button" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 250.39001
+offset_top = 134.58002
+offset_right = 268.39
+offset_bottom = 152.58002
+pivot_offset = Vector2(9, 9)
+tooltip_text = "Apply preset color #A4C9DA."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_dcnbn")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_dcnbn")
+theme_override_styles/hover = SubResource("StyleBoxFlat_dcnbn")
+theme_override_styles/focus = SubResource("StyleBoxFlat_dcnbn")
+
+[node name="PreviewColor" type="ColorRect" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 16.109985
+offset_top = 171.70001
+offset_right = 41.929985
+offset_bottom = 197.52002
+mouse_filter = 2
+color = Color(0.49145108, 0.90865034, 0.65421087, 1)
+
+[node name="HexBackground" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 49.099976
+offset_top = 171.52002
+offset_right = 132.11996
+offset_bottom = 197.52002
+texture = ExtResource("68_3ygbk")
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="HexInput" type="LineEdit" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 49.099976
+offset_top = 169.02002
+offset_right = 132.11996
+offset_bottom = 200.02002
+tooltip_text = "Type a #RRGGBB color and press Enter."
+theme_override_colors/font_color = Color(0.6901961, 0.6901961, 0.6901961, 1)
+theme_override_colors/font_placeholder_color = Color(0.196, 0.196, 0.196, 0.5)
+theme_override_fonts/font = ExtResource("69_wb4m4")
+theme_override_font_sizes/font_size = 11
+theme_override_styles/normal = SubResource("StyleBoxEmpty_87ony")
+theme_override_styles/read_only = SubResource("StyleBoxEmpty_okppx")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_wi5tg")
+text = "#7DE8A7"
+placeholder_text = "Enter text..."
+alignment = 1
+max_length = 7
+
+[node name="ButtonCopy" type="TextureButton" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 118.589966
+offset_top = 169.52002
+offset_right = 172.58997
+offset_bottom = 199.52002
+pivot_offset = Vector2(27, 15)
+tooltip_text = "Copy the current color hex code to the clipboard."
+texture_normal = ExtResource("70_74u82")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="ButtonAdd" type="TextureButton" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 207.58997
+offset_top = 172.52002
+offset_right = 231.58997
+offset_bottom = 196.52002
+pivot_offset = Vector2(12, 12)
+tooltip_text = "Save the current color to the selected favorite slot."
+texture_normal = ExtResource("71_wsvde")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="ButtonDelete" type="TextureButton" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 241.98999
+offset_top = 171.70001
+offset_right = 263.99
+offset_bottom = 195.70001
+pivot_offset = Vector2(11, 12)
+tooltip_text = "Delete the selected favorite color."
+texture_normal = ExtResource("72_53hvq")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="FavoriteEmpty0" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 14.689941
+offset_top = 209.41998
+offset_right = 36.68994
+offset_bottom = 231.41998
+texture = ExtResource("73_omhns")
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="FavoriteColor0" type="ColorRect" parent="UI/Canvas/ColorPicker"]
+visible = false
+layout_mode = 0
+offset_left = 14.689941
+offset_top = 209.41998
+offset_right = 36.68994
+offset_bottom = 231.41998
+mouse_filter = 2
+
+[node name="FavoriteFocus0" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
+visible = false
+layout_mode = 0
+offset_left = 14.689941
+offset_top = 209.41998
+offset_right = 36.68994
+offset_bottom = 231.41998
+texture = ExtResource("74_pseod")
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="FavoriteSlot0" type="Button" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 14.689941
+offset_top = 209.41998
+offset_right = 36.68994
+offset_bottom = 231.41998
+pivot_offset = Vector2(11, 11)
+tooltip_text = "Select this favorite color, click again to apply, right-click to delete."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_28irv")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_rw37w")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_y2idd")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_tv6hs")
+flat = true
+
+[node name="FavoriteEmpty1" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 39.68994
+offset_top = 209.41998
+offset_right = 61.68994
+offset_bottom = 231.41998
+texture = ExtResource("73_omhns")
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="FavoriteColor1" type="ColorRect" parent="UI/Canvas/ColorPicker"]
+visible = false
+layout_mode = 0
+offset_left = 39.68994
+offset_top = 209.41998
+offset_right = 61.68994
+offset_bottom = 231.41998
+mouse_filter = 2
+
+[node name="FavoriteFocus1" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
+visible = false
+layout_mode = 0
+offset_left = 39.68994
+offset_top = 209.41998
+offset_right = 61.68994
+offset_bottom = 231.41998
+texture = ExtResource("74_pseod")
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="FavoriteSlot1" type="Button" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 39.68994
+offset_top = 209.41998
+offset_right = 61.68994
+offset_bottom = 231.41998
+pivot_offset = Vector2(11, 11)
+tooltip_text = "Select this favorite color, click again to apply, right-click to delete."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_3lho7")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_b1inv")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_jqren")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ux5jp")
+flat = true
+
+[node name="FavoriteEmpty2" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 64.68994
+offset_top = 209.41998
+offset_right = 86.68994
+offset_bottom = 231.41998
+texture = ExtResource("73_omhns")
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="FavoriteColor2" type="ColorRect" parent="UI/Canvas/ColorPicker"]
+visible = false
+layout_mode = 0
+offset_left = 64.68994
+offset_top = 209.41998
+offset_right = 86.68994
+offset_bottom = 231.41998
+mouse_filter = 2
+
+[node name="FavoriteFocus2" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
+visible = false
+layout_mode = 0
+offset_left = 64.68994
+offset_top = 209.41998
+offset_right = 86.68994
+offset_bottom = 231.41998
+texture = ExtResource("74_pseod")
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="FavoriteSlot2" type="Button" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 64.68994
+offset_top = 209.41998
+offset_right = 86.68994
+offset_bottom = 231.41998
+pivot_offset = Vector2(11, 11)
+tooltip_text = "Select this favorite color, click again to apply, right-click to delete."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_5a2i0")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_8hw81")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_yhuaw")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_elahr")
+flat = true
+
+[node name="FavoriteEmpty3" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 89.68994
+offset_top = 209.41998
+offset_right = 111.68994
+offset_bottom = 231.41998
+texture = ExtResource("73_omhns")
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="FavoriteColor3" type="ColorRect" parent="UI/Canvas/ColorPicker"]
+visible = false
+layout_mode = 0
+offset_left = 89.68994
+offset_top = 209.41998
+offset_right = 111.68994
+offset_bottom = 231.41998
+mouse_filter = 2
+
+[node name="FavoriteFocus3" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
+visible = false
+layout_mode = 0
+offset_left = 89.68994
+offset_top = 209.41998
+offset_right = 111.68994
+offset_bottom = 231.41998
+texture = ExtResource("74_pseod")
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="FavoriteSlot3" type="Button" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 89.68994
+offset_top = 209.41998
+offset_right = 111.68994
+offset_bottom = 231.41998
+pivot_offset = Vector2(11, 11)
+tooltip_text = "Select this favorite color, click again to apply, right-click to delete."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_qwvv3")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_c5vt5")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_obc87")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_h0mkj")
+flat = true
+
+[node name="FavoriteEmpty4" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 114.68994
+offset_top = 209.41998
+offset_right = 136.68994
+offset_bottom = 231.41998
+texture = ExtResource("73_omhns")
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="FavoriteColor4" type="ColorRect" parent="UI/Canvas/ColorPicker"]
+visible = false
+layout_mode = 0
+offset_left = 114.68994
+offset_top = 209.41998
+offset_right = 136.68994
+offset_bottom = 231.41998
+mouse_filter = 2
+
+[node name="FavoriteFocus4" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
+visible = false
+layout_mode = 0
+offset_left = 114.68994
+offset_top = 209.41998
+offset_right = 136.68994
+offset_bottom = 231.41998
+texture = ExtResource("74_pseod")
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="FavoriteSlot4" type="Button" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 114.68994
+offset_top = 209.41998
+offset_right = 136.68994
+offset_bottom = 231.41998
+pivot_offset = Vector2(11, 11)
+tooltip_text = "Select this favorite color, click again to apply, right-click to delete."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_fpnny")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_gyu6r")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_q2a6x")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_b7n7c")
+flat = true
+
+[node name="FavoriteEmpty5" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 139.68994
+offset_top = 209.41998
+offset_right = 161.68994
+offset_bottom = 231.41998
+texture = ExtResource("73_omhns")
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="FavoriteColor5" type="ColorRect" parent="UI/Canvas/ColorPicker"]
+visible = false
+layout_mode = 0
+offset_left = 139.68994
+offset_top = 209.41998
+offset_right = 161.68994
+offset_bottom = 231.41998
+mouse_filter = 2
+
+[node name="FavoriteFocus5" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
+visible = false
+layout_mode = 0
+offset_left = 139.68994
+offset_top = 209.41998
+offset_right = 161.68994
+offset_bottom = 231.41998
+texture = ExtResource("74_pseod")
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="FavoriteSlot5" type="Button" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 139.68994
+offset_top = 209.41998
+offset_right = 161.68994
+offset_bottom = 231.41998
+pivot_offset = Vector2(11, 11)
+tooltip_text = "Select this favorite color, click again to apply, right-click to delete."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_6rs5m")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_trhdn")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_wx5qh")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_4qjjh")
+flat = true
+
+[node name="FavoriteEmpty6" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 164.68994
+offset_top = 209.41998
+offset_right = 186.68994
+offset_bottom = 231.41998
+texture = ExtResource("73_omhns")
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="FavoriteColor6" type="ColorRect" parent="UI/Canvas/ColorPicker"]
+visible = false
+layout_mode = 0
+offset_left = 164.68994
+offset_top = 209.41998
+offset_right = 186.68994
+offset_bottom = 231.41998
+mouse_filter = 2
+
+[node name="FavoriteFocus6" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
+visible = false
+layout_mode = 0
+offset_left = 164.68994
+offset_top = 209.41998
+offset_right = 186.68994
+offset_bottom = 231.41998
+texture = ExtResource("74_pseod")
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="FavoriteSlot6" type="Button" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 164.68994
+offset_top = 209.41998
+offset_right = 186.68994
+offset_bottom = 231.41998
+pivot_offset = Vector2(11, 11)
+tooltip_text = "Select this favorite color, click again to apply, right-click to delete."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_brmbk")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_0xcpo")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_7gnjx")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_lbhom")
+flat = true
+
+[node name="FavoriteEmpty7" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 189.68994
+offset_top = 209.41998
+offset_right = 211.68994
+offset_bottom = 231.41998
+texture = ExtResource("73_omhns")
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="FavoriteColor7" type="ColorRect" parent="UI/Canvas/ColorPicker"]
+visible = false
+layout_mode = 0
+offset_left = 189.68994
+offset_top = 209.41998
+offset_right = 211.68994
+offset_bottom = 231.41998
+mouse_filter = 2
+
+[node name="FavoriteFocus7" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
+visible = false
+layout_mode = 0
+offset_left = 189.68994
+offset_top = 209.41998
+offset_right = 211.68994
+offset_bottom = 231.41998
+texture = ExtResource("74_pseod")
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="FavoriteSlot7" type="Button" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 189.68994
+offset_top = 209.41998
+offset_right = 211.68994
+offset_bottom = 231.41998
+pivot_offset = Vector2(11, 11)
+tooltip_text = "Select this favorite color, click again to apply, right-click to delete."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_rjdtp")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_fxib2")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_4mmfq")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_kigec")
+flat = true
+
+[node name="FavoriteEmpty8" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 214.68994
+offset_top = 209.41998
+offset_right = 236.68994
+offset_bottom = 231.41998
+texture = ExtResource("73_omhns")
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="FavoriteColor8" type="ColorRect" parent="UI/Canvas/ColorPicker"]
+visible = false
+layout_mode = 0
+offset_left = 214.68994
+offset_top = 209.41998
+offset_right = 236.68994
+offset_bottom = 231.41998
+mouse_filter = 2
+
+[node name="FavoriteFocus8" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
+visible = false
+layout_mode = 0
+offset_left = 214.68994
+offset_top = 209.41998
+offset_right = 236.68994
+offset_bottom = 231.41998
+texture = ExtResource("74_pseod")
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="FavoriteSlot8" type="Button" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 214.68994
+offset_top = 209.41998
+offset_right = 236.68994
+offset_bottom = 231.41998
+pivot_offset = Vector2(11, 11)
+tooltip_text = "Select this favorite color, click again to apply, right-click to delete."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_3vb3e")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_hs6la")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_k85ec")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ghbhv")
+flat = true
+
+[node name="FavoriteEmpty9" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 239.68994
+offset_top = 209.41998
+offset_right = 261.68994
+offset_bottom = 231.41998
+texture = ExtResource("73_omhns")
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="FavoriteColor9" type="ColorRect" parent="UI/Canvas/ColorPicker"]
+visible = false
+layout_mode = 0
+offset_left = 239.68994
+offset_top = 209.41998
+offset_right = 261.68994
+offset_bottom = 231.41998
+mouse_filter = 2
+
+[node name="FavoriteFocus9" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
+visible = false
+layout_mode = 0
+offset_left = 239.68994
+offset_top = 209.41998
+offset_right = 261.68994
+offset_bottom = 231.41998
+texture = ExtResource("74_pseod")
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="FavoriteSlot9" type="Button" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 239.68994
+offset_top = 209.41998
+offset_right = 261.68994
+offset_bottom = 231.41998
+pivot_offset = Vector2(11, 11)
+tooltip_text = "Select this favorite color, click again to apply, right-click to delete."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ac3rl")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_rq2iq")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_e7d0c")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_1xbmh")
+flat = true
+
+[node name="FavoriteEmpty10" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 14.689941
+offset_top = 234.41998
+offset_right = 36.68994
+offset_bottom = 256.41998
+texture = ExtResource("73_omhns")
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="FavoriteColor10" type="ColorRect" parent="UI/Canvas/ColorPicker"]
+visible = false
+layout_mode = 0
+offset_left = 14.689941
+offset_top = 234.41998
+offset_right = 36.68994
+offset_bottom = 256.41998
+mouse_filter = 2
+
+[node name="FavoriteFocus10" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
+visible = false
+layout_mode = 0
+offset_left = 14.689941
+offset_top = 234.41998
+offset_right = 36.68994
+offset_bottom = 256.41998
+texture = ExtResource("74_pseod")
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="FavoriteSlot10" type="Button" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 14.689941
+offset_top = 234.41998
+offset_right = 36.68994
+offset_bottom = 256.41998
+pivot_offset = Vector2(11, 11)
+tooltip_text = "Select this favorite color, click again to apply, right-click to delete."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_j7m3t")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_mv5k0")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_scti1")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_vptdh")
+flat = true
+
+[node name="FavoriteEmpty11" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 39.68994
+offset_top = 234.41998
+offset_right = 61.68994
+offset_bottom = 256.41998
+texture = ExtResource("73_omhns")
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="FavoriteColor11" type="ColorRect" parent="UI/Canvas/ColorPicker"]
+visible = false
+layout_mode = 0
+offset_left = 39.68994
+offset_top = 234.41998
+offset_right = 61.68994
+offset_bottom = 256.41998
+mouse_filter = 2
+
+[node name="FavoriteFocus11" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
+visible = false
+layout_mode = 0
+offset_left = 39.68994
+offset_top = 234.41998
+offset_right = 61.68994
+offset_bottom = 256.41998
+texture = ExtResource("74_pseod")
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="FavoriteSlot11" type="Button" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 39.68994
+offset_top = 234.41998
+offset_right = 61.68994
+offset_bottom = 256.41998
+pivot_offset = Vector2(11, 11)
+tooltip_text = "Select this favorite color, click again to apply, right-click to delete."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_rmc2n")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_dwa4i")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_c1jk2")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_8mhpq")
+flat = true
+
+[node name="FavoriteEmpty12" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 64.68994
+offset_top = 234.41998
+offset_right = 86.68994
+offset_bottom = 256.41998
+texture = ExtResource("73_omhns")
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="FavoriteColor12" type="ColorRect" parent="UI/Canvas/ColorPicker"]
+visible = false
+layout_mode = 0
+offset_left = 64.68994
+offset_top = 234.41998
+offset_right = 86.68994
+offset_bottom = 256.41998
+mouse_filter = 2
+
+[node name="FavoriteFocus12" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
+visible = false
+layout_mode = 0
+offset_left = 64.68994
+offset_top = 234.41998
+offset_right = 86.68994
+offset_bottom = 256.41998
+texture = ExtResource("74_pseod")
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="FavoriteSlot12" type="Button" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 64.68994
+offset_top = 234.41998
+offset_right = 86.68994
+offset_bottom = 256.41998
+pivot_offset = Vector2(11, 11)
+tooltip_text = "Select this favorite color, click again to apply, right-click to delete."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_rprsh")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_f68mt")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_n0nrn")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_l862w")
+flat = true
+
+[node name="FavoriteEmpty13" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 89.68994
+offset_top = 234.41998
+offset_right = 111.68994
+offset_bottom = 256.41998
+texture = ExtResource("73_omhns")
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="FavoriteColor13" type="ColorRect" parent="UI/Canvas/ColorPicker"]
+visible = false
+layout_mode = 0
+offset_left = 89.68994
+offset_top = 234.41998
+offset_right = 111.68994
+offset_bottom = 256.41998
+mouse_filter = 2
+
+[node name="FavoriteFocus13" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
+visible = false
+layout_mode = 0
+offset_left = 89.68994
+offset_top = 234.41998
+offset_right = 111.68994
+offset_bottom = 256.41998
+texture = ExtResource("74_pseod")
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="FavoriteSlot13" type="Button" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 89.68994
+offset_top = 234.41998
+offset_right = 111.68994
+offset_bottom = 256.41998
+pivot_offset = Vector2(11, 11)
+tooltip_text = "Select this favorite color, click again to apply, right-click to delete."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_xver4")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_2w07a")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_n0q6g")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_o6bi3")
+flat = true
+
+[node name="FavoriteEmpty14" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 114.68994
+offset_top = 234.41998
+offset_right = 136.68994
+offset_bottom = 256.41998
+texture = ExtResource("73_omhns")
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="FavoriteColor14" type="ColorRect" parent="UI/Canvas/ColorPicker"]
+visible = false
+layout_mode = 0
+offset_left = 114.68994
+offset_top = 234.41998
+offset_right = 136.68994
+offset_bottom = 256.41998
+mouse_filter = 2
+
+[node name="FavoriteFocus14" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
+visible = false
+layout_mode = 0
+offset_left = 114.68994
+offset_top = 234.41998
+offset_right = 136.68994
+offset_bottom = 256.41998
+texture = ExtResource("74_pseod")
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="FavoriteSlot14" type="Button" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 114.68994
+offset_top = 234.41998
+offset_right = 136.68994
+offset_bottom = 256.41998
+pivot_offset = Vector2(11, 11)
+tooltip_text = "Select this favorite color, click again to apply, right-click to delete."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_y0cha")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_cm0in")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_h20up")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_rbncs")
+flat = true
+
+[node name="FavoriteEmpty15" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 139.68994
+offset_top = 234.41998
+offset_right = 161.68994
+offset_bottom = 256.41998
+texture = ExtResource("73_omhns")
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="FavoriteColor15" type="ColorRect" parent="UI/Canvas/ColorPicker"]
+visible = false
+layout_mode = 0
+offset_left = 139.68994
+offset_top = 234.41998
+offset_right = 161.68994
+offset_bottom = 256.41998
+mouse_filter = 2
+
+[node name="FavoriteFocus15" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
+visible = false
+layout_mode = 0
+offset_left = 139.68994
+offset_top = 234.41998
+offset_right = 161.68994
+offset_bottom = 256.41998
+texture = ExtResource("74_pseod")
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="FavoriteSlot15" type="Button" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 139.68994
+offset_top = 234.41998
+offset_right = 161.68994
+offset_bottom = 256.41998
+pivot_offset = Vector2(11, 11)
+tooltip_text = "Select this favorite color, click again to apply, right-click to delete."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_xhvnc")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_52l68")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_ea8s8")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_5x8uy")
+flat = true
+
+[node name="FavoriteEmpty16" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 164.68994
+offset_top = 234.41998
+offset_right = 186.68994
+offset_bottom = 256.41998
+texture = ExtResource("73_omhns")
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="FavoriteColor16" type="ColorRect" parent="UI/Canvas/ColorPicker"]
+visible = false
+layout_mode = 0
+offset_left = 164.68994
+offset_top = 234.41998
+offset_right = 186.68994
+offset_bottom = 256.41998
+mouse_filter = 2
+
+[node name="FavoriteFocus16" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
+visible = false
+layout_mode = 0
+offset_left = 164.68994
+offset_top = 234.41998
+offset_right = 186.68994
+offset_bottom = 256.41998
+texture = ExtResource("74_pseod")
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="FavoriteSlot16" type="Button" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 164.68994
+offset_top = 234.41998
+offset_right = 186.68994
+offset_bottom = 256.41998
+pivot_offset = Vector2(11, 11)
+tooltip_text = "Select this favorite color, click again to apply, right-click to delete."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ralad")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_qan5i")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_6cxhh")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_8klpg")
+flat = true
+
+[node name="FavoriteEmpty17" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 189.68994
+offset_top = 234.41998
+offset_right = 211.68994
+offset_bottom = 256.41998
+texture = ExtResource("73_omhns")
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="FavoriteColor17" type="ColorRect" parent="UI/Canvas/ColorPicker"]
+visible = false
+layout_mode = 0
+offset_left = 189.68994
+offset_top = 234.41998
+offset_right = 211.68994
+offset_bottom = 256.41998
+mouse_filter = 2
+
+[node name="FavoriteFocus17" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
+visible = false
+layout_mode = 0
+offset_left = 189.68994
+offset_top = 234.41998
+offset_right = 211.68994
+offset_bottom = 256.41998
+texture = ExtResource("74_pseod")
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="FavoriteSlot17" type="Button" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 189.68994
+offset_top = 234.41998
+offset_right = 211.68994
+offset_bottom = 256.41998
+pivot_offset = Vector2(11, 11)
+tooltip_text = "Select this favorite color, click again to apply, right-click to delete."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_mpd1b")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_omnws")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_ryc8u")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_wms2a")
+flat = true
+
+[node name="FavoriteEmpty18" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 214.68994
+offset_top = 234.41998
+offset_right = 236.68994
+offset_bottom = 256.41998
+texture = ExtResource("73_omhns")
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="FavoriteColor18" type="ColorRect" parent="UI/Canvas/ColorPicker"]
+visible = false
+layout_mode = 0
+offset_left = 214.68994
+offset_top = 234.41998
+offset_right = 236.68994
+offset_bottom = 256.41998
+mouse_filter = 2
+
+[node name="FavoriteFocus18" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
+visible = false
+layout_mode = 0
+offset_left = 214.68994
+offset_top = 234.41998
+offset_right = 236.68994
+offset_bottom = 256.41998
+texture = ExtResource("74_pseod")
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="FavoriteSlot18" type="Button" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 214.68994
+offset_top = 234.41998
+offset_right = 236.68994
+offset_bottom = 256.41998
+pivot_offset = Vector2(11, 11)
+tooltip_text = "Select this favorite color, click again to apply, right-click to delete."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_s35l5")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_rk721")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_2yjw0")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_tmwwt")
+flat = true
+
+[node name="FavoriteEmpty19" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 239.68994
+offset_top = 234.41998
+offset_right = 261.68994
+offset_bottom = 256.41998
+texture = ExtResource("73_omhns")
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="FavoriteColor19" type="ColorRect" parent="UI/Canvas/ColorPicker"]
+visible = false
+layout_mode = 0
+offset_left = 239.68994
+offset_top = 234.41998
+offset_right = 261.68994
+offset_bottom = 256.41998
+mouse_filter = 2
+
+[node name="FavoriteFocus19" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
+visible = false
+layout_mode = 0
+offset_left = 239.68994
+offset_top = 234.41998
+offset_right = 261.68994
+offset_bottom = 256.41998
+texture = ExtResource("74_pseod")
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="FavoriteSlot19" type="Button" parent="UI/Canvas/ColorPicker"]
+layout_mode = 0
+offset_left = 239.68994
+offset_top = 234.41998
+offset_right = 261.68994
+offset_bottom = 256.41998
+pivot_offset = Vector2(11, 11)
+tooltip_text = "Select this favorite color, click again to apply, right-click to delete."
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_unuru")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_7vg5q")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_khc5u")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_y5ktv")
+flat = true
+
+[node name="TextAnimation" type="Label" parent="UI/Canvas"]
+layout_mode = 0
+offset_left = 109.11
+offset_top = 405.77
+offset_right = 240.15
+offset_bottom = 436.22998
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 12
+theme_override_constants/shadow_outline_size = 1
+theme_override_fonts/font = ExtResource("5_362oy")
+theme_override_font_sizes/font_size = 18
+text = "ANIMATION"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AnimationButton0" type="Button" parent="UI/Canvas"]
+layout_mode = 0
+offset_left = 30.73
+offset_top = 445.7
+offset_right = 170.73
+offset_bottom = 483.7
+pivot_offset = Vector2(70, 19)
+tooltip_text = "Play the Idle animation."
+focus_mode = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_disabled_color = Color(1, 1, 1, 0.5)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("5_362oy")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxTexture_pr8x1")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_6udl4")
+theme_override_styles/hover = SubResource("StyleBoxTexture_xlbx1")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_5vgy6")
+theme_override_styles/focus = SubResource("StyleBoxTexture_4wn57")
+text = "Idle"
+
+[node name="AnimationButton1" type="Button" parent="UI/Canvas"]
+layout_mode = 0
+offset_left = 176.53
+offset_top = 445.7
+offset_right = 316.53
+offset_bottom = 483.7
+pivot_offset = Vector2(70, 19)
+tooltip_text = "Play the Walk animation."
+focus_mode = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_disabled_color = Color(1, 1, 1, 0.5)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("5_362oy")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxTexture_4cmxj")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_hy17o")
+theme_override_styles/hover = SubResource("StyleBoxTexture_hrik0")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_2wmkf")
+theme_override_styles/focus = SubResource("StyleBoxTexture_h1ls8")
+text = "Walk"
+
+[node name="AnimationButton2" type="Button" parent="UI/Canvas"]
+layout_mode = 0
+offset_left = 30.73
+offset_top = 489.79
+offset_right = 170.73
+offset_bottom = 527.79004
+pivot_offset = Vector2(70, 19.000015)
+tooltip_text = "Play the Attack animation."
+focus_mode = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_disabled_color = Color(1, 1, 1, 0.5)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("5_362oy")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxTexture_madg0")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_kiocq")
+theme_override_styles/hover = SubResource("StyleBoxTexture_lr672")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_4xsf5")
+theme_override_styles/focus = SubResource("StyleBoxTexture_omjec")
+text = "Attack"
+
+[node name="AnimationButton3" type="Button" parent="UI/Canvas"]
+layout_mode = 0
+offset_left = 176.53
+offset_top = 489.79
+offset_right = 316.53
+offset_bottom = 527.79004
+pivot_offset = Vector2(70, 19.000015)
+tooltip_text = "Play the Skill animation."
+focus_mode = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_disabled_color = Color(1, 1, 1, 0.5)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("5_362oy")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxTexture_bjji6")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_ctd0r")
+theme_override_styles/hover = SubResource("StyleBoxTexture_pw8cw")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_66btw")
+theme_override_styles/focus = SubResource("StyleBoxTexture_gafx5")
+text = "Skill"
+
+[node name="AnimationButton4" type="Button" parent="UI/Canvas"]
+layout_mode = 0
+offset_left = 30.73
+offset_top = 533.88
+offset_right = 170.73
+offset_bottom = 571.88
+pivot_offset = Vector2(70, 19)
+tooltip_text = "Play the Run animation."
+focus_mode = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_disabled_color = Color(1, 1, 1, 0.5)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("5_362oy")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxTexture_g5uwl")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_nrt12")
+theme_override_styles/hover = SubResource("StyleBoxTexture_85y68")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_jt451")
+theme_override_styles/focus = SubResource("StyleBoxTexture_160a5")
+text = "Run"
+
+[node name="AnimationButton5" type="Button" parent="UI/Canvas"]
+layout_mode = 0
+offset_left = 176.53
+offset_top = 533.88
+offset_right = 316.53
+offset_bottom = 571.88
+pivot_offset = Vector2(70, 19)
+tooltip_text = "Play the Roll animation."
+focus_mode = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_disabled_color = Color(1, 1, 1, 0.5)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("5_362oy")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxTexture_ofoea")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_c6a0h")
+theme_override_styles/hover = SubResource("StyleBoxTexture_w1qo2")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_2vf16")
+theme_override_styles/focus = SubResource("StyleBoxTexture_4kvjm")
+text = "Roll"
+
+[node name="AnimationButton6" type="Button" parent="UI/Canvas"]
+layout_mode = 0
+offset_left = 30.73
+offset_top = 577.97
+offset_right = 170.73
+offset_bottom = 615.97
+pivot_offset = Vector2(70, 19)
+tooltip_text = "Play the Jump animation."
+focus_mode = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_disabled_color = Color(1, 1, 1, 0.5)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("5_362oy")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxTexture_7f2ck")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_ec2os")
+theme_override_styles/hover = SubResource("StyleBoxTexture_hnpba")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_nvjs7")
+theme_override_styles/focus = SubResource("StyleBoxTexture_3ocl2")
+text = "Jump"
+
+[node name="AnimationButton7" type="Button" parent="UI/Canvas"]
+layout_mode = 0
+offset_left = 176.53
+offset_top = 577.97
+offset_right = 316.53
+offset_bottom = 615.97
+pivot_offset = Vector2(70, 19)
+tooltip_text = "Play the Jump Attack animation."
+focus_mode = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_disabled_color = Color(1, 1, 1, 0.5)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("5_362oy")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxTexture_ds1jc")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_br0ak")
+theme_override_styles/hover = SubResource("StyleBoxTexture_4xjam")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_1h8fj")
+theme_override_styles/focus = SubResource("StyleBoxTexture_ik25q")
+text = "Jump Attack"
+
+[node name="AnimationButton8" type="Button" parent="UI/Canvas"]
+layout_mode = 0
+offset_left = 30.73
+offset_top = 622.06
+offset_right = 170.73
+offset_bottom = 660.06
+pivot_offset = Vector2(70, 19)
+tooltip_text = "Play the Dance animation."
+focus_mode = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_disabled_color = Color(1, 1, 1, 0.5)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("5_362oy")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxTexture_inu2d")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_2ykn6")
+theme_override_styles/hover = SubResource("StyleBoxTexture_pch13")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_y7wvf")
+theme_override_styles/focus = SubResource("StyleBoxTexture_jgfyp")
+text = "Dance"
+
+[node name="AnimationButton9" type="Button" parent="UI/Canvas"]
+layout_mode = 0
+offset_left = 176.53
+offset_top = 622.06
+offset_right = 316.53
+offset_bottom = 660.06
+pivot_offset = Vector2(70, 19)
+tooltip_text = "Play the Victory animation."
+focus_mode = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_disabled_color = Color(1, 1, 1, 0.5)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("5_362oy")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxTexture_0adb6")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_jnsc2")
+theme_override_styles/hover = SubResource("StyleBoxTexture_e1kam")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_wyg8f")
+theme_override_styles/focus = SubResource("StyleBoxTexture_pcnhy")
+text = "Victory"
+
+[node name="AnimationButton10" type="Button" parent="UI/Canvas"]
+layout_mode = 0
+offset_left = 30.73
+offset_top = 666.15
+offset_right = 170.73
+offset_bottom = 704.15
+pivot_offset = Vector2(70, 19)
+tooltip_text = "Play the Defeat animation."
+focus_mode = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_disabled_color = Color(1, 1, 1, 0.5)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("5_362oy")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxTexture_doo7j")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_8ml1i")
+theme_override_styles/hover = SubResource("StyleBoxTexture_p1dhh")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_1oy32")
+theme_override_styles/focus = SubResource("StyleBoxTexture_pd5cn")
+text = "Defeat"
+
+[node name="AnimationButton11" type="Button" parent="UI/Canvas"]
+layout_mode = 0
+offset_left = 176.53
+offset_top = 666.15
+offset_right = 316.53
+offset_bottom = 704.15
+pivot_offset = Vector2(70, 19)
+tooltip_text = "Play the Stun animation."
+focus_mode = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_disabled_color = Color(1, 1, 1, 0.5)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("5_362oy")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxTexture_dtt42")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_fyfkb")
+theme_override_styles/hover = SubResource("StyleBoxTexture_6uty0")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_kgyrn")
+theme_override_styles/focus = SubResource("StyleBoxTexture_8dyi8")
+text = "Stun"
+
+[node name="AnimationButton12" type="Button" parent="UI/Canvas"]
+layout_mode = 0
+offset_left = 30.73
+offset_top = 710.24
+offset_right = 170.73
+offset_bottom = 748.24
+pivot_offset = Vector2(70, 19)
+tooltip_text = "Play the Dead1 animation."
+focus_mode = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_disabled_color = Color(1, 1, 1, 0.5)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("5_362oy")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxTexture_cwkag")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_pgynh")
+theme_override_styles/hover = SubResource("StyleBoxTexture_6cjeh")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_hqee8")
+theme_override_styles/focus = SubResource("StyleBoxTexture_a2uf0")
+text = "Dead1"
+
+[node name="AnimationButton13" type="Button" parent="UI/Canvas"]
+layout_mode = 0
+offset_left = 176.53
+offset_top = 710.24
+offset_right = 316.53
+offset_bottom = 748.24
+pivot_offset = Vector2(70, 19)
+tooltip_text = "Play the Dead2 animation."
+focus_mode = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_disabled_color = Color(1, 1, 1, 0.5)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("5_362oy")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxTexture_8324v")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_f8wdg")
+theme_override_styles/hover = SubResource("StyleBoxTexture_jrbw0")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_8xjn3")
+theme_override_styles/focus = SubResource("StyleBoxTexture_bdvbx")
+text = "Dead2"
+
+[node name="AnimationButton14" type="Button" parent="UI/Canvas"]
+layout_mode = 0
+offset_left = 30.73
+offset_top = 754.33
+offset_right = 170.73
+offset_bottom = 792.33
+pivot_offset = Vector2(70, 19)
+tooltip_text = "Play the Dead3 animation."
+focus_mode = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_disabled_color = Color(1, 1, 1, 0.5)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("5_362oy")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxTexture_ulw18")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_sbhae")
+theme_override_styles/hover = SubResource("StyleBoxTexture_g56hg")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_ao4et")
+theme_override_styles/focus = SubResource("StyleBoxTexture_vdjt4")
+text = "Dead3"
+
+[node name="AnimationButton15" type="Button" parent="UI/Canvas"]
+layout_mode = 0
+offset_left = 176.53
+offset_top = 754.33
+offset_right = 316.53
+offset_bottom = 792.33
+pivot_offset = Vector2(70, 19)
+tooltip_text = "Play the Double Attack animation."
+focus_mode = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_disabled_color = Color(1, 1, 1, 0.5)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("5_362oy")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxTexture_bldkt")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_1gkg6")
+theme_override_styles/hover = SubResource("StyleBoxTexture_8lufb")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_dlbnu")
+theme_override_styles/focus = SubResource("StyleBoxTexture_qrkxo")
+text = "Double Attack"

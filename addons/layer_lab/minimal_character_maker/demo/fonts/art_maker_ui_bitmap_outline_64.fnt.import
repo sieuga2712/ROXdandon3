@@ -1,0 +1,17 @@
+[remap]
+
+importer="font_data_bmfont"
+type="FontFile"
+uid="uid://bo82q8h8pmqvf"
+path="res://.godot/imported/art_maker_ui_bitmap_outline_64.fnt-71a4873dd09de71a5fa8e07bc1ced165.fontdata"
+
+[deps]
+
+source_file="res://addons/layer_lab/minimal_character_maker/demo/fonts/art_maker_ui_bitmap_outline_64.fnt"
+dest_files=["res://.godot/imported/art_maker_ui_bitmap_outline_64.fnt-71a4873dd09de71a5fa8e07bc1ced165.fontdata"]
+
+[params]
+
+fallbacks=[]
+compress=true
+scaling_mode=2

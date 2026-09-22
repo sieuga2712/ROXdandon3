@@ -1,0 +1,152 @@
+[gd_scene load_steps=2 format=3 uid="uid://dbaj4k38w8luv"]
+
+[ext_resource type="Script" path="res://scenes/character_creation/character_creation.gd" id="1"]
+
+[node name="CharacterCreation" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.098, 0.098, 0.145, 1)
+
+[node name="MainVBox" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 16.0
+offset_top = 16.0
+offset_right = -16.0
+offset_bottom = -16.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 12
+
+[node name="TopBar" type="HBoxContainer" parent="MainVBox"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="TitleLabel" type="Label" parent="MainVBox/TopBar"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+text = "TẠO NHÂN VẬT"
+
+[node name="Spacer" type="Control" parent="MainVBox/TopBar"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="NameHintLabel" type="Label" parent="MainVBox/TopBar"]
+layout_mode = 2
+text = "Tên:"
+
+[node name="NameEdit" type="LineEdit" parent="MainVBox/TopBar"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(220, 0)
+layout_mode = 2
+placeholder_text = "Nhập tên nhân vật"
+
+[node name="HSeparator" type="HSeparator" parent="MainVBox"]
+layout_mode = 2
+
+[node name="ContentHBox" type="HBoxContainer" parent="MainVBox"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 12
+
+[node name="CategoryPanel" type="PanelContainer" parent="MainVBox/ContentHBox"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+
+[node name="CategoryScroll" type="ScrollContainer" parent="MainVBox/ContentHBox/CategoryPanel"]
+layout_mode = 2
+horizontal_scroll_mode = 0
+
+[node name="CategoryBox" type="VBoxContainer" parent="MainVBox/ContentHBox/CategoryPanel/CategoryScroll"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 4
+
+[node name="ItemPanel" type="PanelContainer" parent="MainVBox/ContentHBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+
+[node name="ItemScroll" type="ScrollContainer" parent="MainVBox/ContentHBox/ItemPanel"]
+layout_mode = 2
+
+[node name="ItemGrid" type="GridContainer" parent="MainVBox/ContentHBox/ItemPanel/ItemScroll"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/h_separation = 6
+theme_override_constants/v_separation = 6
+columns = 6
+
+[node name="PreviewPanel" type="PanelContainer" parent="MainVBox/ContentHBox"]
+custom_minimum_size = Vector2(260, 0)
+layout_mode = 2
+
+[node name="PreviewVBox" type="VBoxContainer" parent="MainVBox/ContentHBox/PreviewPanel"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="PreviewTitle" type="Label" parent="MainVBox/ContentHBox/PreviewPanel/PreviewVBox"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "Xem trước"
+
+[node name="PreviewFrame" type="PanelContainer" parent="MainVBox/ContentHBox/PreviewPanel/PreviewVBox"]
+custom_minimum_size = Vector2(0, 220)
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="PreviewHolder" type="Control" parent="MainVBox/ContentHBox/PreviewPanel/PreviewVBox/PreviewFrame"]
+unique_name_in_owner = true
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="HSeparator2" type="HSeparator" parent="MainVBox/ContentHBox/PreviewPanel/PreviewVBox"]
+layout_mode = 2
+
+[node name="ColorTitle" type="Label" parent="MainVBox/ContentHBox/PreviewPanel/PreviewVBox"]
+layout_mode = 2
+text = "Màu sắc"
+
+[node name="ColorBox" type="VBoxContainer" parent="MainVBox/ContentHBox/PreviewPanel/PreviewVBox"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="RandomButton" type="Button" parent="MainVBox/ContentHBox/PreviewPanel/PreviewVBox"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Ngẫu nhiên"
+
+[node name="BottomBar" type="HBoxContainer" parent="MainVBox"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="ResultLabel" type="Label" parent="MainVBox/BottomBar"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="CreateButton" type="Button" parent="MainVBox/BottomBar"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(160, 40)
+layout_mode = 2
+text = "Tạo nhân vật"

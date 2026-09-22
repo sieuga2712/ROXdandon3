@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "product_id": "layer_lab_minimal_character_maker",
+  "display_name": "Layer Lab Minimal Character Maker",
+  "documentation": "res://addons/layer_lab/minimal_character_maker/README.md",
+  "version": "1.0.0-rc.5",
+  "demo": "res://addons/layer_lab/minimal_character_maker/demo/main.tscn",
+  "runtime": "godot_native_sprite2d",
+  "requires_gdextension": false,
+  "coinstall_group": "layer_lab_character_makers",
+  "godot_minimum": "4.3",
+  "godot_verified": "4.7.1"
+}

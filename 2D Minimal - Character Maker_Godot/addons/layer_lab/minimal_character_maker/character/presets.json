@@ -1,0 +1,1896 @@
+{
+  "schema": 1,
+  "product_id": "layer_lab_minimal_character_maker",
+  "items": [
+    {
+      "is_empty": false,
+      "parts": [
+        {
+          "type": "Eye",
+          "index": 0
+        },
+        {
+          "type": "Hair",
+          "index": 15
+        },
+        {
+          "type": "Helmet",
+          "index": -1
+        },
+        {
+          "type": "Beard",
+          "index": -1
+        },
+        {
+          "type": "Chest",
+          "index": 49
+        },
+        {
+          "type": "Sword",
+          "index": 9
+        },
+        {
+          "type": "Axe",
+          "index": 1
+        },
+        {
+          "type": "Bow",
+          "index": 7
+        },
+        {
+          "type": "Shield",
+          "index": 6
+        },
+        {
+          "type": "Wand",
+          "index": 9
+        },
+        {
+          "type": "Staff",
+          "index": 15
+        },
+        {
+          "type": "Spear",
+          "index": 9
+        },
+        {
+          "type": "Blunt",
+          "index": 8
+        },
+        {
+          "type": "Crossbow",
+          "index": 5
+        },
+        {
+          "type": "SubItem",
+          "index": 27
+        },
+        {
+          "type": "Arrow",
+          "index": 9
+        },
+        {
+          "type": "HelmetHair",
+          "index": 15
+        },
+        {
+          "type": "Skin",
+          "index": 0
+        }
+      ],
+      "colors": [
+        {
+          "target": "Skin",
+          "color": [
+            0.98039216,
+            0.7882353,
+            0.6745098,
+            1.0
+          ]
+        },
+        {
+          "target": "Hair",
+          "color": [
+            0.49145108,
+            0.90865034,
+            0.65421087,
+            1.0
+          ]
+        },
+        {
+          "target": "Eye",
+          "color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "target": "Beard",
+          "color": [
+            0.95413476,
+            0.38536122,
+            0.8566955,
+            1.0
+          ]
+        }
+      ],
+      "visibility": [
+        {
+          "type": "Eye",
+          "visible": true
+        },
+        {
+          "type": "Hair",
+          "visible": true
+        },
+        {
+          "type": "Helmet",
+          "visible": false
+        },
+        {
+          "type": "Beard",
+          "visible": false
+        },
+        {
+          "type": "Chest",
+          "visible": true
+        },
+        {
+          "type": "Sword",
+          "visible": false
+        },
+        {
+          "type": "Axe",
+          "visible": false
+        },
+        {
+          "type": "Bow",
+          "visible": true
+        },
+        {
+          "type": "Shield",
+          "visible": true
+        },
+        {
+          "type": "Wand",
+          "visible": false
+        },
+        {
+          "type": "Staff",
+          "visible": false
+        },
+        {
+          "type": "Spear",
+          "visible": false
+        },
+        {
+          "type": "Blunt",
+          "visible": false
+        },
+        {
+          "type": "Crossbow",
+          "visible": false
+        },
+        {
+          "type": "SubItem",
+          "visible": false
+        },
+        {
+          "type": "Arrow",
+          "visible": true
+        },
+        {
+          "type": "HelmetHair",
+          "visible": false
+        },
+        {
+          "type": "Skin",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "is_empty": false,
+      "parts": [
+        {
+          "type": "Eye",
+          "index": 10
+        },
+        {
+          "type": "Hair",
+          "index": 4
+        },
+        {
+          "type": "Helmet",
+          "index": 53
+        },
+        {
+          "type": "Beard",
+          "index": -1
+        },
+        {
+          "type": "Chest",
+          "index": 35
+        },
+        {
+          "type": "Sword",
+          "index": 2
+        },
+        {
+          "type": "Axe",
+          "index": 12
+        },
+        {
+          "type": "Bow",
+          "index": 10
+        },
+        {
+          "type": "Shield",
+          "index": 6
+        },
+        {
+          "type": "Wand",
+          "index": 5
+        },
+        {
+          "type": "Staff",
+          "index": 5
+        },
+        {
+          "type": "Spear",
+          "index": 9
+        },
+        {
+          "type": "Blunt",
+          "index": 8
+        },
+        {
+          "type": "Crossbow",
+          "index": 5
+        },
+        {
+          "type": "SubItem",
+          "index": 19
+        },
+        {
+          "type": "Arrow",
+          "index": 9
+        },
+        {
+          "type": "HelmetHair",
+          "index": 4
+        },
+        {
+          "type": "Skin",
+          "index": 0
+        }
+      ],
+      "colors": [
+        {
+          "target": "Skin",
+          "color": [
+            0.98039216,
+            0.7882353,
+            0.6745098,
+            1.0
+          ]
+        },
+        {
+          "target": "Hair",
+          "color": [
+            0.7976917,
+            0.26504242,
+            0.64978445,
+            1.0
+          ]
+        },
+        {
+          "target": "Eye",
+          "color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "target": "Beard",
+          "color": [
+            0.7976917,
+            0.2650424,
+            0.6497844,
+            1.0
+          ]
+        }
+      ],
+      "visibility": [
+        {
+          "type": "Eye",
+          "visible": true
+        },
+        {
+          "type": "Hair",
+          "visible": true
+        },
+        {
+          "type": "Helmet",
+          "visible": true
+        },
+        {
+          "type": "Beard",
+          "visible": false
+        },
+        {
+          "type": "Chest",
+          "visible": true
+        },
+        {
+          "type": "Sword",
+          "visible": false
+        },
+        {
+          "type": "Axe",
+          "visible": false
+        },
+        {
+          "type": "Bow",
+          "visible": true
+        },
+        {
+          "type": "Shield",
+          "visible": false
+        },
+        {
+          "type": "Wand",
+          "visible": false
+        },
+        {
+          "type": "Staff",
+          "visible": false
+        },
+        {
+          "type": "Spear",
+          "visible": false
+        },
+        {
+          "type": "Blunt",
+          "visible": false
+        },
+        {
+          "type": "Crossbow",
+          "visible": false
+        },
+        {
+          "type": "SubItem",
+          "visible": true
+        },
+        {
+          "type": "Arrow",
+          "visible": true
+        },
+        {
+          "type": "HelmetHair",
+          "visible": true
+        },
+        {
+          "type": "Skin",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "is_empty": false,
+      "parts": [
+        {
+          "type": "Eye",
+          "index": 0
+        },
+        {
+          "type": "Hair",
+          "index": -1
+        },
+        {
+          "type": "Helmet",
+          "index": 16
+        },
+        {
+          "type": "Beard",
+          "index": 2
+        },
+        {
+          "type": "Chest",
+          "index": 20
+        },
+        {
+          "type": "Sword",
+          "index": 12
+        },
+        {
+          "type": "Axe",
+          "index": 1
+        },
+        {
+          "type": "Bow",
+          "index": 7
+        },
+        {
+          "type": "Shield",
+          "index": 15
+        },
+        {
+          "type": "Wand",
+          "index": 5
+        },
+        {
+          "type": "Staff",
+          "index": 9
+        },
+        {
+          "type": "Spear",
+          "index": 9
+        },
+        {
+          "type": "Blunt",
+          "index": 8
+        },
+        {
+          "type": "Crossbow",
+          "index": 3
+        },
+        {
+          "type": "SubItem",
+          "index": 23
+        },
+        {
+          "type": "Arrow",
+          "index": 9
+        },
+        {
+          "type": "HelmetHair",
+          "index": 10
+        },
+        {
+          "type": "Skin",
+          "index": 0
+        }
+      ],
+      "colors": [
+        {
+          "target": "Skin",
+          "color": [
+            0.98039216,
+            0.7882353,
+            0.6745098,
+            1.0
+          ]
+        },
+        {
+          "target": "Hair",
+          "color": [
+            0.13333334,
+            0.12941177,
+            0.12941177,
+            1.0
+          ]
+        },
+        {
+          "target": "Eye",
+          "color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "target": "Beard",
+          "color": [
+            0.70980394,
+            0.5019608,
+            0.37254903,
+            1.0
+          ]
+        }
+      ],
+      "visibility": [
+        {
+          "type": "Eye",
+          "visible": true
+        },
+        {
+          "type": "Hair",
+          "visible": false
+        },
+        {
+          "type": "Helmet",
+          "visible": true
+        },
+        {
+          "type": "Beard",
+          "visible": true
+        },
+        {
+          "type": "Chest",
+          "visible": true
+        },
+        {
+          "type": "Sword",
+          "visible": false
+        },
+        {
+          "type": "Axe",
+          "visible": false
+        },
+        {
+          "type": "Bow",
+          "visible": false
+        },
+        {
+          "type": "Shield",
+          "visible": true
+        },
+        {
+          "type": "Wand",
+          "visible": false
+        },
+        {
+          "type": "Staff",
+          "visible": true
+        },
+        {
+          "type": "Spear",
+          "visible": false
+        },
+        {
+          "type": "Blunt",
+          "visible": false
+        },
+        {
+          "type": "Crossbow",
+          "visible": false
+        },
+        {
+          "type": "SubItem",
+          "visible": false
+        },
+        {
+          "type": "Arrow",
+          "visible": false
+        },
+        {
+          "type": "HelmetHair",
+          "visible": false
+        },
+        {
+          "type": "Skin",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "is_empty": false,
+      "parts": [
+        {
+          "type": "Eye",
+          "index": 0
+        },
+        {
+          "type": "Hair",
+          "index": 4
+        },
+        {
+          "type": "Helmet",
+          "index": -1
+        },
+        {
+          "type": "Beard",
+          "index": -1
+        },
+        {
+          "type": "Chest",
+          "index": 17
+        },
+        {
+          "type": "Sword",
+          "index": -1
+        },
+        {
+          "type": "Axe",
+          "index": -1
+        },
+        {
+          "type": "Bow",
+          "index": -1
+        },
+        {
+          "type": "Shield",
+          "index": -1
+        },
+        {
+          "type": "Wand",
+          "index": -1
+        },
+        {
+          "type": "Staff",
+          "index": -1
+        },
+        {
+          "type": "Spear",
+          "index": -1
+        },
+        {
+          "type": "Blunt",
+          "index": -1
+        },
+        {
+          "type": "Crossbow",
+          "index": 9
+        },
+        {
+          "type": "SubItem",
+          "index": -1
+        },
+        {
+          "type": "Arrow",
+          "index": 9
+        },
+        {
+          "type": "HelmetHair",
+          "index": 4
+        },
+        {
+          "type": "Skin",
+          "index": 0
+        }
+      ],
+      "colors": [
+        {
+          "target": "Skin",
+          "color": [
+            0.40392157,
+            0.2509804,
+            0.23137255,
+            1.0
+          ]
+        },
+        {
+          "target": "Hair",
+          "color": [
+            0.8901961,
+            0.2352941,
+            0.46666667,
+            1.0
+          ]
+        },
+        {
+          "target": "Eye",
+          "color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "target": "Beard",
+          "color": [
+            0.16534258,
+            0.089319,
+            0.51155955,
+            1.0
+          ]
+        }
+      ],
+      "visibility": [
+        {
+          "type": "Eye",
+          "visible": true
+        },
+        {
+          "type": "Hair",
+          "visible": true
+        },
+        {
+          "type": "Helmet",
+          "visible": false
+        },
+        {
+          "type": "Beard",
+          "visible": false
+        },
+        {
+          "type": "Chest",
+          "visible": true
+        },
+        {
+          "type": "Sword",
+          "visible": false
+        },
+        {
+          "type": "Axe",
+          "visible": false
+        },
+        {
+          "type": "Bow",
+          "visible": false
+        },
+        {
+          "type": "Shield",
+          "visible": false
+        },
+        {
+          "type": "Wand",
+          "visible": false
+        },
+        {
+          "type": "Staff",
+          "visible": false
+        },
+        {
+          "type": "Spear",
+          "visible": false
+        },
+        {
+          "type": "Blunt",
+          "visible": false
+        },
+        {
+          "type": "Crossbow",
+          "visible": true
+        },
+        {
+          "type": "SubItem",
+          "visible": false
+        },
+        {
+          "type": "Arrow",
+          "visible": true
+        },
+        {
+          "type": "HelmetHair",
+          "visible": false
+        },
+        {
+          "type": "Skin",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "is_empty": false,
+      "parts": [
+        {
+          "type": "Eye",
+          "index": 0
+        },
+        {
+          "type": "Hair",
+          "index": 18
+        },
+        {
+          "type": "Helmet",
+          "index": 50
+        },
+        {
+          "type": "Beard",
+          "index": -1
+        },
+        {
+          "type": "Chest",
+          "index": 17
+        },
+        {
+          "type": "Sword",
+          "index": 15
+        },
+        {
+          "type": "Axe",
+          "index": 1
+        },
+        {
+          "type": "Bow",
+          "index": 2
+        },
+        {
+          "type": "Shield",
+          "index": -1
+        },
+        {
+          "type": "Wand",
+          "index": 5
+        },
+        {
+          "type": "Staff",
+          "index": 3
+        },
+        {
+          "type": "Spear",
+          "index": 3
+        },
+        {
+          "type": "Blunt",
+          "index": 12
+        },
+        {
+          "type": "Crossbow",
+          "index": 9
+        },
+        {
+          "type": "SubItem",
+          "index": 51
+        },
+        {
+          "type": "Arrow",
+          "index": 9
+        },
+        {
+          "type": "HelmetHair",
+          "index": 18
+        },
+        {
+          "type": "Skin",
+          "index": 0
+        }
+      ],
+      "colors": [
+        {
+          "target": "Skin",
+          "color": [
+            0.45490196,
+            0.3019608,
+            0.27058825,
+            1.0
+          ]
+        },
+        {
+          "target": "Hair",
+          "color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "target": "Eye",
+          "color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "target": "Beard",
+          "color": [
+            0.16534258,
+            0.089319,
+            0.51155955,
+            1.0
+          ]
+        }
+      ],
+      "visibility": [
+        {
+          "type": "Eye",
+          "visible": true
+        },
+        {
+          "type": "Hair",
+          "visible": true
+        },
+        {
+          "type": "Helmet",
+          "visible": true
+        },
+        {
+          "type": "Beard",
+          "visible": false
+        },
+        {
+          "type": "Chest",
+          "visible": true
+        },
+        {
+          "type": "Sword",
+          "visible": true
+        },
+        {
+          "type": "Axe",
+          "visible": false
+        },
+        {
+          "type": "Bow",
+          "visible": false
+        },
+        {
+          "type": "Shield",
+          "visible": false
+        },
+        {
+          "type": "Wand",
+          "visible": false
+        },
+        {
+          "type": "Staff",
+          "visible": false
+        },
+        {
+          "type": "Spear",
+          "visible": false
+        },
+        {
+          "type": "Blunt",
+          "visible": false
+        },
+        {
+          "type": "Crossbow",
+          "visible": false
+        },
+        {
+          "type": "SubItem",
+          "visible": true
+        },
+        {
+          "type": "Arrow",
+          "visible": false
+        },
+        {
+          "type": "HelmetHair",
+          "visible": true
+        },
+        {
+          "type": "Skin",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "is_empty": false,
+      "parts": [
+        {
+          "type": "Eye",
+          "index": 7
+        },
+        {
+          "type": "Hair",
+          "index": 21
+        },
+        {
+          "type": "Helmet",
+          "index": -1
+        },
+        {
+          "type": "Beard",
+          "index": 14
+        },
+        {
+          "type": "Chest",
+          "index": 7
+        },
+        {
+          "type": "Sword",
+          "index": 0
+        },
+        {
+          "type": "Axe",
+          "index": 6
+        },
+        {
+          "type": "Bow",
+          "index": 10
+        },
+        {
+          "type": "Shield",
+          "index": 3
+        },
+        {
+          "type": "Wand",
+          "index": 5
+        },
+        {
+          "type": "Staff",
+          "index": 3
+        },
+        {
+          "type": "Spear",
+          "index": 3
+        },
+        {
+          "type": "Blunt",
+          "index": 12
+        },
+        {
+          "type": "Crossbow",
+          "index": 0
+        },
+        {
+          "type": "SubItem",
+          "index": 3
+        },
+        {
+          "type": "Arrow",
+          "index": 9
+        },
+        {
+          "type": "HelmetHair",
+          "index": 21
+        },
+        {
+          "type": "Skin",
+          "index": 0
+        }
+      ],
+      "colors": [
+        {
+          "target": "Skin",
+          "color": [
+            0.7058824,
+            0.4117647,
+            0.25490198,
+            1.0
+          ]
+        },
+        {
+          "target": "Hair",
+          "color": [
+            0.55,
+            0.47843137,
+            0.45490196,
+            1.0
+          ]
+        },
+        {
+          "target": "Eye",
+          "color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "target": "Beard",
+          "color": [
+            0.55,
+            0.47843137,
+            0.45490196,
+            1.0
+          ]
+        }
+      ],
+      "visibility": [
+        {
+          "type": "Eye",
+          "visible": true
+        },
+        {
+          "type": "Hair",
+          "visible": true
+        },
+        {
+          "type": "Helmet",
+          "visible": false
+        },
+        {
+          "type": "Beard",
+          "visible": true
+        },
+        {
+          "type": "Chest",
+          "visible": true
+        },
+        {
+          "type": "Sword",
+          "visible": false
+        },
+        {
+          "type": "Axe",
+          "visible": true
+        },
+        {
+          "type": "Bow",
+          "visible": false
+        },
+        {
+          "type": "Shield",
+          "visible": true
+        },
+        {
+          "type": "Wand",
+          "visible": false
+        },
+        {
+          "type": "Staff",
+          "visible": false
+        },
+        {
+          "type": "Spear",
+          "visible": false
+        },
+        {
+          "type": "Blunt",
+          "visible": false
+        },
+        {
+          "type": "Crossbow",
+          "visible": false
+        },
+        {
+          "type": "SubItem",
+          "visible": false
+        },
+        {
+          "type": "Arrow",
+          "visible": false
+        },
+        {
+          "type": "HelmetHair",
+          "visible": false
+        },
+        {
+          "type": "Skin",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "is_empty": false,
+      "parts": [
+        {
+          "type": "Eye",
+          "index": 18
+        },
+        {
+          "type": "Hair",
+          "index": 19
+        },
+        {
+          "type": "Helmet",
+          "index": 33
+        },
+        {
+          "type": "Beard",
+          "index": -1
+        },
+        {
+          "type": "Chest",
+          "index": 38
+        },
+        {
+          "type": "Sword",
+          "index": 19
+        },
+        {
+          "type": "Axe",
+          "index": 12
+        },
+        {
+          "type": "Bow",
+          "index": 4
+        },
+        {
+          "type": "Shield",
+          "index": 13
+        },
+        {
+          "type": "Wand",
+          "index": 9
+        },
+        {
+          "type": "Staff",
+          "index": 3
+        },
+        {
+          "type": "Spear",
+          "index": 2
+        },
+        {
+          "type": "Blunt",
+          "index": 0
+        },
+        {
+          "type": "Crossbow",
+          "index": 4
+        },
+        {
+          "type": "SubItem",
+          "index": 2
+        },
+        {
+          "type": "Arrow",
+          "index": 10
+        },
+        {
+          "type": "HelmetHair",
+          "index": 19
+        },
+        {
+          "type": "Skin",
+          "index": 0
+        }
+      ],
+      "colors": [
+        {
+          "target": "Skin",
+          "color": [
+            0.70980394,
+            0.5019608,
+            0.37254903,
+            1.0
+          ]
+        },
+        {
+          "target": "Hair",
+          "color": [
+            0.33259133,
+            0.47347826,
+            0.034675363,
+            1.0
+          ]
+        },
+        {
+          "target": "Eye",
+          "color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "target": "Beard",
+          "color": [
+            0.931026,
+            0.6197011,
+            0.21706691,
+            1.0
+          ]
+        }
+      ],
+      "visibility": [
+        {
+          "type": "Eye",
+          "visible": true
+        },
+        {
+          "type": "Hair",
+          "visible": true
+        },
+        {
+          "type": "Helmet",
+          "visible": true
+        },
+        {
+          "type": "Beard",
+          "visible": false
+        },
+        {
+          "type": "Chest",
+          "visible": true
+        },
+        {
+          "type": "Sword",
+          "visible": true
+        },
+        {
+          "type": "Axe",
+          "visible": false
+        },
+        {
+          "type": "Bow",
+          "visible": false
+        },
+        {
+          "type": "Shield",
+          "visible": true
+        },
+        {
+          "type": "Wand",
+          "visible": false
+        },
+        {
+          "type": "Staff",
+          "visible": false
+        },
+        {
+          "type": "Spear",
+          "visible": false
+        },
+        {
+          "type": "Blunt",
+          "visible": false
+        },
+        {
+          "type": "Crossbow",
+          "visible": false
+        },
+        {
+          "type": "SubItem",
+          "visible": false
+        },
+        {
+          "type": "Arrow",
+          "visible": false
+        },
+        {
+          "type": "HelmetHair",
+          "visible": true
+        },
+        {
+          "type": "Skin",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "is_empty": false,
+      "parts": [
+        {
+          "type": "Eye",
+          "index": 12
+        },
+        {
+          "type": "Hair",
+          "index": 19
+        },
+        {
+          "type": "Helmet",
+          "index": 53
+        },
+        {
+          "type": "Beard",
+          "index": 2
+        },
+        {
+          "type": "Chest",
+          "index": 33
+        },
+        {
+          "type": "Sword",
+          "index": 8
+        },
+        {
+          "type": "Axe",
+          "index": 12
+        },
+        {
+          "type": "Bow",
+          "index": 4
+        },
+        {
+          "type": "Shield",
+          "index": 2
+        },
+        {
+          "type": "Wand",
+          "index": 9
+        },
+        {
+          "type": "Staff",
+          "index": 3
+        },
+        {
+          "type": "Spear",
+          "index": 2
+        },
+        {
+          "type": "Blunt",
+          "index": 0
+        },
+        {
+          "type": "Crossbow",
+          "index": 4
+        },
+        {
+          "type": "SubItem",
+          "index": 5
+        },
+        {
+          "type": "Arrow",
+          "index": 10
+        },
+        {
+          "type": "HelmetHair",
+          "index": 19
+        },
+        {
+          "type": "Skin",
+          "index": 0
+        }
+      ],
+      "colors": [
+        {
+          "target": "Skin",
+          "color": [
+            0.98039216,
+            0.7882353,
+            0.6745098,
+            1.0
+          ]
+        },
+        {
+          "target": "Hair",
+          "color": [
+            0.33259133,
+            0.47347826,
+            0.034675363,
+            1.0
+          ]
+        },
+        {
+          "target": "Eye",
+          "color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "target": "Beard",
+          "color": [
+            0.9882353,
+            0.99215686,
+            0.92941177,
+            1.0
+          ]
+        }
+      ],
+      "visibility": [
+        {
+          "type": "Eye",
+          "visible": true
+        },
+        {
+          "type": "Hair",
+          "visible": true
+        },
+        {
+          "type": "Helmet",
+          "visible": true
+        },
+        {
+          "type": "Beard",
+          "visible": true
+        },
+        {
+          "type": "Chest",
+          "visible": true
+        },
+        {
+          "type": "Sword",
+          "visible": true
+        },
+        {
+          "type": "Axe",
+          "visible": false
+        },
+        {
+          "type": "Bow",
+          "visible": false
+        },
+        {
+          "type": "Shield",
+          "visible": false
+        },
+        {
+          "type": "Wand",
+          "visible": false
+        },
+        {
+          "type": "Staff",
+          "visible": false
+        },
+        {
+          "type": "Spear",
+          "visible": false
+        },
+        {
+          "type": "Blunt",
+          "visible": false
+        },
+        {
+          "type": "Crossbow",
+          "visible": false
+        },
+        {
+          "type": "SubItem",
+          "visible": true
+        },
+        {
+          "type": "Arrow",
+          "visible": false
+        },
+        {
+          "type": "HelmetHair",
+          "visible": true
+        },
+        {
+          "type": "Skin",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "is_empty": false,
+      "parts": [
+        {
+          "type": "Eye",
+          "index": 11
+        },
+        {
+          "type": "Hair",
+          "index": 22
+        },
+        {
+          "type": "Helmet",
+          "index": 6
+        },
+        {
+          "type": "Beard",
+          "index": -1
+        },
+        {
+          "type": "Chest",
+          "index": 23
+        },
+        {
+          "type": "Sword",
+          "index": -1
+        },
+        {
+          "type": "Axe",
+          "index": -1
+        },
+        {
+          "type": "Bow",
+          "index": -1
+        },
+        {
+          "type": "Shield",
+          "index": 8
+        },
+        {
+          "type": "Wand",
+          "index": -1
+        },
+        {
+          "type": "Staff",
+          "index": -1
+        },
+        {
+          "type": "Spear",
+          "index": -1
+        },
+        {
+          "type": "Blunt",
+          "index": -1
+        },
+        {
+          "type": "Crossbow",
+          "index": -1
+        },
+        {
+          "type": "SubItem",
+          "index": 45
+        },
+        {
+          "type": "Arrow",
+          "index": 10
+        },
+        {
+          "type": "HelmetHair",
+          "index": 22
+        },
+        {
+          "type": "Skin",
+          "index": 0
+        }
+      ],
+      "colors": [
+        {
+          "target": "Skin",
+          "color": [
+            0.98039216,
+            0.7882353,
+            0.6745098,
+            1.0
+          ]
+        },
+        {
+          "target": "Hair",
+          "color": [
+            0.9882353,
+            0.99215686,
+            0.92941177,
+            1.0
+          ]
+        },
+        {
+          "target": "Eye",
+          "color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "target": "Beard",
+          "color": [
+            0.9882353,
+            0.99215686,
+            0.92941177,
+            1.0
+          ]
+        }
+      ],
+      "visibility": [
+        {
+          "type": "Eye",
+          "visible": true
+        },
+        {
+          "type": "Hair",
+          "visible": true
+        },
+        {
+          "type": "Helmet",
+          "visible": true
+        },
+        {
+          "type": "Beard",
+          "visible": false
+        },
+        {
+          "type": "Chest",
+          "visible": true
+        },
+        {
+          "type": "Sword",
+          "visible": false
+        },
+        {
+          "type": "Axe",
+          "visible": false
+        },
+        {
+          "type": "Bow",
+          "visible": false
+        },
+        {
+          "type": "Shield",
+          "visible": false
+        },
+        {
+          "type": "Wand",
+          "visible": false
+        },
+        {
+          "type": "Staff",
+          "visible": false
+        },
+        {
+          "type": "Spear",
+          "visible": false
+        },
+        {
+          "type": "Blunt",
+          "visible": false
+        },
+        {
+          "type": "Crossbow",
+          "visible": false
+        },
+        {
+          "type": "SubItem",
+          "visible": true
+        },
+        {
+          "type": "Arrow",
+          "visible": false
+        },
+        {
+          "type": "HelmetHair",
+          "visible": true
+        },
+        {
+          "type": "Skin",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "is_empty": false,
+      "parts": [
+        {
+          "type": "Eye",
+          "index": 15
+        },
+        {
+          "type": "Hair",
+          "index": 19
+        },
+        {
+          "type": "Helmet",
+          "index": 38
+        },
+        {
+          "type": "Beard",
+          "index": 2
+        },
+        {
+          "type": "Chest",
+          "index": 36
+        },
+        {
+          "type": "Sword",
+          "index": 12
+        },
+        {
+          "type": "Axe",
+          "index": 12
+        },
+        {
+          "type": "Bow",
+          "index": 4
+        },
+        {
+          "type": "Shield",
+          "index": 2
+        },
+        {
+          "type": "Wand",
+          "index": 9
+        },
+        {
+          "type": "Staff",
+          "index": 3
+        },
+        {
+          "type": "Spear",
+          "index": 2
+        },
+        {
+          "type": "Blunt",
+          "index": 0
+        },
+        {
+          "type": "Crossbow",
+          "index": 4
+        },
+        {
+          "type": "SubItem",
+          "index": 4
+        },
+        {
+          "type": "Arrow",
+          "index": 10
+        },
+        {
+          "type": "HelmetHair",
+          "index": 19
+        },
+        {
+          "type": "Skin",
+          "index": 0
+        }
+      ],
+      "colors": [
+        {
+          "target": "Skin",
+          "color": [
+            0.98039216,
+            0.7882353,
+            0.6745098,
+            1.0
+          ]
+        },
+        {
+          "target": "Hair",
+          "color": [
+            0.33259133,
+            0.47347826,
+            0.034675363,
+            1.0
+          ]
+        },
+        {
+          "target": "Eye",
+          "color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "target": "Beard",
+          "color": [
+            0.85882354,
+            0.654902,
+            0.48235294,
+            1.0
+          ]
+        }
+      ],
+      "visibility": [
+        {
+          "type": "Eye",
+          "visible": true
+        },
+        {
+          "type": "Hair",
+          "visible": true
+        },
+        {
+          "type": "Helmet",
+          "visible": true
+        },
+        {
+          "type": "Beard",
+          "visible": true
+        },
+        {
+          "type": "Chest",
+          "visible": true
+        },
+        {
+          "type": "Sword",
+          "visible": true
+        },
+        {
+          "type": "Axe",
+          "visible": false
+        },
+        {
+          "type": "Bow",
+          "visible": false
+        },
+        {
+          "type": "Shield",
+          "visible": true
+        },
+        {
+          "type": "Wand",
+          "visible": false
+        },
+        {
+          "type": "Staff",
+          "visible": false
+        },
+        {
+          "type": "Spear",
+          "visible": false
+        },
+        {
+          "type": "Blunt",
+          "visible": false
+        },
+        {
+          "type": "Crossbow",
+          "visible": false
+        },
+        {
+          "type": "SubItem",
+          "visible": false
+        },
+        {
+          "type": "Arrow",
+          "visible": false
+        },
+        {
+          "type": "HelmetHair",
+          "visible": true
+        },
+        {
+          "type": "Skin",
+          "visible": true
+        }
+      ]
+    }
+  ]
+}

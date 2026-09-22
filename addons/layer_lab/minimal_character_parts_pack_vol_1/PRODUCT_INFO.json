@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "product_id": "layer_lab_minimal_character_parts_pack_vol_1",
+  "display_name": "2D Minimal - Character Parts Pack Vol.1 [Expansion]",
+  "version": "1.0.0-rc.1",
+  "runtime": "godot_native_sprite2d_data_extension",
+  "requires_product": "layer_lab_minimal_character_maker",
+  "requires_version": ">=1.0.0-rc.1",
+  "coinstall_group": "layer_lab_minimal_character_parts_packs",
+  "godot_minimum": "4.3",
+  "godot_verified": "4.7.1"
+}
