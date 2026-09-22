@@ -30,10 +30,22 @@ const TYPE_LABELS_VI := {
 	"Skin": "Da",
 }
 
+# A handful of the 16 available clips (see docs/API.md) so the preview stays compact.
+const ANIM_PICKS := ["Idle", "Walk", "Run", "Attack", "Skill", "Dance"]
+const ANIM_LABELS_VI := {
+	"Idle": "Đứng yên",
+	"Walk": "Đi bộ",
+	"Run": "Chạy",
+	"Attack": "Tấn công",
+	"Skill": "Kỹ năng",
+	"Dance": "Nhảy múa",
+}
+
 @onready var category_box: VBoxContainer = %CategoryBox
 @onready var item_grid: GridContainer = %ItemGrid
 @onready var preview_holder: Control = %PreviewHolder
 @onready var color_box: VBoxContainer = %ColorBox
+@onready var anim_flow: HFlowContainer = %AnimFlow
 @onready var name_edit: LineEdit = %NameEdit
 @onready var create_button: Button = %CreateButton
 @onready var random_button: Button = %RandomButton
@@ -52,6 +64,7 @@ func _ready() -> void:
 
 	_build_category_buttons()
 	_build_color_pickers()
+	_build_animation_buttons()
 	create_button.pressed.connect(_on_create_pressed)
 	random_button.pressed.connect(_on_random_pressed)
 
@@ -102,6 +115,17 @@ func _build_color_pickers() -> void:
 		row.add_child(picker)
 
 		color_box.add_child(row)
+
+
+func _build_animation_buttons() -> void:
+	for anim_name in ANIM_PICKS:
+		if not character.has_animation(StringName(anim_name)):
+			continue
+		var btn := Button.new()
+		btn.text = ANIM_LABELS_VI.get(anim_name, anim_name)
+		btn.focus_mode = Control.FOCUS_NONE
+		btn.pressed.connect(func(): character.play_animation(StringName(anim_name)))
+		anim_flow.add_child(btn)
 
 
 func _select_category(type_name: String) -> void:
