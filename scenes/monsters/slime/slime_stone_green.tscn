@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/monsters/monster_base.tscn" id="1_base"]
+[ext_resource type="Texture2D" path="res://assets/monsters/slime/shadow.png" id="2_tex"]
+[ext_resource type="Texture2D" path="res://assets/monsters/slime/slime_green/slime_stone/body.png" id="3_tex"]
+[ext_resource type="Texture2D" path="res://assets/monsters/slime/slime_green/slime_stone/weapon.png" id="4_tex"]
+
+[node name="SlimeStoneGreen" instance=ExtResource("1_base")]
+
+[node name="Art" parent="Shadow"]
+texture = ExtResource("2_tex")
+
+[node name="Art" parent="Body"]
+position = Vector2(0, -11.4)
+texture = ExtResource("3_tex")
+
+[node name="Art" parent="HandRight/Sword"]
+position = Vector2(6, 4)
+texture = ExtResource("4_tex")
