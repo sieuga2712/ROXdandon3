@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/item_data.gd" id="1_4v236"]
+
+[resource]
+script = ExtResource("1_4v236")
+id = &"helm_magic_hood"
+display_name = "Mũ trùm phép"
+slot = "helmet"
+equip_tag = "armor_magic"
+stats = {
+"hp": 40.0,
+"mdef": 8.0
+}

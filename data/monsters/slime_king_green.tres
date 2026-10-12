@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="MonsterData" load_steps=3 format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/monsters/slime/slime_king_green.tscn" id="1_epctn"]
+[ext_resource type="Script" path="res://scripts/data/monster_data.gd" id="2_ym3hg"]
+
+[resource]
+script = ExtResource("2_ym3hg")
+id = &"slime_king_green"
+display_name = "Vua slime xanh"
+base_stats = {
+"atk": 85.0,
+"atsp": 0.7,
+"def": 45.0,
+"hp": 9000.0,
+"mdef": 30.0
+}
+move_speed = 50.0
+attack_range = 70.0
+attack_type = "physical"
+skills = PackedStringArray("slime_bash", "slime_king_quake")
+scene = ExtResource("1_epctn")
+is_boss = true
+break_max = 100.0
+break_lock = 4.0

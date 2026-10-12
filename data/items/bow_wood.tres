@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/item_data.gd" id="1_10t27"]
+
+[resource]
+script = ExtResource("1_10t27")
+id = &"bow_wood"
+display_name = "Cung gỗ"
+slot = "weapon"
+equip_tag = "bow"
+stats = {
+"atk": 24.0,
+"crit": 0.03
+}

@@ -11,8 +11,8 @@ config_version=5
 [application]
 
 config/name="ROXdandon3"
-run/main_scene="res://scenes/character_creation/CharacterCreation.tscn"
-config/features=PackedStringArray("4.3", "Mobile")
+run/main_scene="res://scenes/hub/hub.tscn"
+config/features=PackedStringArray("4.4", "Mobile")
 config/icon="res://icon.svg"
 
 [rendering]

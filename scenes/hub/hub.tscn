@@ -1,0 +1,117 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scenes/hub/hub.gd" id="1_script"]
+
+[node name="Hub" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_script")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.16, 0.17, 0.22, 1)
+
+[node name="Margin" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 12
+
+[node name="VBox" type="VBoxContainer" parent="Margin"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="TopBar" type="HBoxContainer" parent="Margin/VBox"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="GoldLabel" type="Label" parent="Margin/VBox/TopBar"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 16
+text = "Vàng: 0"
+autowrap_mode = 3
+
+[node name="IdleButton" type="Button" parent="Margin/VBox/TopBar"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(320, 36)
+layout_mode = 2
+text = "Treo máy"
+autowrap_mode = 3
+
+[node name="Toast" type="Label" parent="Margin/VBox"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.9, 0.5, 1)
+
+[node name="Tabs" type="TabContainer" parent="Margin/VBox"]
+layout_mode = 2
+size_flags_vertical = 3
+current_tab = 0
+
+[node name="Màn chơi" type="ScrollContainer" parent="Margin/VBox/Tabs"]
+layout_mode = 2
+metadata/_tab_index = 0
+
+[node name="StagesBox" type="VBoxContainer" parent="Margin/VBox/Tabs/Màn chơi"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 12
+
+[node name="Phó bản ngày" type="ScrollContainer" parent="Margin/VBox/Tabs"]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 1
+
+[node name="DailyBox" type="VBoxContainer" parent="Margin/VBox/Tabs/Phó bản ngày"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 12
+
+[node name="Đội hình" type="ScrollContainer" parent="Margin/VBox/Tabs"]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 2
+
+[node name="TeamBox" type="VBoxContainer" parent="Margin/VBox/Tabs/Đội hình"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Trang bị" type="ScrollContainer" parent="Margin/VBox/Tabs"]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 3
+
+[node name="EquipBox" type="VBoxContainer" parent="Margin/VBox/Tabs/Trang bị"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Kho" type="ScrollContainer" parent="Margin/VBox/Tabs"]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 4
+
+[node name="BagBox" type="VBoxContainer" parent="Margin/VBox/Tabs/Kho"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3

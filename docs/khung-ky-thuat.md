@@ -125,7 +125,7 @@ Thêm bộ chọn mới là thêm một hàm, không đụng skill cũ.
 
 | Hiệu ứng | Tham số |
 |---|---|
-| `damage` | `scale` (% atk hoặc matk), `type` (`physical` / `magic`), `hits`, `force_crit` |
+| `damage` | `scale` (% atk hoặc matk), `damage_type` (`physical` / `magic`), `hits`, `force_crit` |
 | `heal` | `scale`, `basis` (`max_hp` / `atk` / `matk`) |
 | `shield` | `scale`, `basis` (`caster_max_hp` / `target_max_hp`), `duration` |
 | `modify_stat` | `stat`, `value`, `mode` (`flat` / `percent`), `duration` (`0` = cả trận, dùng cho nội tại `always`) |
@@ -136,6 +136,8 @@ Thêm bộ chọn mới là thêm một hàm, không đụng skill cũ.
 | `cleanse` | `count` |
 | `undying` | `duration` (HP không xuống dưới 1) |
 | `extra_attacks` | `count` |
+
+Mỗi hiệu ứng là một Dictionary có khóa `type`. Thêm `"on": "self"` thì hiệu ứng áp một lần lên người dùng skill thay vì lên từng mục tiêu. Ví dụ Khiêu khích: `taunt` lên quái xung quanh, `modify_stat` damage_taken −30% lên chính Hiệp sĩ.
 
 ### 4.6 Các skill trong doc ghép theo 3 loại
 
@@ -378,27 +380,36 @@ Một ví duy nhất. Mọi chỗ cộng/trừ tiền đi qua một hàm có ghi
 
 ---
 
-## 11. Thư mục dự kiến
+## 11. Thư mục (đã làm)
 
 ```
-data/
-  classes/        archer.tres, warrior.tres, ...      (chỉ số gốc, thuộc tính 5.2, equip_tag được mặc)
-  skills/         archer_arrow_rain.tres, ...         (kho skill chung, có class_tags)
-  items/          bow_wood.tres, armor_magic_cloth.tres, ...
-  monsters/       slime_green.tres, ...               (chỉ số + thuộc tính 5.2 + scene rig)
-  stages/         1_1.tres, ...                       (đợt quái, rules, phần thưởng, idle_rate)
-  daily/          schedule.tres
-  economy/        gem_types.csv, enhance_curve.csv, gem_merge.csv, enhance_transfer.csv
+data/                     dữ liệu, sửa trực tiếp trong Godot hoặc file CSV
+  config.tres             hằng số chung: K thủ, choáng khi vỡ thanh, 5% cường hóa, treo máy, lịch phó bản ngày
+  classes/  skills/  items/  monsters/  stages/   (phó bản ngày nằm trong stages/, cờ is_daily)
+  economy/                gem_types.csv, enhance_curve.csv, gem_merge.csv, enhance_transfer.csv
 scripts/
-  battle/         battle_sim.gd, unit_state.gd, skill_runner.gd, targeting.gd, effects.gd,
-                  stats.gd, movement.gd
-  data/           skill_data.gd, class_data.gd, monster_data.gd
-  save/           save_service.gd, migrations.gd
-  tools/          balance_runner.gd
+  battle/                 battle_sim.gd (gồm cả di chuyển), unit_state.gd, unit_factory.gd, battle_context.gd,
+                          targeting.gd, effects.gd, stats.gd, stage_rules.gd
+  data/                   skill_data.gd, class_data.gd, monster_data.gd, item_data.gd, stage_data.gd,
+                          game_config.gd, game_db.gd
+  meta/                   profile.gd, save_service.gd, enhance.gd, idle_and_daily.gd
+  tools/                  balance_runner.gd
+tools/seed_data.gd        tạo bộ dữ liệu khởi đầu (chạy lại sẽ ghi đè data/)
+tests/                    test_battle_core.gd, test_battle_sim.gd
 scenes/
-  battle/         battle_view.tscn
-  monsters/       (đã có: rig quái + animation)
-  character_creation/   (đã có)
+  hub/                    hub.tscn — màn khởi động: màn chơi, phó bản ngày, đội hình, trang bị, kho, treo máy
+  battle/                 battle_view.tscn — trận đánh có hình
+  monsters/               rig quái + animation
+  character_creation/     màn tạo nhân vật cũ (chưa nối với sảnh)
+```
+
+### Lệnh chạy (Godot ở `D:\godot`)
+
+```
+# Test (exit code = số test sai)
+Godot_v4.4.1-stable_win64_console.exe --headless --path . -s res://tests/test_battle_sim.gd
+# Cân bằng: số trận, đội (class:hàng), màn
+Godot_v4.4.1-stable_win64_console.exe --headless --path . -s res://scripts/tools/balance_runner.gd -- 200 knight:0,warrior:0,priest:1,archer:2 1_3
 ```
 
 ---
@@ -406,10 +417,19 @@ scenes/
 ## 12. Thứ tự làm
 
 1. ~~Chốt khung~~ (xong).
-2. `stats.gd` + `skill_data.gd` + `effects.gd` + `targeting.gd`, kèm test nhỏ cho từng hiệu ứng.
-3. `movement.gd` + `battle_sim.gd`: 5 class đánh slime với số tạm, in log ra console.
-4. `balance_runner.gd`, chạy 1000 trận, sửa mấy lỗi cân bằng đã biết.
-5. `battle_view.tscn` gắn rig nhân vật và slime vào sự kiện (`Walk` khi chạy, `Attack` khi đánh).
-6. Trang bị (4 ô, `equip_tag`) và đá cường hóa bậc 1–2 đọc từ CSV, rồi mới tới 200 cấp.
-7. Ô skill và kho skill chung, màn chơi có `rules`.
-8. Phó bản ngày và treo máy làm sau cùng.
+2. ~~Chỉ số, dữ liệu skill, chọn mục tiêu, hiệu ứng~~ (xong).
+3. ~~`battle_sim.gd`: 5 class đánh slime~~ (xong).
+4. ~~`balance_runner.gd`~~ (xong). **Chưa cân bằng số**: màn nào cũng thắng 100%, boss chưa từng bị phá thanh vì skill khống chế tự bắn không trùng lúc boss niệm.
+5. ~~`battle_view.tscn`~~ (xong).
+6. ~~Trang bị 4 ô, cường hóa 200 cấp từ CSV, chuyển cấp, ghép đá~~ (xong).
+7. ~~Ô skill, kho skill chung, preset, màn có `rules`~~ (xong).
+8. ~~Phó bản ngày, treo máy, save có phiên bản~~ (xong).
+
+Việc tiếp theo:
+
+- [ ] Cân bằng số bằng `balance_runner` (độ khó màn, mana, hồi chiêu chiêu cuối).
+- [ ] Skill khống chế đợi boss niệm mới bắn (cờ `hold_for_break` đã bàn), nếu không thì thanh choáng gần như chỉ dùng được bằng bấm tay.
+- [ ] Nguồn rơi đồ (hiện chỉ có cửa hàng tạm trong sảnh).
+- [ ] Nối màn tạo nhân vật với sảnh: ngoại hình chọn ở đó hiện trong trận (hiện mỗi trận nhân vật có ngoại hình ngẫu nhiên).
+- [ ] Nâng cấp skill (đã có cấp trong save, chưa có chỗ tiêu tài nguyên để lên cấp).
+- [ ] Nhiều preset (khung có sẵn, sảnh mới hiện 1 preset).

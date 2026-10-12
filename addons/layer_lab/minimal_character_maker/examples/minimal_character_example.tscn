@@ -1,7 +1,7 @@
-[gd_scene load_steps=3 format=3]
+[gd_scene load_steps=3 format=3 uid="uid://b1dnaxxxvx5lk"]
 
-[ext_resource type="Script" path="res://addons/layer_lab/minimal_character_maker/examples/minimal_character_example.gd" id="1_example"]
-[ext_resource type="PackedScene" path="res://addons/layer_lab/minimal_character_maker/character/minimal_character.tscn" id="2_character"]
+[ext_resource type="Script" uid="uid://cnwjpw6xltfso" path="res://addons/layer_lab/minimal_character_maker/examples/minimal_character_example.gd" id="1_example"]
+[ext_resource type="PackedScene" uid="uid://ce30pb60mo6q2" path="res://addons/layer_lab/minimal_character_maker/character/minimal_character.tscn" id="2_character"]
 
 [node name="MinimalCharacterExample" type="Node2D"]
 script = ExtResource("1_example")

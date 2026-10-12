@@ -1,0 +1,39 @@
+[gd_resource type="Resource" script_class="StageData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/stage_data.gd" id="1_1656l"]
+
+[resource]
+script = ExtResource("1_1656l")
+id = &"1_2"
+display_name = "1-2 Bìa rừng"
+chapter = 1
+is_daily = false
+waves = Array[Dictionary]([{
+"monsters": [{
+"id": "slime_green",
+"row": 0
+}, {
+"id": "slime_green",
+"row": 1
+}]
+}, {
+"monsters": [{
+"id": "slime_green",
+"row": 0
+}, {
+"id": "slime_green",
+"row": 0
+}, {
+"id": "slime_stone_green",
+"row": 2
+}]
+}])
+rules = Array[Dictionary]([])
+rewards = {
+"gem_0": 4,
+"gold": 150
+}
+idle_rate = {
+"gem_0": 3,
+"gold": 80
+}

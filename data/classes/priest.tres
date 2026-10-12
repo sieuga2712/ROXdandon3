@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="ClassData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/class_data.gd" id="1_xcbh8"]
+
+[resource]
+script = ExtResource("1_xcbh8")
+id = &"priest"
+display_name = "Tu sĩ"
+base_stats = {
+"atk": 40.0,
+"atsp": 0.9,
+"crit": 0.05,
+"def": 22.0,
+"hp": 1000.0,
+"mana_regen": 1.0,
+"matk": 85.0,
+"mdef": 50.0
+}
+move_speed = 95.0
+attack_range = 260.0
+attack_type = "magic"
+mana_max = 100.0
+mana_per_attack = 5.0
+mana_per_hit_taken = 3.0
+equip_tags = PackedStringArray("wand", "armor_magic", "accessory")
+weapon_part = "Wand"
+offhand_part = ""
+default_passives = PackedStringArray("priest_smite", "priest_team_vitality")
+default_actives = PackedStringArray("priest_purify")
+default_ultimate = &"priest_blessing"

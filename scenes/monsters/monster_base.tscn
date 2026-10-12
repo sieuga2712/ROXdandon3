@@ -1,10 +1,10 @@
-[gd_scene load_steps=6 format=3]
+[gd_scene load_steps=6 format=3 uid="uid://cm76v20l465h3"]
 
-[ext_resource type="Script" path="res://scenes/monsters/monster.gd" id="1_script"]
+[ext_resource type="Script" uid="uid://b22iqewn77tgt" path="res://scenes/monsters/monster.gd" id="1_script"]
 [ext_resource type="AnimationLibrary" path="res://scenes/monsters/monster_animations.tres" id="2_anims"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/other/bone.png" id="3_tex"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/other/gravestone.png" id="4_tex"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/other/ghost.png" id="5_tex"]
+[ext_resource type="Texture2D" uid="uid://31mjghapaeun" path="res://addons/layer_lab/minimal_character_maker/textures/other/bone.png" id="3_tex"]
+[ext_resource type="Texture2D" uid="uid://cgahkp8eyyhvf" path="res://addons/layer_lab/minimal_character_maker/textures/other/gravestone.png" id="4_tex"]
+[ext_resource type="Texture2D" uid="uid://bm547b7axjec5" path="res://addons/layer_lab/minimal_character_maker/textures/other/ghost.png" id="5_tex"]
 
 [node name="Monster" type="Node2D"]
 script = ExtResource("1_script")
@@ -54,8 +54,8 @@ z_index = 1
 [node name="HandRight" type="Node2D" parent="."]
 
 [node name="Sword" type="Node2D" parent="HandRight"]
-position = Vector2(4.100007, -2.599996)
-rotation = 0.2617995
+position = Vector2(4.10001, -2.6)
+rotation = 0.2618
 
 [node name="Art" type="Sprite2D" parent="HandRight/Sword"]
 z_index = 10
@@ -63,27 +63,27 @@ z_index = 10
 [node name="HandLeft" type="Node2D" parent="."]
 
 [node name="Shield" type="Node2D" parent="HandLeft"]
-position = Vector2(29.10001, -13.1)
+position = Vector2(29.1, -13.1)
 
 [node name="Art" type="Sprite2D" parent="HandLeft/Shield"]
 z_index = 9
 
 [node name="Body" type="Node2D" parent="."]
-position = Vector2(0.6000102, -17.59999)
+position = Vector2(0.60001, -17.6)
 z_index = 2
 
 [node name="Art" type="Sprite2D" parent="Body"]
 
 [node name="Head" type="Node2D" parent="Body"]
-position = Vector2(-3.000003, -31.5)
+position = Vector2(-3, -31.5)
 z_index = 2
 
 [node name="Art" type="Sprite2D" parent="Body/Head"]
 
 [node name="Shadow" type="Node2D" parent="."]
-position = Vector2(0.1000106, -0.09999871)
+position = Vector2(0.100011, -0.0999987)
 z_index = 1
-modulate = Color(1, 1, 1, 0.3333333)
+modulate = Color(1, 1, 1, 0.333333)
 
 [node name="Art" type="Sprite2D" parent="Shadow"]
 

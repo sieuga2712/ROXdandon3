@@ -1,81 +1,81 @@
-[gd_scene format=3]
+[gd_scene load_steps=387 format=3 uid="uid://dfdibjqgjfkjj"]
 
-[ext_resource type="Script" path="res://addons/layer_lab/minimal_character_maker/demo/minimal_main.gd" id="1_8av53"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/map/sample_map.png" id="2_boa5g"]
-[ext_resource type="PackedScene" path="res://addons/layer_lab/minimal_character_maker/character/minimal_character.tscn" id="3_c1c08"]
-[ext_resource type="Script" path="res://addons/layer_lab/minimal_character_maker/runtime/minimal_character.gd" id="4_mi0df"]
-[ext_resource type="FontFile" path="res://addons/layer_lab/minimal_character_maker/demo/fonts/art_maker_ui_bitmap_outline_64.fnt" id="5_362oy"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/sns_discord.png" id="6_14rie"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/sns_facebook.png" id="7_v3dmn"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/sns_youtube.png" id="8_xgfp0"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/parts_panel_bg.png" id="9_lmeum"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/parts_slot_bg_select.png" id="10_lemcx"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/icon_hair.png" id="11_xloob"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_016.png" id="12_gf2m4"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/parts_slot_activeself_on.png" id="13_ste86"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/icon_eye.png" id="14_x2jr0"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/eye/body_eye_001.png" id="15_sxq0e"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/parts_slot_bg_empty.png" id="16_6k423"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/icon_beard.png" id="17_qn1m1"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/beard/body_beard_001.png" id="18_hk2yq"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/icon_skin.png" id="19_meeli"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/skin/skin1.png" id="20_oxm27"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/icon_helmet.png" id="21_yjkg4"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/helmet/fa_helmet_001_brown.png" id="22_8avo4"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/icon_chest.png" id="23_w8yps"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/chest/fa_chest_026_silver.png" id="24_3kut1"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/icon_hand_right.png" id="25_w6or1"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/bow/fa_wp_main_bow_008_red.png" id="26_pcj6w"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/icon_hand_left.png" id="27_xblji"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/shield/fa_wp_sub_shield_006_gold.png" id="28_eabtx"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/parts_slot_icon_arrow_left.png" id="29_nrhov"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/parts_slot_icon_arrow_right.png" id="30_3fuh4"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/parts_slot_item_select_frame.png" id="31_kxh68"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/preset_previous.png" id="32_t4b8x"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/preset_bg.png" id="33_gpkwh"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/preset_next.png" id="34_gciob"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/button_dice_white.png" id="35_0g5qu"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/button_small_blue.png" id="36_dpm31"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/parts_panel_bg_default.png" id="37_hdcye"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/button_reset.png" id="38_nfhox"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_001.png" id="39_074pe"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_002.png" id="40_p3bmg"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_003.png" id="41_qtssc"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_004.png" id="42_16o7y"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_005.png" id="43_4525o"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_006.png" id="44_olgu4"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_007.png" id="45_44w21"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_008.png" id="46_8vc70"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_009.png" id="47_nxnsc"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_010.png" id="48_hs8ux"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_011.png" id="49_e46xo"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_012.png" id="50_wkn8l"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_013.png" id="51_aw8wv"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_014.png" id="52_blxql"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_015.png" id="53_x4k5m"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/parts_list_select.png" id="54_2ob38"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_017.png" id="55_u8f7q"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_018.png" id="56_ar6bu"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_019.png" id="57_mt7d7"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_020.png" id="58_gwx25"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_021.png" id="59_a4bs5"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_022.png" id="60_7cv7h"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_023.png" id="61_n0p41"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_024.png" id="62_2hrpb"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_025.png" id="63_mh5r2"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_026.png" id="64_5ne02"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/picker_pointer.png" id="65_m0vmr"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/picker_color_bar.png" id="66_jd803"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/picker_slider_pointer.png" id="67_djdpc"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/picker_favorite_inputfield_bg.png" id="68_3ygbk"]
-[ext_resource type="FontFile" path="res://addons/layer_lab/minimal_character_maker/demo/fonts/art_maker_ui_bitmap_64.fnt" id="69_wb4m4"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/picker_favorite_button_copy.png" id="70_74u82"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/picker_favorite_button_coloradd.png" id="71_wsvde"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/picker_favorite_button_colordelete.png" id="72_53hvq"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/picker_favorite_slot_empty.png" id="73_omhns"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/picker_favorite_focus.png" id="74_pseod"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/button_animation_f.png" id="75_nvm0q"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/button_animaiton_n.png" id="76_koyxq"]
+[ext_resource type="Script" uid="uid://r3ff4vavhgcv" path="res://addons/layer_lab/minimal_character_maker/demo/minimal_main.gd" id="1_8av53"]
+[ext_resource type="Texture2D" uid="uid://cmmo6yptjlwus" path="res://addons/layer_lab/minimal_character_maker/demo/assets/map/sample_map.png" id="2_boa5g"]
+[ext_resource type="PackedScene" uid="uid://ce30pb60mo6q2" path="res://addons/layer_lab/minimal_character_maker/character/minimal_character.tscn" id="3_c1c08"]
+[ext_resource type="Script" uid="uid://b0f0hnu7eqhql" path="res://addons/layer_lab/minimal_character_maker/runtime/minimal_character.gd" id="4_mi0df"]
+[ext_resource type="FontFile" uid="uid://bo82q8h8pmqvf" path="res://addons/layer_lab/minimal_character_maker/demo/fonts/art_maker_ui_bitmap_outline_64.fnt" id="5_362oy"]
+[ext_resource type="Texture2D" uid="uid://bah5xa73wg1ln" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/sns_discord.png" id="6_14rie"]
+[ext_resource type="Texture2D" uid="uid://cjkhiu8bccpjs" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/sns_facebook.png" id="7_v3dmn"]
+[ext_resource type="Texture2D" uid="uid://dfldddjen7x77" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/sns_youtube.png" id="8_xgfp0"]
+[ext_resource type="Texture2D" uid="uid://buog45jruim0c" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/parts_panel_bg.png" id="9_lmeum"]
+[ext_resource type="Texture2D" uid="uid://cdxr5f5200y8r" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/parts_slot_bg_select.png" id="10_lemcx"]
+[ext_resource type="Texture2D" uid="uid://ss2xggu2p3wp" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/icon_hair.png" id="11_xloob"]
+[ext_resource type="Texture2D" uid="uid://cb4xm5lggm552" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_016.png" id="12_gf2m4"]
+[ext_resource type="Texture2D" uid="uid://do6l6v43whksf" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/parts_slot_activeself_on.png" id="13_ste86"]
+[ext_resource type="Texture2D" uid="uid://drp3q6mqkbdwh" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/icon_eye.png" id="14_x2jr0"]
+[ext_resource type="Texture2D" uid="uid://dx0wp2du0xvsu" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/eye/body_eye_001.png" id="15_sxq0e"]
+[ext_resource type="Texture2D" uid="uid://u0dnfbgru1wu" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/parts_slot_bg_empty.png" id="16_6k423"]
+[ext_resource type="Texture2D" uid="uid://cux2fs7ev1tuw" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/icon_beard.png" id="17_qn1m1"]
+[ext_resource type="Texture2D" uid="uid://ohpwe5g1gs8" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/beard/body_beard_001.png" id="18_hk2yq"]
+[ext_resource type="Texture2D" uid="uid://b2f466pw30rjx" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/icon_skin.png" id="19_meeli"]
+[ext_resource type="Texture2D" uid="uid://e6ifkge7gopn" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/skin/skin1.png" id="20_oxm27"]
+[ext_resource type="Texture2D" uid="uid://xgu2hfsf1r58" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/icon_helmet.png" id="21_yjkg4"]
+[ext_resource type="Texture2D" uid="uid://bgi21s6bb1vk8" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/helmet/fa_helmet_001_brown.png" id="22_8avo4"]
+[ext_resource type="Texture2D" uid="uid://ch7fjehnmqrah" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/icon_chest.png" id="23_w8yps"]
+[ext_resource type="Texture2D" uid="uid://47dlfxua46r0" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/chest/fa_chest_026_silver.png" id="24_3kut1"]
+[ext_resource type="Texture2D" uid="uid://c4saaoxb6kkdc" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/icon_hand_right.png" id="25_w6or1"]
+[ext_resource type="Texture2D" uid="uid://34c6cvaq6p3k" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/bow/fa_wp_main_bow_008_red.png" id="26_pcj6w"]
+[ext_resource type="Texture2D" uid="uid://b0ki21m0jfvql" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/icon_hand_left.png" id="27_xblji"]
+[ext_resource type="Texture2D" uid="uid://chqefcfiv51g8" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/shield/fa_wp_sub_shield_006_gold.png" id="28_eabtx"]
+[ext_resource type="Texture2D" uid="uid://c2wg4l4r5gb4n" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/parts_slot_icon_arrow_left.png" id="29_nrhov"]
+[ext_resource type="Texture2D" uid="uid://cfimafyg3qmjs" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/parts_slot_icon_arrow_right.png" id="30_3fuh4"]
+[ext_resource type="Texture2D" uid="uid://65afonwruuwm" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/parts_slot_item_select_frame.png" id="31_kxh68"]
+[ext_resource type="Texture2D" uid="uid://c2oddc48rfr0e" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/preset_previous.png" id="32_t4b8x"]
+[ext_resource type="Texture2D" uid="uid://yinatki7es6v" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/preset_bg.png" id="33_gpkwh"]
+[ext_resource type="Texture2D" uid="uid://mhcvkpodj413" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/preset_next.png" id="34_gciob"]
+[ext_resource type="Texture2D" uid="uid://bqw04sefpux1g" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/button_dice_white.png" id="35_0g5qu"]
+[ext_resource type="Texture2D" uid="uid://de4mhvfpkadyu" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/button_small_blue.png" id="36_dpm31"]
+[ext_resource type="Texture2D" uid="uid://dspv7peqc4171" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/parts_panel_bg_default.png" id="37_hdcye"]
+[ext_resource type="Texture2D" uid="uid://b40wlpgg2vj68" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/button_reset.png" id="38_nfhox"]
+[ext_resource type="Texture2D" uid="uid://buyhw5tqkn5kk" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_001.png" id="39_074pe"]
+[ext_resource type="Texture2D" uid="uid://bk54tlxyvj45y" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_002.png" id="40_p3bmg"]
+[ext_resource type="Texture2D" uid="uid://bu4b2opsdyomc" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_003.png" id="41_qtssc"]
+[ext_resource type="Texture2D" uid="uid://c2dmexu24c0jg" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_004.png" id="42_16o7y"]
+[ext_resource type="Texture2D" uid="uid://v5oh7y2x4sem" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_005.png" id="43_4525o"]
+[ext_resource type="Texture2D" uid="uid://cr4mpbtswa37m" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_006.png" id="44_olgu4"]
+[ext_resource type="Texture2D" uid="uid://vdkm2fql1qa" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_007.png" id="45_44w21"]
+[ext_resource type="Texture2D" uid="uid://cq15wr1w7lug7" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_008.png" id="46_8vc70"]
+[ext_resource type="Texture2D" uid="uid://b6h1s8dtpnywm" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_009.png" id="47_nxnsc"]
+[ext_resource type="Texture2D" uid="uid://cwcionp17gn1o" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_010.png" id="48_hs8ux"]
+[ext_resource type="Texture2D" uid="uid://bqdnek7whflbw" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_011.png" id="49_e46xo"]
+[ext_resource type="Texture2D" uid="uid://wrptiqvbdl4n" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_012.png" id="50_wkn8l"]
+[ext_resource type="Texture2D" uid="uid://tfuyc4js3sfq" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_013.png" id="51_aw8wv"]
+[ext_resource type="Texture2D" uid="uid://72ciopubd2dh" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_014.png" id="52_blxql"]
+[ext_resource type="Texture2D" uid="uid://cw0bm5bf6oy3n" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_015.png" id="53_x4k5m"]
+[ext_resource type="Texture2D" uid="uid://bul6iyu8q5gay" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/parts_list_select.png" id="54_2ob38"]
+[ext_resource type="Texture2D" uid="uid://ceko1lanw5whu" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_017.png" id="55_u8f7q"]
+[ext_resource type="Texture2D" uid="uid://djopvqdplrxdp" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_018.png" id="56_ar6bu"]
+[ext_resource type="Texture2D" uid="uid://byg7ucakl4hox" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_019.png" id="57_mt7d7"]
+[ext_resource type="Texture2D" uid="uid://hutwac6sq5vr" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_020.png" id="58_gwx25"]
+[ext_resource type="Texture2D" uid="uid://udmbl6nvf65a" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_021.png" id="59_a4bs5"]
+[ext_resource type="Texture2D" uid="uid://bfnvkg2qh38d2" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_022.png" id="60_7cv7h"]
+[ext_resource type="Texture2D" uid="uid://cvikajyiokgtn" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_023.png" id="61_n0p41"]
+[ext_resource type="Texture2D" uid="uid://bl0hwyobwsojj" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_024.png" id="62_2hrpb"]
+[ext_resource type="Texture2D" uid="uid://dwu3ke7bhhmwy" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_025.png" id="63_mh5r2"]
+[ext_resource type="Texture2D" uid="uid://d13qc08r8ge8u" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/thumbnail/hair/body_hair_026.png" id="64_5ne02"]
+[ext_resource type="Texture2D" uid="uid://d0125y4nalgox" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/picker_pointer.png" id="65_m0vmr"]
+[ext_resource type="Texture2D" uid="uid://b0mlbawotfq7g" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/picker_color_bar.png" id="66_jd803"]
+[ext_resource type="Texture2D" uid="uid://ce8axx5xuhj0f" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/picker_slider_pointer.png" id="67_djdpc"]
+[ext_resource type="Texture2D" uid="uid://toh6ounu4uk3" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/picker_favorite_inputfield_bg.png" id="68_3ygbk"]
+[ext_resource type="FontFile" uid="uid://bqxovj6mnbnxo" path="res://addons/layer_lab/minimal_character_maker/demo/fonts/art_maker_ui_bitmap_64.fnt" id="69_wb4m4"]
+[ext_resource type="Texture2D" uid="uid://bobwsm28et688" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/picker_favorite_button_copy.png" id="70_74u82"]
+[ext_resource type="Texture2D" uid="uid://dvofgw3rperxq" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/picker_favorite_button_coloradd.png" id="71_wsvde"]
+[ext_resource type="Texture2D" uid="uid://btc76xylxf7dm" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/picker_favorite_button_colordelete.png" id="72_53hvq"]
+[ext_resource type="Texture2D" uid="uid://bw8elvei3y0o6" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/picker_favorite_slot_empty.png" id="73_omhns"]
+[ext_resource type="Texture2D" uid="uid://b6gk28ee5mxae" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/picker_favorite_focus.png" id="74_pseod"]
+[ext_resource type="Texture2D" uid="uid://bptlikr8dkdtg" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/button_animation_f.png" id="75_nvm0q"]
+[ext_resource type="Texture2D" uid="uid://bhbwecu87x5wd" path="res://addons/layer_lab/minimal_character_maker/demo/assets/ui/button_animaiton_n.png" id="76_koyxq"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4wh2h"]
 
@@ -371,91 +371,91 @@ void fragment() {
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_tjs6d"]
 shader = SubResource("Shader_f1uut")
-shader_parameter/hue = 0.39835414
+shader_parameter/hue = 0.398354
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4imvn"]
-bg_color = Color(0.13333334, 0.12941177, 0.12941177, 1)
+bg_color = Color(0.133333, 0.129412, 0.129412, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_etuqg"]
-bg_color = Color(0.34901962, 0.18039216, 0.18431373, 1)
+bg_color = Color(0.34902, 0.180392, 0.184314, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_c66h7"]
-bg_color = Color(0.3764706, 0.27058825, 0.20784314, 1)
+bg_color = Color(0.376471, 0.270588, 0.207843, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lhi1t"]
-bg_color = Color(0.54901963, 0.47843137, 0.45490196, 1)
+bg_color = Color(0.54902, 0.478431, 0.454902, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mws3x"]
-bg_color = Color(0.54901963, 0.47843137, 0.45490196, 1)
+bg_color = Color(0.54902, 0.478431, 0.454902, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oqo36"]
-bg_color = Color(0.78039217, 0.63529414, 0.45882353, 1)
+bg_color = Color(0.780392, 0.635294, 0.458824, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xgxso"]
-bg_color = Color(0.9529412, 0.72156864, 0.2509804, 1)
+bg_color = Color(0.952941, 0.721569, 0.25098, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ge5m5"]
-bg_color = Color(0.9882353, 0.99215686, 0.92941177, 1)
+bg_color = Color(0.988235, 0.992157, 0.929412, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xa3fi"]
-bg_color = Color(0.8980392, 0.44313726, 0.1882353, 1)
+bg_color = Color(0.898039, 0.443137, 0.188235, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_b6vnr"]
-bg_color = Color(0.6, 0.13333334, 0.05490196, 1)
+bg_color = Color(0.6, 0.133333, 0.054902, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xu6c2"]
-bg_color = Color(0.8901961, 0.23529412, 0.46666667, 1)
+bg_color = Color(0.890196, 0.235294, 0.466667, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8dre5"]
-bg_color = Color(0.9372549, 0.61960787, 0.80784315, 1)
+bg_color = Color(0.937255, 0.619608, 0.807843, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1r1ql"]
-bg_color = Color(0.5294118, 0.35686275, 0.94509804, 1)
+bg_color = Color(0.529412, 0.356863, 0.945098, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vjkqt"]
-bg_color = Color(0.19607843, 0.32156864, 0.6745098, 1)
+bg_color = Color(0.196078, 0.321569, 0.67451, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vw1e5"]
-bg_color = Color(0.5176471, 0.7254902, 0.94509804, 1)
+bg_color = Color(0.517647, 0.72549, 0.945098, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4seoa"]
-bg_color = Color(0.22745098, 0.47843137, 0.36862746, 1)
+bg_color = Color(0.227451, 0.478431, 0.368627, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_b3ew5"]
-bg_color = Color(0.98039216, 0.7882353, 0.6745098, 1)
+bg_color = Color(0.980392, 0.788235, 0.67451, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vj7le"]
-bg_color = Color(0.91764706, 0.65882355, 0.53333336, 1)
+bg_color = Color(0.917647, 0.658824, 0.533333, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wsu6n"]
-bg_color = Color(0.85882354, 0.654902, 0.48235294, 1)
+bg_color = Color(0.858824, 0.654902, 0.482353, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_48wje"]
-bg_color = Color(0.7490196, 0.5254902, 0.4392157, 1)
+bg_color = Color(0.74902, 0.52549, 0.439216, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_biu70"]
-bg_color = Color(0.84313726, 0.46666667, 0.38431373, 1)
+bg_color = Color(0.843137, 0.466667, 0.384314, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_t5elh"]
-bg_color = Color(0.70980394, 0.5019608, 0.37254903, 1)
+bg_color = Color(0.709804, 0.501961, 0.372549, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jc6oq"]
-bg_color = Color(0.64705884, 0.47058824, 0.3764706, 1)
+bg_color = Color(0.647059, 0.470588, 0.376471, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xi5h4"]
-bg_color = Color(0.7058824, 0.4117647, 0.25490198, 1)
+bg_color = Color(0.705882, 0.411765, 0.254902, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_myf7f"]
-bg_color = Color(0.45490196, 0.3019608, 0.27058825, 1)
+bg_color = Color(0.454902, 0.301961, 0.270588, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mnqwh"]
-bg_color = Color(0.40392157, 0.2509804, 0.23137255, 1)
+bg_color = Color(0.403922, 0.25098, 0.231373, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xi3b8"]
-bg_color = Color(0.5764706, 0.69803923, 0.41568628, 1)
+bg_color = Color(0.576471, 0.698039, 0.415686, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dcnbn"]
-bg_color = Color(0.6431373, 0.7882353, 0.85490197, 1)
+bg_color = Color(0.643137, 0.788235, 0.854902, 1)
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_87ony"]
 
@@ -1429,7 +1429,7 @@ texture = ExtResource("2_boa5g")
 
 [node name="Character" type="Node2D" parent="." instance=ExtResource("3_c1c08")]
 position = Vector2(790.44, 631.8)
-scale = Vector2(2.254176, 2.254176)
+scale = Vector2(2.25418, 2.25418)
 script = ExtResource("4_mi0df")
 default_animation = &""
 
@@ -1445,9 +1445,9 @@ mouse_filter = 2
 [node name="TextTitle" type="Label" parent="UI/Canvas"]
 layout_mode = 0
 offset_left = 33.46
-offset_top = 18.049997
+offset_top = 18.05
 offset_right = 329.94
-offset_bottom = 65.380005
+offset_bottom = 65.38
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
@@ -1465,7 +1465,7 @@ offset_left = 33.46
 offset_top = 62.63
 offset_right = 329.94
 offset_bottom = 95.97
-theme_override_colors/font_color = Color(0.9372549, 0.75686276, 0.37254903, 1)
+theme_override_colors/font_color = Color(0.937255, 0.756863, 0.372549, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = 0
@@ -1517,7 +1517,7 @@ layout_mode = 0
 offset_left = 1292.75
 offset_top = 160.71
 offset_right = 1641.53
-offset_bottom = 961.79004
+offset_bottom = 961.79
 texture = ExtResource("9_lmeum")
 patch_margin_left = 86
 patch_margin_top = 144
@@ -1565,7 +1565,7 @@ anchors_preset = 0
 offset_left = 1314.97
 offset_top = 206.02
 offset_right = 1410.97
-offset_bottom = 304.02002
+offset_bottom = 304.02
 mouse_filter = 2
 
 [node name="Select" type="TextureButton" parent="UI/Canvas/SlotHair"]
@@ -1590,12 +1590,12 @@ texture = ExtResource("11_xloob")
 expand_mode = 1
 
 [node name="Item" type="TextureRect" parent="UI/Canvas/SlotHair"]
-modulate = Color(0.49145108, 0.90865034, 0.65421087, 1)
+modulate = Color(0.491451, 0.90865, 0.654211, 1)
 layout_mode = 0
 offset_left = 3.2
 offset_top = 4.2
-offset_right = 92.799995
-offset_bottom = 93.799995
+offset_right = 92.8
+offset_bottom = 93.8
 mouse_filter = 2
 texture = ExtResource("12_gf2m4")
 expand_mode = 1
@@ -1617,7 +1617,7 @@ anchors_preset = 0
 offset_left = 1418.97
 offset_top = 206.02
 offset_right = 1514.97
-offset_bottom = 304.02002
+offset_bottom = 304.02
 mouse_filter = 2
 
 [node name="Select" type="TextureButton" parent="UI/Canvas/SlotEye"]
@@ -1645,8 +1645,8 @@ expand_mode = 1
 layout_mode = 0
 offset_left = 3.2
 offset_top = 4.2
-offset_right = 92.799995
-offset_bottom = 93.799995
+offset_right = 92.8
+offset_bottom = 93.8
 mouse_filter = 2
 texture = ExtResource("15_sxq0e")
 expand_mode = 1
@@ -1669,7 +1669,7 @@ anchors_preset = 0
 offset_left = 1522.97
 offset_top = 206.02
 offset_right = 1618.97
-offset_bottom = 304.02002
+offset_bottom = 304.02
 mouse_filter = 2
 
 [node name="Select" type="TextureButton" parent="UI/Canvas/SlotBeard"]
@@ -1697,8 +1697,8 @@ visible = false
 layout_mode = 0
 offset_left = 3.2
 offset_top = 4.2
-offset_right = 92.799995
-offset_bottom = 93.799995
+offset_right = 92.8
+offset_bottom = 93.8
 mouse_filter = 2
 texture = ExtResource("18_hk2yq")
 expand_mode = 1
@@ -1746,12 +1746,12 @@ texture = ExtResource("19_meeli")
 expand_mode = 1
 
 [node name="Item" type="TextureRect" parent="UI/Canvas/SlotSkin"]
-modulate = Color(0.98039216, 0.7882353, 0.6745098, 1)
+modulate = Color(0.980392, 0.788235, 0.67451, 1)
 layout_mode = 0
 offset_left = 3.2
 offset_top = 4.2
-offset_right = 92.799995
-offset_bottom = 93.799995
+offset_right = 92.8
+offset_bottom = 93.8
 mouse_filter = 2
 texture = ExtResource("20_oxm27")
 expand_mode = 1
@@ -1802,8 +1802,8 @@ visible = false
 layout_mode = 0
 offset_left = 3.2
 offset_top = 4.2
-offset_right = 92.799995
-offset_bottom = 93.799995
+offset_right = 92.8
+offset_bottom = 93.8
 mouse_filter = 2
 texture = ExtResource("22_8avo4")
 expand_mode = 1
@@ -1854,8 +1854,8 @@ expand_mode = 1
 layout_mode = 0
 offset_left = 3.2
 offset_top = 4.2
-offset_right = 92.799995
-offset_bottom = 93.799995
+offset_right = 92.8
+offset_bottom = 93.8
 mouse_filter = 2
 texture = ExtResource("24_3kut1")
 expand_mode = 1
@@ -1905,8 +1905,8 @@ expand_mode = 1
 layout_mode = 0
 offset_left = 3.2
 offset_top = 4.2
-offset_right = 92.799995
-offset_bottom = 93.799995
+offset_right = 92.8
+offset_bottom = 93.8
 mouse_filter = 2
 texture = ExtResource("26_pcj6w")
 expand_mode = 1
@@ -1956,8 +1956,8 @@ expand_mode = 1
 layout_mode = 0
 offset_left = 3.2
 offset_top = 4.2
-offset_right = 92.799995
-offset_bottom = 93.799995
+offset_right = 92.8
+offset_bottom = 93.8
 mouse_filter = 2
 texture = ExtResource("28_eabtx")
 expand_mode = 1
@@ -2011,7 +2011,7 @@ anchors_preset = 0
 offset_right = 18.6
 offset_bottom = 44.05
 mouse_filter = 2
-metadata/cell_offset = Vector2(85.689995, 29.92)
+metadata/cell_offset = Vector2(85.69, 29.92)
 
 [node name="HitArea" type="Button" parent="UI/Canvas/ArrowNext"]
 layout_mode = 0
@@ -2048,12 +2048,12 @@ patch_margin_right = 21
 patch_margin_bottom = 26
 
 [node name="SelectFrame" type="NinePatchRect" parent="UI/Canvas"]
-modulate = Color(0.7176471, 1, 0.5294118, 1)
+modulate = Color(0.717647, 1, 0.529412, 1)
 layout_mode = 0
-offset_left = 1317.375
+offset_left = 1317.38
 offset_top = 209.185
-offset_right = 1408.565
-offset_bottom = 300.85498
+offset_right = 1408.57
+offset_bottom = 300.855
 texture = ExtResource("31_kxh68")
 patch_margin_left = 21
 patch_margin_top = 26
@@ -2064,8 +2064,8 @@ patch_margin_bottom = 26
 layout_mode = 0
 offset_left = 1316.65
 offset_top = 787.92
-offset_right = 1436.9501
-offset_bottom = 813.51996
+offset_right = 1436.95
+offset_bottom = 813.52
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
@@ -2095,7 +2095,7 @@ layout_mode = 0
 offset_left = 1357.94
 offset_top = 824.53
 offset_right = 1575.34
-offset_bottom = 863.91003
+offset_bottom = 863.91
 mouse_filter = 2
 texture = ExtResource("33_gpkwh")
 expand_mode = 1
@@ -2137,7 +2137,7 @@ offset_left = 1311.85
 offset_top = 897.65
 offset_right = 1351.85
 offset_bottom = 943.89
-pivot_offset = Vector2(20, 23.119995)
+pivot_offset = Vector2(20, 23.12)
 tooltip_text = "Randomize every part and the skin, hair and beard colors."
 texture_normal = ExtResource("35_0g5qu")
 ignore_texture_size = true
@@ -2147,9 +2147,9 @@ stretch_mode = 0
 layout_mode = 0
 offset_left = 1373.21
 offset_top = 897.65
-offset_right = 1627.6799
+offset_right = 1627.68
 offset_bottom = 943.89
-pivot_offset = Vector2(127.234985, 23.119995)
+pivot_offset = Vector2(127.235, 23.12)
 tooltip_text = "Save the current character as a reusable scene with a 512x512 preview (Godot editor only)."
 focus_mode = 0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
@@ -2168,7 +2168,7 @@ theme_override_styles/focus = SubResource("StyleBoxTexture_khkhe")
 text = "Save Character"
 
 [node name="PanelPartsList" type="NinePatchRect" parent="UI/Canvas"]
-modulate = Color(0.18431373, 0.2, 0.24705882, 1)
+modulate = Color(0.184314, 0.2, 0.247059, 1)
 layout_mode = 0
 offset_left = 1641.53
 offset_top = 160.71
@@ -2183,9 +2183,9 @@ patch_margin_bottom = 9
 [node name="ListTitle" type="Label" parent="UI/Canvas"]
 layout_mode = 0
 offset_left = 1657.39
-offset_top = 175.93001
+offset_top = 175.93
 offset_right = 1892.74
-offset_bottom = 198.93001
+offset_bottom = 198.93
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
@@ -2202,16 +2202,16 @@ vertical_alignment = 1
 layout_mode = 0
 offset_left = 1642.56
 offset_top = 211.28
-offset_right = 1918.9701
+offset_right = 1918.97
 offset_bottom = 677.94
 mouse_filter = 2
-color = Color(0.13725491, 0.14901961, 0.1882353, 1)
+color = Color(0.137255, 0.14902, 0.188235, 1)
 
 [node name="ListScroll" type="ScrollContainer" parent="UI/Canvas"]
 layout_mode = 0
 offset_left = 1642.56
 offset_top = 211.28
-offset_right = 1918.9701
+offset_right = 1918.97
 offset_bottom = 677.94
 horizontal_scroll_mode = 0
 vertical_scroll_mode = 3
@@ -2248,7 +2248,7 @@ theme_override_styles/hover = SubResource("StyleBoxEmpty_ml4dt")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_ee30m")
 
 [node name="Image" type="TextureRect" parent="UI/Canvas/ListScroll/ListMargin/ListGrid/ListCell_Hair_0"]
-modulate = Color(0.49145108, 0.90865034, 0.65421087, 1)
+modulate = Color(0.491451, 0.90865, 0.654211, 1)
 layout_mode = 0
 offset_left = 1.6
 offset_top = 1.6
@@ -2269,7 +2269,7 @@ theme_override_styles/hover = SubResource("StyleBoxEmpty_ub2r5")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_f11wd")
 
 [node name="Image" type="TextureRect" parent="UI/Canvas/ListScroll/ListMargin/ListGrid/ListCell_Hair_1"]
-modulate = Color(0.49145108, 0.90865034, 0.65421087, 1)
+modulate = Color(0.491451, 0.90865, 0.654211, 1)
 layout_mode = 0
 offset_left = 1.6
 offset_top = 1.6
@@ -2290,7 +2290,7 @@ theme_override_styles/hover = SubResource("StyleBoxEmpty_woxe3")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_icod1")
 
 [node name="Image" type="TextureRect" parent="UI/Canvas/ListScroll/ListMargin/ListGrid/ListCell_Hair_2"]
-modulate = Color(0.49145108, 0.90865034, 0.65421087, 1)
+modulate = Color(0.491451, 0.90865, 0.654211, 1)
 layout_mode = 0
 offset_left = 1.6
 offset_top = 1.6
@@ -2311,7 +2311,7 @@ theme_override_styles/hover = SubResource("StyleBoxEmpty_y3cvp")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_xeoyd")
 
 [node name="Image" type="TextureRect" parent="UI/Canvas/ListScroll/ListMargin/ListGrid/ListCell_Hair_3"]
-modulate = Color(0.49145108, 0.90865034, 0.65421087, 1)
+modulate = Color(0.491451, 0.90865, 0.654211, 1)
 layout_mode = 0
 offset_left = 1.6
 offset_top = 1.6
@@ -2332,7 +2332,7 @@ theme_override_styles/hover = SubResource("StyleBoxEmpty_a5d26")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_wrov0")
 
 [node name="Image" type="TextureRect" parent="UI/Canvas/ListScroll/ListMargin/ListGrid/ListCell_Hair_4"]
-modulate = Color(0.49145108, 0.90865034, 0.65421087, 1)
+modulate = Color(0.491451, 0.90865, 0.654211, 1)
 layout_mode = 0
 offset_left = 1.6
 offset_top = 1.6
@@ -2353,7 +2353,7 @@ theme_override_styles/hover = SubResource("StyleBoxEmpty_m4sy0")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_u8iam")
 
 [node name="Image" type="TextureRect" parent="UI/Canvas/ListScroll/ListMargin/ListGrid/ListCell_Hair_5"]
-modulate = Color(0.49145108, 0.90865034, 0.65421087, 1)
+modulate = Color(0.491451, 0.90865, 0.654211, 1)
 layout_mode = 0
 offset_left = 1.6
 offset_top = 1.6
@@ -2374,7 +2374,7 @@ theme_override_styles/hover = SubResource("StyleBoxEmpty_gxa7b")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_0rvns")
 
 [node name="Image" type="TextureRect" parent="UI/Canvas/ListScroll/ListMargin/ListGrid/ListCell_Hair_6"]
-modulate = Color(0.49145108, 0.90865034, 0.65421087, 1)
+modulate = Color(0.491451, 0.90865, 0.654211, 1)
 layout_mode = 0
 offset_left = 1.6
 offset_top = 1.6
@@ -2395,7 +2395,7 @@ theme_override_styles/hover = SubResource("StyleBoxEmpty_juash")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_givek")
 
 [node name="Image" type="TextureRect" parent="UI/Canvas/ListScroll/ListMargin/ListGrid/ListCell_Hair_7"]
-modulate = Color(0.49145108, 0.90865034, 0.65421087, 1)
+modulate = Color(0.491451, 0.90865, 0.654211, 1)
 layout_mode = 0
 offset_left = 1.6
 offset_top = 1.6
@@ -2416,7 +2416,7 @@ theme_override_styles/hover = SubResource("StyleBoxEmpty_pmphu")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_7nc6r")
 
 [node name="Image" type="TextureRect" parent="UI/Canvas/ListScroll/ListMargin/ListGrid/ListCell_Hair_8"]
-modulate = Color(0.49145108, 0.90865034, 0.65421087, 1)
+modulate = Color(0.491451, 0.90865, 0.654211, 1)
 layout_mode = 0
 offset_left = 1.6
 offset_top = 1.6
@@ -2437,7 +2437,7 @@ theme_override_styles/hover = SubResource("StyleBoxEmpty_kw1c7")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_mh6t3")
 
 [node name="Image" type="TextureRect" parent="UI/Canvas/ListScroll/ListMargin/ListGrid/ListCell_Hair_9"]
-modulate = Color(0.49145108, 0.90865034, 0.65421087, 1)
+modulate = Color(0.491451, 0.90865, 0.654211, 1)
 layout_mode = 0
 offset_left = 1.6
 offset_top = 1.6
@@ -2458,7 +2458,7 @@ theme_override_styles/hover = SubResource("StyleBoxEmpty_juhqb")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_4ojv1")
 
 [node name="Image" type="TextureRect" parent="UI/Canvas/ListScroll/ListMargin/ListGrid/ListCell_Hair_10"]
-modulate = Color(0.49145108, 0.90865034, 0.65421087, 1)
+modulate = Color(0.491451, 0.90865, 0.654211, 1)
 layout_mode = 0
 offset_left = 1.6
 offset_top = 1.6
@@ -2479,7 +2479,7 @@ theme_override_styles/hover = SubResource("StyleBoxEmpty_k718o")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_3ii80")
 
 [node name="Image" type="TextureRect" parent="UI/Canvas/ListScroll/ListMargin/ListGrid/ListCell_Hair_11"]
-modulate = Color(0.49145108, 0.90865034, 0.65421087, 1)
+modulate = Color(0.491451, 0.90865, 0.654211, 1)
 layout_mode = 0
 offset_left = 1.6
 offset_top = 1.6
@@ -2500,7 +2500,7 @@ theme_override_styles/hover = SubResource("StyleBoxEmpty_1memb")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_3uy28")
 
 [node name="Image" type="TextureRect" parent="UI/Canvas/ListScroll/ListMargin/ListGrid/ListCell_Hair_12"]
-modulate = Color(0.49145108, 0.90865034, 0.65421087, 1)
+modulate = Color(0.491451, 0.90865, 0.654211, 1)
 layout_mode = 0
 offset_left = 1.6
 offset_top = 1.6
@@ -2521,7 +2521,7 @@ theme_override_styles/hover = SubResource("StyleBoxEmpty_acrpt")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_yvcs4")
 
 [node name="Image" type="TextureRect" parent="UI/Canvas/ListScroll/ListMargin/ListGrid/ListCell_Hair_13"]
-modulate = Color(0.49145108, 0.90865034, 0.65421087, 1)
+modulate = Color(0.491451, 0.90865, 0.654211, 1)
 layout_mode = 0
 offset_left = 1.6
 offset_top = 1.6
@@ -2542,7 +2542,7 @@ theme_override_styles/hover = SubResource("StyleBoxEmpty_egw1q")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_8l0ui")
 
 [node name="Image" type="TextureRect" parent="UI/Canvas/ListScroll/ListMargin/ListGrid/ListCell_Hair_14"]
-modulate = Color(0.49145108, 0.90865034, 0.65421087, 1)
+modulate = Color(0.491451, 0.90865, 0.654211, 1)
 layout_mode = 0
 offset_left = 1.6
 offset_top = 1.6
@@ -2573,7 +2573,7 @@ texture = ExtResource("54_2ob38")
 expand_mode = 1
 
 [node name="Image" type="TextureRect" parent="UI/Canvas/ListScroll/ListMargin/ListGrid/ListCell_Hair_15"]
-modulate = Color(0.49145108, 0.90865034, 0.65421087, 1)
+modulate = Color(0.491451, 0.90865, 0.654211, 1)
 layout_mode = 0
 offset_left = 1.6
 offset_top = 1.6
@@ -2594,7 +2594,7 @@ theme_override_styles/hover = SubResource("StyleBoxEmpty_a6wh6")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_x5hpi")
 
 [node name="Image" type="TextureRect" parent="UI/Canvas/ListScroll/ListMargin/ListGrid/ListCell_Hair_16"]
-modulate = Color(0.49145108, 0.90865034, 0.65421087, 1)
+modulate = Color(0.491451, 0.90865, 0.654211, 1)
 layout_mode = 0
 offset_left = 1.6
 offset_top = 1.6
@@ -2615,7 +2615,7 @@ theme_override_styles/hover = SubResource("StyleBoxEmpty_k460r")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_rq53y")
 
 [node name="Image" type="TextureRect" parent="UI/Canvas/ListScroll/ListMargin/ListGrid/ListCell_Hair_17"]
-modulate = Color(0.49145108, 0.90865034, 0.65421087, 1)
+modulate = Color(0.491451, 0.90865, 0.654211, 1)
 layout_mode = 0
 offset_left = 1.6
 offset_top = 1.6
@@ -2636,7 +2636,7 @@ theme_override_styles/hover = SubResource("StyleBoxEmpty_dy5ws")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_xufnn")
 
 [node name="Image" type="TextureRect" parent="UI/Canvas/ListScroll/ListMargin/ListGrid/ListCell_Hair_18"]
-modulate = Color(0.49145108, 0.90865034, 0.65421087, 1)
+modulate = Color(0.491451, 0.90865, 0.654211, 1)
 layout_mode = 0
 offset_left = 1.6
 offset_top = 1.6
@@ -2657,7 +2657,7 @@ theme_override_styles/hover = SubResource("StyleBoxEmpty_8auqs")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_dvq7h")
 
 [node name="Image" type="TextureRect" parent="UI/Canvas/ListScroll/ListMargin/ListGrid/ListCell_Hair_19"]
-modulate = Color(0.49145108, 0.90865034, 0.65421087, 1)
+modulate = Color(0.491451, 0.90865, 0.654211, 1)
 layout_mode = 0
 offset_left = 1.6
 offset_top = 1.6
@@ -2678,7 +2678,7 @@ theme_override_styles/hover = SubResource("StyleBoxEmpty_yap5t")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_kbjvx")
 
 [node name="Image" type="TextureRect" parent="UI/Canvas/ListScroll/ListMargin/ListGrid/ListCell_Hair_20"]
-modulate = Color(0.49145108, 0.90865034, 0.65421087, 1)
+modulate = Color(0.491451, 0.90865, 0.654211, 1)
 layout_mode = 0
 offset_left = 1.6
 offset_top = 1.6
@@ -2699,7 +2699,7 @@ theme_override_styles/hover = SubResource("StyleBoxEmpty_1ukfb")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_xdb6w")
 
 [node name="Image" type="TextureRect" parent="UI/Canvas/ListScroll/ListMargin/ListGrid/ListCell_Hair_21"]
-modulate = Color(0.49145108, 0.90865034, 0.65421087, 1)
+modulate = Color(0.491451, 0.90865, 0.654211, 1)
 layout_mode = 0
 offset_left = 1.6
 offset_top = 1.6
@@ -2720,7 +2720,7 @@ theme_override_styles/hover = SubResource("StyleBoxEmpty_ih8nl")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_dclmo")
 
 [node name="Image" type="TextureRect" parent="UI/Canvas/ListScroll/ListMargin/ListGrid/ListCell_Hair_22"]
-modulate = Color(0.49145108, 0.90865034, 0.65421087, 1)
+modulate = Color(0.491451, 0.90865, 0.654211, 1)
 layout_mode = 0
 offset_left = 1.6
 offset_top = 1.6
@@ -2741,7 +2741,7 @@ theme_override_styles/hover = SubResource("StyleBoxEmpty_o3n8s")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_p74qw")
 
 [node name="Image" type="TextureRect" parent="UI/Canvas/ListScroll/ListMargin/ListGrid/ListCell_Hair_23"]
-modulate = Color(0.49145108, 0.90865034, 0.65421087, 1)
+modulate = Color(0.491451, 0.90865, 0.654211, 1)
 layout_mode = 0
 offset_left = 1.6
 offset_top = 1.6
@@ -2762,7 +2762,7 @@ theme_override_styles/hover = SubResource("StyleBoxEmpty_ruwaa")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_tkpwx")
 
 [node name="Image" type="TextureRect" parent="UI/Canvas/ListScroll/ListMargin/ListGrid/ListCell_Hair_24"]
-modulate = Color(0.49145108, 0.90865034, 0.65421087, 1)
+modulate = Color(0.491451, 0.90865, 0.654211, 1)
 layout_mode = 0
 offset_left = 1.6
 offset_top = 1.6
@@ -2783,7 +2783,7 @@ theme_override_styles/hover = SubResource("StyleBoxEmpty_v6khq")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_kjipv")
 
 [node name="Image" type="TextureRect" parent="UI/Canvas/ListScroll/ListMargin/ListGrid/ListCell_Hair_25"]
-modulate = Color(0.49145108, 0.90865034, 0.65421087, 1)
+modulate = Color(0.491451, 0.90865, 0.654211, 1)
 layout_mode = 0
 offset_left = 1.6
 offset_top = 1.6
@@ -2797,7 +2797,7 @@ expand_mode = 1
 anchors_preset = 0
 offset_left = 1642.17
 offset_top = 687.94
-offset_right = 1919.3601
+offset_right = 1919.36
 offset_bottom = 957.69
 mouse_filter = 2
 
@@ -2819,10 +2819,10 @@ offset_bottom = 153.8
 
 [node name="SaturationValuePointer" type="TextureRect" parent="UI/Canvas/ColorPicker/SaturationValue"]
 layout_mode = 0
-offset_left = 65.111404
-offset_top = 8.549578
-offset_right = 76.111404
-offset_bottom = 19.549578
+offset_left = 65.1114
+offset_top = 8.54958
+offset_right = 76.1114
+offset_bottom = 19.5496
 mouse_filter = 2
 texture = ExtResource("65_m0vmr")
 expand_mode = 1
@@ -2845,19 +2845,19 @@ offset_bottom = 154.0
 [node name="HuePointer" type="TextureRect" parent="UI/Canvas/ColorPicker"]
 layout_mode = 0
 offset_left = 170.09
-offset_top = 85.653465
+offset_top = 85.6535
 offset_right = 184.09
-offset_bottom = 99.653465
+offset_bottom = 99.6535
 mouse_filter = 2
 texture = ExtResource("67_djdpc")
 expand_mode = 1
 
 [node name="ColorPreset0" type="Button" parent="UI/Canvas/ColorPicker"]
 layout_mode = 0
-offset_left = 190.39001
-offset_top = 0.7999878
-offset_right = 208.39001
-offset_bottom = 18.799988
+offset_left = 190.39
+offset_top = 0.799988
+offset_right = 208.39
+offset_bottom = 18.8
 pivot_offset = Vector2(9, 9)
 tooltip_text = "Apply preset color #222121."
 focus_mode = 0
@@ -2868,10 +2868,10 @@ theme_override_styles/focus = SubResource("StyleBoxFlat_4imvn")
 
 [node name="ColorPreset1" type="Button" parent="UI/Canvas/ColorPicker"]
 layout_mode = 0
-offset_left = 210.39001
-offset_top = 0.7999878
-offset_right = 228.39001
-offset_bottom = 18.799988
+offset_left = 210.39
+offset_top = 0.799988
+offset_right = 228.39
+offset_bottom = 18.8
 pivot_offset = Vector2(9, 9)
 tooltip_text = "Apply preset color #592E2F."
 focus_mode = 0
@@ -2882,10 +2882,10 @@ theme_override_styles/focus = SubResource("StyleBoxFlat_etuqg")
 
 [node name="ColorPreset2" type="Button" parent="UI/Canvas/ColorPicker"]
 layout_mode = 0
-offset_left = 230.39001
-offset_top = 0.7999878
-offset_right = 248.39001
-offset_bottom = 18.799988
+offset_left = 230.39
+offset_top = 0.799988
+offset_right = 248.39
+offset_bottom = 18.8
 pivot_offset = Vector2(9, 9)
 tooltip_text = "Apply preset color #604535."
 focus_mode = 0
@@ -2896,10 +2896,10 @@ theme_override_styles/focus = SubResource("StyleBoxFlat_c66h7")
 
 [node name="ColorPreset3" type="Button" parent="UI/Canvas/ColorPicker"]
 layout_mode = 0
-offset_left = 250.39001
-offset_top = 0.7999878
+offset_left = 250.39
+offset_top = 0.799988
 offset_right = 268.39
-offset_bottom = 18.799988
+offset_bottom = 18.8
 pivot_offset = Vector2(9, 9)
 tooltip_text = "Apply preset color #8C7A74."
 focus_mode = 0
@@ -2910,10 +2910,10 @@ theme_override_styles/focus = SubResource("StyleBoxFlat_lhi1t")
 
 [node name="ColorPreset4" type="Button" parent="UI/Canvas/ColorPicker"]
 layout_mode = 0
-offset_left = 190.39001
-offset_top = 20.799988
-offset_right = 208.39001
-offset_bottom = 38.799988
+offset_left = 190.39
+offset_top = 20.8
+offset_right = 208.39
+offset_bottom = 38.8
 pivot_offset = Vector2(9, 9)
 tooltip_text = "Apply preset color #8C7A74."
 focus_mode = 0
@@ -2924,10 +2924,10 @@ theme_override_styles/focus = SubResource("StyleBoxFlat_mws3x")
 
 [node name="ColorPreset5" type="Button" parent="UI/Canvas/ColorPicker"]
 layout_mode = 0
-offset_left = 210.39001
-offset_top = 20.799988
-offset_right = 228.39001
-offset_bottom = 38.799988
+offset_left = 210.39
+offset_top = 20.8
+offset_right = 228.39
+offset_bottom = 38.8
 pivot_offset = Vector2(9, 9)
 tooltip_text = "Apply preset color #C7A275."
 focus_mode = 0
@@ -2938,10 +2938,10 @@ theme_override_styles/focus = SubResource("StyleBoxFlat_oqo36")
 
 [node name="ColorPreset6" type="Button" parent="UI/Canvas/ColorPicker"]
 layout_mode = 0
-offset_left = 230.39001
-offset_top = 20.799988
-offset_right = 248.39001
-offset_bottom = 38.799988
+offset_left = 230.39
+offset_top = 20.8
+offset_right = 248.39
+offset_bottom = 38.8
 pivot_offset = Vector2(9, 9)
 tooltip_text = "Apply preset color #F3B840."
 focus_mode = 0
@@ -2952,10 +2952,10 @@ theme_override_styles/focus = SubResource("StyleBoxFlat_xgxso")
 
 [node name="ColorPreset7" type="Button" parent="UI/Canvas/ColorPicker"]
 layout_mode = 0
-offset_left = 250.39001
-offset_top = 20.799988
+offset_left = 250.39
+offset_top = 20.8
 offset_right = 268.39
-offset_bottom = 38.799988
+offset_bottom = 38.8
 pivot_offset = Vector2(9, 9)
 tooltip_text = "Apply preset color #FCFDED."
 focus_mode = 0
@@ -2966,10 +2966,10 @@ theme_override_styles/focus = SubResource("StyleBoxFlat_ge5m5")
 
 [node name="ColorPreset8" type="Button" parent="UI/Canvas/ColorPicker"]
 layout_mode = 0
-offset_left = 190.39001
-offset_top = 40.799988
-offset_right = 208.39001
-offset_bottom = 58.799988
+offset_left = 190.39
+offset_top = 40.8
+offset_right = 208.39
+offset_bottom = 58.8
 pivot_offset = Vector2(9, 9)
 tooltip_text = "Apply preset color #E57130."
 focus_mode = 0
@@ -2980,10 +2980,10 @@ theme_override_styles/focus = SubResource("StyleBoxFlat_xa3fi")
 
 [node name="ColorPreset9" type="Button" parent="UI/Canvas/ColorPicker"]
 layout_mode = 0
-offset_left = 210.39001
-offset_top = 40.799988
-offset_right = 228.39001
-offset_bottom = 58.799988
+offset_left = 210.39
+offset_top = 40.8
+offset_right = 228.39
+offset_bottom = 58.8
 pivot_offset = Vector2(9, 9)
 tooltip_text = "Apply preset color #99220E."
 focus_mode = 0
@@ -2994,10 +2994,10 @@ theme_override_styles/focus = SubResource("StyleBoxFlat_b6vnr")
 
 [node name="ColorPreset10" type="Button" parent="UI/Canvas/ColorPicker"]
 layout_mode = 0
-offset_left = 230.39001
-offset_top = 40.799988
-offset_right = 248.39001
-offset_bottom = 58.799988
+offset_left = 230.39
+offset_top = 40.8
+offset_right = 248.39
+offset_bottom = 58.8
 pivot_offset = Vector2(9, 9)
 tooltip_text = "Apply preset color #E33C77."
 focus_mode = 0
@@ -3008,10 +3008,10 @@ theme_override_styles/focus = SubResource("StyleBoxFlat_xu6c2")
 
 [node name="ColorPreset11" type="Button" parent="UI/Canvas/ColorPicker"]
 layout_mode = 0
-offset_left = 250.39001
-offset_top = 40.799988
+offset_left = 250.39
+offset_top = 40.8
 offset_right = 268.39
-offset_bottom = 58.799988
+offset_bottom = 58.8
 pivot_offset = Vector2(9, 9)
 tooltip_text = "Apply preset color #EF9ECE."
 focus_mode = 0
@@ -3022,10 +3022,10 @@ theme_override_styles/focus = SubResource("StyleBoxFlat_8dre5")
 
 [node name="ColorPreset12" type="Button" parent="UI/Canvas/ColorPicker"]
 layout_mode = 0
-offset_left = 190.39001
-offset_top = 60.799988
-offset_right = 208.39001
-offset_bottom = 78.79999
+offset_left = 190.39
+offset_top = 60.8
+offset_right = 208.39
+offset_bottom = 78.8
 pivot_offset = Vector2(9, 9)
 tooltip_text = "Apply preset color #875BF1."
 focus_mode = 0
@@ -3036,10 +3036,10 @@ theme_override_styles/focus = SubResource("StyleBoxFlat_1r1ql")
 
 [node name="ColorPreset13" type="Button" parent="UI/Canvas/ColorPicker"]
 layout_mode = 0
-offset_left = 210.39001
-offset_top = 60.799988
-offset_right = 228.39001
-offset_bottom = 78.79999
+offset_left = 210.39
+offset_top = 60.8
+offset_right = 228.39
+offset_bottom = 78.8
 pivot_offset = Vector2(9, 9)
 tooltip_text = "Apply preset color #3252AC."
 focus_mode = 0
@@ -3050,10 +3050,10 @@ theme_override_styles/focus = SubResource("StyleBoxFlat_vjkqt")
 
 [node name="ColorPreset14" type="Button" parent="UI/Canvas/ColorPicker"]
 layout_mode = 0
-offset_left = 230.39001
-offset_top = 60.799988
-offset_right = 248.39001
-offset_bottom = 78.79999
+offset_left = 230.39
+offset_top = 60.8
+offset_right = 248.39
+offset_bottom = 78.8
 pivot_offset = Vector2(9, 9)
 tooltip_text = "Apply preset color #84B9F1."
 focus_mode = 0
@@ -3064,10 +3064,10 @@ theme_override_styles/focus = SubResource("StyleBoxFlat_vw1e5")
 
 [node name="ColorPreset15" type="Button" parent="UI/Canvas/ColorPicker"]
 layout_mode = 0
-offset_left = 250.39001
-offset_top = 60.799988
+offset_left = 250.39
+offset_top = 60.8
 offset_right = 268.39
-offset_bottom = 78.79999
+offset_bottom = 78.8
 pivot_offset = Vector2(9, 9)
 tooltip_text = "Apply preset color #3A7A5E."
 focus_mode = 0
@@ -3078,10 +3078,10 @@ theme_override_styles/focus = SubResource("StyleBoxFlat_4seoa")
 
 [node name="ColorPreset16" type="Button" parent="UI/Canvas/ColorPicker"]
 layout_mode = 0
-offset_left = 190.39001
-offset_top = 94.58002
-offset_right = 208.39001
-offset_bottom = 112.58002
+offset_left = 190.39
+offset_top = 94.58
+offset_right = 208.39
+offset_bottom = 112.58
 pivot_offset = Vector2(9, 9)
 tooltip_text = "Apply preset color #FAC9AC."
 focus_mode = 0
@@ -3092,10 +3092,10 @@ theme_override_styles/focus = SubResource("StyleBoxFlat_b3ew5")
 
 [node name="ColorPreset17" type="Button" parent="UI/Canvas/ColorPicker"]
 layout_mode = 0
-offset_left = 210.39001
-offset_top = 94.58002
-offset_right = 228.39001
-offset_bottom = 112.58002
+offset_left = 210.39
+offset_top = 94.58
+offset_right = 228.39
+offset_bottom = 112.58
 pivot_offset = Vector2(9, 9)
 tooltip_text = "Apply preset color #EAA888."
 focus_mode = 0
@@ -3106,10 +3106,10 @@ theme_override_styles/focus = SubResource("StyleBoxFlat_vj7le")
 
 [node name="ColorPreset18" type="Button" parent="UI/Canvas/ColorPicker"]
 layout_mode = 0
-offset_left = 230.39001
-offset_top = 94.58002
-offset_right = 248.39001
-offset_bottom = 112.58002
+offset_left = 230.39
+offset_top = 94.58
+offset_right = 248.39
+offset_bottom = 112.58
 pivot_offset = Vector2(9, 9)
 tooltip_text = "Apply preset color #DBA77B."
 focus_mode = 0
@@ -3120,10 +3120,10 @@ theme_override_styles/focus = SubResource("StyleBoxFlat_wsu6n")
 
 [node name="ColorPreset19" type="Button" parent="UI/Canvas/ColorPicker"]
 layout_mode = 0
-offset_left = 250.39001
-offset_top = 94.58002
+offset_left = 250.39
+offset_top = 94.58
 offset_right = 268.39
-offset_bottom = 112.58002
+offset_bottom = 112.58
 pivot_offset = Vector2(9, 9)
 tooltip_text = "Apply preset color #BF8670."
 focus_mode = 0
@@ -3134,10 +3134,10 @@ theme_override_styles/focus = SubResource("StyleBoxFlat_48wje")
 
 [node name="ColorPreset20" type="Button" parent="UI/Canvas/ColorPicker"]
 layout_mode = 0
-offset_left = 190.39001
-offset_top = 114.58002
-offset_right = 208.39001
-offset_bottom = 132.58002
+offset_left = 190.39
+offset_top = 114.58
+offset_right = 208.39
+offset_bottom = 132.58
 pivot_offset = Vector2(9, 9)
 tooltip_text = "Apply preset color #D77762."
 focus_mode = 0
@@ -3148,10 +3148,10 @@ theme_override_styles/focus = SubResource("StyleBoxFlat_biu70")
 
 [node name="ColorPreset21" type="Button" parent="UI/Canvas/ColorPicker"]
 layout_mode = 0
-offset_left = 210.39001
-offset_top = 114.58002
-offset_right = 228.39001
-offset_bottom = 132.58002
+offset_left = 210.39
+offset_top = 114.58
+offset_right = 228.39
+offset_bottom = 132.58
 pivot_offset = Vector2(9, 9)
 tooltip_text = "Apply preset color #B5805F."
 focus_mode = 0
@@ -3162,10 +3162,10 @@ theme_override_styles/focus = SubResource("StyleBoxFlat_t5elh")
 
 [node name="ColorPreset22" type="Button" parent="UI/Canvas/ColorPicker"]
 layout_mode = 0
-offset_left = 230.39001
-offset_top = 114.58002
-offset_right = 248.39001
-offset_bottom = 132.58002
+offset_left = 230.39
+offset_top = 114.58
+offset_right = 248.39
+offset_bottom = 132.58
 pivot_offset = Vector2(9, 9)
 tooltip_text = "Apply preset color #A57860."
 focus_mode = 0
@@ -3176,10 +3176,10 @@ theme_override_styles/focus = SubResource("StyleBoxFlat_jc6oq")
 
 [node name="ColorPreset23" type="Button" parent="UI/Canvas/ColorPicker"]
 layout_mode = 0
-offset_left = 250.39001
-offset_top = 114.58002
+offset_left = 250.39
+offset_top = 114.58
 offset_right = 268.39
-offset_bottom = 132.58002
+offset_bottom = 132.58
 pivot_offset = Vector2(9, 9)
 tooltip_text = "Apply preset color #B46941."
 focus_mode = 0
@@ -3190,10 +3190,10 @@ theme_override_styles/focus = SubResource("StyleBoxFlat_xi5h4")
 
 [node name="ColorPreset24" type="Button" parent="UI/Canvas/ColorPicker"]
 layout_mode = 0
-offset_left = 190.39001
-offset_top = 134.58002
-offset_right = 208.39001
-offset_bottom = 152.58002
+offset_left = 190.39
+offset_top = 134.58
+offset_right = 208.39
+offset_bottom = 152.58
 pivot_offset = Vector2(9, 9)
 tooltip_text = "Apply preset color #744D45."
 focus_mode = 0
@@ -3204,10 +3204,10 @@ theme_override_styles/focus = SubResource("StyleBoxFlat_myf7f")
 
 [node name="ColorPreset25" type="Button" parent="UI/Canvas/ColorPicker"]
 layout_mode = 0
-offset_left = 210.39001
-offset_top = 134.58002
-offset_right = 228.39001
-offset_bottom = 152.58002
+offset_left = 210.39
+offset_top = 134.58
+offset_right = 228.39
+offset_bottom = 152.58
 pivot_offset = Vector2(9, 9)
 tooltip_text = "Apply preset color #67403B."
 focus_mode = 0
@@ -3218,10 +3218,10 @@ theme_override_styles/focus = SubResource("StyleBoxFlat_mnqwh")
 
 [node name="ColorPreset26" type="Button" parent="UI/Canvas/ColorPicker"]
 layout_mode = 0
-offset_left = 230.39001
-offset_top = 134.58002
-offset_right = 248.39001
-offset_bottom = 152.58002
+offset_left = 230.39
+offset_top = 134.58
+offset_right = 248.39
+offset_bottom = 152.58
 pivot_offset = Vector2(9, 9)
 tooltip_text = "Apply preset color #93B26A."
 focus_mode = 0
@@ -3232,10 +3232,10 @@ theme_override_styles/focus = SubResource("StyleBoxFlat_xi3b8")
 
 [node name="ColorPreset27" type="Button" parent="UI/Canvas/ColorPicker"]
 layout_mode = 0
-offset_left = 250.39001
-offset_top = 134.58002
+offset_left = 250.39
+offset_top = 134.58
 offset_right = 268.39
-offset_bottom = 152.58002
+offset_bottom = 152.58
 pivot_offset = Vector2(9, 9)
 tooltip_text = "Apply preset color #A4C9DA."
 focus_mode = 0
@@ -3246,19 +3246,19 @@ theme_override_styles/focus = SubResource("StyleBoxFlat_dcnbn")
 
 [node name="PreviewColor" type="ColorRect" parent="UI/Canvas/ColorPicker"]
 layout_mode = 0
-offset_left = 16.109985
-offset_top = 171.70001
-offset_right = 41.929985
-offset_bottom = 197.52002
+offset_left = 16.11
+offset_top = 171.7
+offset_right = 41.93
+offset_bottom = 197.52
 mouse_filter = 2
-color = Color(0.49145108, 0.90865034, 0.65421087, 1)
+color = Color(0.491451, 0.90865, 0.654211, 1)
 
 [node name="HexBackground" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
 layout_mode = 0
-offset_left = 49.099976
-offset_top = 171.52002
-offset_right = 132.11996
-offset_bottom = 197.52002
+offset_left = 49.1
+offset_top = 171.52
+offset_right = 132.12
+offset_bottom = 197.52
 texture = ExtResource("68_3ygbk")
 patch_margin_left = 4
 patch_margin_top = 4
@@ -3267,12 +3267,12 @@ patch_margin_bottom = 5
 
 [node name="HexInput" type="LineEdit" parent="UI/Canvas/ColorPicker"]
 layout_mode = 0
-offset_left = 49.099976
-offset_top = 169.02002
-offset_right = 132.11996
-offset_bottom = 200.02002
+offset_left = 49.1
+offset_top = 169.02
+offset_right = 132.12
+offset_bottom = 200.02
 tooltip_text = "Type a #RRGGBB color and press Enter."
-theme_override_colors/font_color = Color(0.6901961, 0.6901961, 0.6901961, 1)
+theme_override_colors/font_color = Color(0.690196, 0.690196, 0.690196, 1)
 theme_override_colors/font_placeholder_color = Color(0.196, 0.196, 0.196, 0.5)
 theme_override_fonts/font = ExtResource("69_wb4m4")
 theme_override_font_sizes/font_size = 11
@@ -3286,10 +3286,10 @@ max_length = 7
 
 [node name="ButtonCopy" type="TextureButton" parent="UI/Canvas/ColorPicker"]
 layout_mode = 0
-offset_left = 118.589966
-offset_top = 169.52002
-offset_right = 172.58997
-offset_bottom = 199.52002
+offset_left = 118.59
+offset_top = 169.52
+offset_right = 172.59
+offset_bottom = 199.52
 pivot_offset = Vector2(27, 15)
 tooltip_text = "Copy the current color hex code to the clipboard."
 texture_normal = ExtResource("70_74u82")
@@ -3298,10 +3298,10 @@ stretch_mode = 0
 
 [node name="ButtonAdd" type="TextureButton" parent="UI/Canvas/ColorPicker"]
 layout_mode = 0
-offset_left = 207.58997
-offset_top = 172.52002
-offset_right = 231.58997
-offset_bottom = 196.52002
+offset_left = 207.59
+offset_top = 172.52
+offset_right = 231.59
+offset_bottom = 196.52
 pivot_offset = Vector2(12, 12)
 tooltip_text = "Save the current color to the selected favorite slot."
 texture_normal = ExtResource("71_wsvde")
@@ -3310,10 +3310,10 @@ stretch_mode = 0
 
 [node name="ButtonDelete" type="TextureButton" parent="UI/Canvas/ColorPicker"]
 layout_mode = 0
-offset_left = 241.98999
-offset_top = 171.70001
+offset_left = 241.99
+offset_top = 171.7
 offset_right = 263.99
-offset_bottom = 195.70001
+offset_bottom = 195.7
 pivot_offset = Vector2(11, 12)
 tooltip_text = "Delete the selected favorite color."
 texture_normal = ExtResource("72_53hvq")
@@ -3322,10 +3322,10 @@ stretch_mode = 0
 
 [node name="FavoriteEmpty0" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
 layout_mode = 0
-offset_left = 14.689941
-offset_top = 209.41998
-offset_right = 36.68994
-offset_bottom = 231.41998
+offset_left = 14.6899
+offset_top = 209.42
+offset_right = 36.6899
+offset_bottom = 231.42
 texture = ExtResource("73_omhns")
 patch_margin_left = 4
 patch_margin_top = 4
@@ -3335,19 +3335,19 @@ patch_margin_bottom = 5
 [node name="FavoriteColor0" type="ColorRect" parent="UI/Canvas/ColorPicker"]
 visible = false
 layout_mode = 0
-offset_left = 14.689941
-offset_top = 209.41998
-offset_right = 36.68994
-offset_bottom = 231.41998
+offset_left = 14.6899
+offset_top = 209.42
+offset_right = 36.6899
+offset_bottom = 231.42
 mouse_filter = 2
 
 [node name="FavoriteFocus0" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
 visible = false
 layout_mode = 0
-offset_left = 14.689941
-offset_top = 209.41998
-offset_right = 36.68994
-offset_bottom = 231.41998
+offset_left = 14.6899
+offset_top = 209.42
+offset_right = 36.6899
+offset_bottom = 231.42
 texture = ExtResource("74_pseod")
 patch_margin_left = 4
 patch_margin_top = 4
@@ -3356,10 +3356,10 @@ patch_margin_bottom = 5
 
 [node name="FavoriteSlot0" type="Button" parent="UI/Canvas/ColorPicker"]
 layout_mode = 0
-offset_left = 14.689941
-offset_top = 209.41998
-offset_right = 36.68994
-offset_bottom = 231.41998
+offset_left = 14.6899
+offset_top = 209.42
+offset_right = 36.6899
+offset_bottom = 231.42
 pivot_offset = Vector2(11, 11)
 tooltip_text = "Select this favorite color, click again to apply, right-click to delete."
 focus_mode = 0
@@ -3371,10 +3371,10 @@ flat = true
 
 [node name="FavoriteEmpty1" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
 layout_mode = 0
-offset_left = 39.68994
-offset_top = 209.41998
-offset_right = 61.68994
-offset_bottom = 231.41998
+offset_left = 39.6899
+offset_top = 209.42
+offset_right = 61.6899
+offset_bottom = 231.42
 texture = ExtResource("73_omhns")
 patch_margin_left = 4
 patch_margin_top = 4
@@ -3384,19 +3384,19 @@ patch_margin_bottom = 5
 [node name="FavoriteColor1" type="ColorRect" parent="UI/Canvas/ColorPicker"]
 visible = false
 layout_mode = 0
-offset_left = 39.68994
-offset_top = 209.41998
-offset_right = 61.68994
-offset_bottom = 231.41998
+offset_left = 39.6899
+offset_top = 209.42
+offset_right = 61.6899
+offset_bottom = 231.42
 mouse_filter = 2
 
 [node name="FavoriteFocus1" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
 visible = false
 layout_mode = 0
-offset_left = 39.68994
-offset_top = 209.41998
-offset_right = 61.68994
-offset_bottom = 231.41998
+offset_left = 39.6899
+offset_top = 209.42
+offset_right = 61.6899
+offset_bottom = 231.42
 texture = ExtResource("74_pseod")
 patch_margin_left = 4
 patch_margin_top = 4
@@ -3405,10 +3405,10 @@ patch_margin_bottom = 5
 
 [node name="FavoriteSlot1" type="Button" parent="UI/Canvas/ColorPicker"]
 layout_mode = 0
-offset_left = 39.68994
-offset_top = 209.41998
-offset_right = 61.68994
-offset_bottom = 231.41998
+offset_left = 39.6899
+offset_top = 209.42
+offset_right = 61.6899
+offset_bottom = 231.42
 pivot_offset = Vector2(11, 11)
 tooltip_text = "Select this favorite color, click again to apply, right-click to delete."
 focus_mode = 0
@@ -3420,10 +3420,10 @@ flat = true
 
 [node name="FavoriteEmpty2" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
 layout_mode = 0
-offset_left = 64.68994
-offset_top = 209.41998
-offset_right = 86.68994
-offset_bottom = 231.41998
+offset_left = 64.6899
+offset_top = 209.42
+offset_right = 86.6899
+offset_bottom = 231.42
 texture = ExtResource("73_omhns")
 patch_margin_left = 4
 patch_margin_top = 4
@@ -3433,19 +3433,19 @@ patch_margin_bottom = 5
 [node name="FavoriteColor2" type="ColorRect" parent="UI/Canvas/ColorPicker"]
 visible = false
 layout_mode = 0
-offset_left = 64.68994
-offset_top = 209.41998
-offset_right = 86.68994
-offset_bottom = 231.41998
+offset_left = 64.6899
+offset_top = 209.42
+offset_right = 86.6899
+offset_bottom = 231.42
 mouse_filter = 2
 
 [node name="FavoriteFocus2" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
 visible = false
 layout_mode = 0
-offset_left = 64.68994
-offset_top = 209.41998
-offset_right = 86.68994
-offset_bottom = 231.41998
+offset_left = 64.6899
+offset_top = 209.42
+offset_right = 86.6899
+offset_bottom = 231.42
 texture = ExtResource("74_pseod")
 patch_margin_left = 4
 patch_margin_top = 4
@@ -3454,10 +3454,10 @@ patch_margin_bottom = 5
 
 [node name="FavoriteSlot2" type="Button" parent="UI/Canvas/ColorPicker"]
 layout_mode = 0
-offset_left = 64.68994
-offset_top = 209.41998
-offset_right = 86.68994
-offset_bottom = 231.41998
+offset_left = 64.6899
+offset_top = 209.42
+offset_right = 86.6899
+offset_bottom = 231.42
 pivot_offset = Vector2(11, 11)
 tooltip_text = "Select this favorite color, click again to apply, right-click to delete."
 focus_mode = 0
@@ -3469,10 +3469,10 @@ flat = true
 
 [node name="FavoriteEmpty3" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
 layout_mode = 0
-offset_left = 89.68994
-offset_top = 209.41998
-offset_right = 111.68994
-offset_bottom = 231.41998
+offset_left = 89.6899
+offset_top = 209.42
+offset_right = 111.69
+offset_bottom = 231.42
 texture = ExtResource("73_omhns")
 patch_margin_left = 4
 patch_margin_top = 4
@@ -3482,19 +3482,19 @@ patch_margin_bottom = 5
 [node name="FavoriteColor3" type="ColorRect" parent="UI/Canvas/ColorPicker"]
 visible = false
 layout_mode = 0
-offset_left = 89.68994
-offset_top = 209.41998
-offset_right = 111.68994
-offset_bottom = 231.41998
+offset_left = 89.6899
+offset_top = 209.42
+offset_right = 111.69
+offset_bottom = 231.42
 mouse_filter = 2
 
 [node name="FavoriteFocus3" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
 visible = false
 layout_mode = 0
-offset_left = 89.68994
-offset_top = 209.41998
-offset_right = 111.68994
-offset_bottom = 231.41998
+offset_left = 89.6899
+offset_top = 209.42
+offset_right = 111.69
+offset_bottom = 231.42
 texture = ExtResource("74_pseod")
 patch_margin_left = 4
 patch_margin_top = 4
@@ -3503,10 +3503,10 @@ patch_margin_bottom = 5
 
 [node name="FavoriteSlot3" type="Button" parent="UI/Canvas/ColorPicker"]
 layout_mode = 0
-offset_left = 89.68994
-offset_top = 209.41998
-offset_right = 111.68994
-offset_bottom = 231.41998
+offset_left = 89.6899
+offset_top = 209.42
+offset_right = 111.69
+offset_bottom = 231.42
 pivot_offset = Vector2(11, 11)
 tooltip_text = "Select this favorite color, click again to apply, right-click to delete."
 focus_mode = 0
@@ -3518,10 +3518,10 @@ flat = true
 
 [node name="FavoriteEmpty4" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
 layout_mode = 0
-offset_left = 114.68994
-offset_top = 209.41998
-offset_right = 136.68994
-offset_bottom = 231.41998
+offset_left = 114.69
+offset_top = 209.42
+offset_right = 136.69
+offset_bottom = 231.42
 texture = ExtResource("73_omhns")
 patch_margin_left = 4
 patch_margin_top = 4
@@ -3531,19 +3531,19 @@ patch_margin_bottom = 5
 [node name="FavoriteColor4" type="ColorRect" parent="UI/Canvas/ColorPicker"]
 visible = false
 layout_mode = 0
-offset_left = 114.68994
-offset_top = 209.41998
-offset_right = 136.68994
-offset_bottom = 231.41998
+offset_left = 114.69
+offset_top = 209.42
+offset_right = 136.69
+offset_bottom = 231.42
 mouse_filter = 2
 
 [node name="FavoriteFocus4" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
 visible = false
 layout_mode = 0
-offset_left = 114.68994
-offset_top = 209.41998
-offset_right = 136.68994
-offset_bottom = 231.41998
+offset_left = 114.69
+offset_top = 209.42
+offset_right = 136.69
+offset_bottom = 231.42
 texture = ExtResource("74_pseod")
 patch_margin_left = 4
 patch_margin_top = 4
@@ -3552,10 +3552,10 @@ patch_margin_bottom = 5
 
 [node name="FavoriteSlot4" type="Button" parent="UI/Canvas/ColorPicker"]
 layout_mode = 0
-offset_left = 114.68994
-offset_top = 209.41998
-offset_right = 136.68994
-offset_bottom = 231.41998
+offset_left = 114.69
+offset_top = 209.42
+offset_right = 136.69
+offset_bottom = 231.42
 pivot_offset = Vector2(11, 11)
 tooltip_text = "Select this favorite color, click again to apply, right-click to delete."
 focus_mode = 0
@@ -3567,10 +3567,10 @@ flat = true
 
 [node name="FavoriteEmpty5" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
 layout_mode = 0
-offset_left = 139.68994
-offset_top = 209.41998
-offset_right = 161.68994
-offset_bottom = 231.41998
+offset_left = 139.69
+offset_top = 209.42
+offset_right = 161.69
+offset_bottom = 231.42
 texture = ExtResource("73_omhns")
 patch_margin_left = 4
 patch_margin_top = 4
@@ -3580,19 +3580,19 @@ patch_margin_bottom = 5
 [node name="FavoriteColor5" type="ColorRect" parent="UI/Canvas/ColorPicker"]
 visible = false
 layout_mode = 0
-offset_left = 139.68994
-offset_top = 209.41998
-offset_right = 161.68994
-offset_bottom = 231.41998
+offset_left = 139.69
+offset_top = 209.42
+offset_right = 161.69
+offset_bottom = 231.42
 mouse_filter = 2
 
 [node name="FavoriteFocus5" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
 visible = false
 layout_mode = 0
-offset_left = 139.68994
-offset_top = 209.41998
-offset_right = 161.68994
-offset_bottom = 231.41998
+offset_left = 139.69
+offset_top = 209.42
+offset_right = 161.69
+offset_bottom = 231.42
 texture = ExtResource("74_pseod")
 patch_margin_left = 4
 patch_margin_top = 4
@@ -3601,10 +3601,10 @@ patch_margin_bottom = 5
 
 [node name="FavoriteSlot5" type="Button" parent="UI/Canvas/ColorPicker"]
 layout_mode = 0
-offset_left = 139.68994
-offset_top = 209.41998
-offset_right = 161.68994
-offset_bottom = 231.41998
+offset_left = 139.69
+offset_top = 209.42
+offset_right = 161.69
+offset_bottom = 231.42
 pivot_offset = Vector2(11, 11)
 tooltip_text = "Select this favorite color, click again to apply, right-click to delete."
 focus_mode = 0
@@ -3616,10 +3616,10 @@ flat = true
 
 [node name="FavoriteEmpty6" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
 layout_mode = 0
-offset_left = 164.68994
-offset_top = 209.41998
-offset_right = 186.68994
-offset_bottom = 231.41998
+offset_left = 164.69
+offset_top = 209.42
+offset_right = 186.69
+offset_bottom = 231.42
 texture = ExtResource("73_omhns")
 patch_margin_left = 4
 patch_margin_top = 4
@@ -3629,19 +3629,19 @@ patch_margin_bottom = 5
 [node name="FavoriteColor6" type="ColorRect" parent="UI/Canvas/ColorPicker"]
 visible = false
 layout_mode = 0
-offset_left = 164.68994
-offset_top = 209.41998
-offset_right = 186.68994
-offset_bottom = 231.41998
+offset_left = 164.69
+offset_top = 209.42
+offset_right = 186.69
+offset_bottom = 231.42
 mouse_filter = 2
 
 [node name="FavoriteFocus6" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
 visible = false
 layout_mode = 0
-offset_left = 164.68994
-offset_top = 209.41998
-offset_right = 186.68994
-offset_bottom = 231.41998
+offset_left = 164.69
+offset_top = 209.42
+offset_right = 186.69
+offset_bottom = 231.42
 texture = ExtResource("74_pseod")
 patch_margin_left = 4
 patch_margin_top = 4
@@ -3650,10 +3650,10 @@ patch_margin_bottom = 5
 
 [node name="FavoriteSlot6" type="Button" parent="UI/Canvas/ColorPicker"]
 layout_mode = 0
-offset_left = 164.68994
-offset_top = 209.41998
-offset_right = 186.68994
-offset_bottom = 231.41998
+offset_left = 164.69
+offset_top = 209.42
+offset_right = 186.69
+offset_bottom = 231.42
 pivot_offset = Vector2(11, 11)
 tooltip_text = "Select this favorite color, click again to apply, right-click to delete."
 focus_mode = 0
@@ -3665,10 +3665,10 @@ flat = true
 
 [node name="FavoriteEmpty7" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
 layout_mode = 0
-offset_left = 189.68994
-offset_top = 209.41998
-offset_right = 211.68994
-offset_bottom = 231.41998
+offset_left = 189.69
+offset_top = 209.42
+offset_right = 211.69
+offset_bottom = 231.42
 texture = ExtResource("73_omhns")
 patch_margin_left = 4
 patch_margin_top = 4
@@ -3678,19 +3678,19 @@ patch_margin_bottom = 5
 [node name="FavoriteColor7" type="ColorRect" parent="UI/Canvas/ColorPicker"]
 visible = false
 layout_mode = 0
-offset_left = 189.68994
-offset_top = 209.41998
-offset_right = 211.68994
-offset_bottom = 231.41998
+offset_left = 189.69
+offset_top = 209.42
+offset_right = 211.69
+offset_bottom = 231.42
 mouse_filter = 2
 
 [node name="FavoriteFocus7" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
 visible = false
 layout_mode = 0
-offset_left = 189.68994
-offset_top = 209.41998
-offset_right = 211.68994
-offset_bottom = 231.41998
+offset_left = 189.69
+offset_top = 209.42
+offset_right = 211.69
+offset_bottom = 231.42
 texture = ExtResource("74_pseod")
 patch_margin_left = 4
 patch_margin_top = 4
@@ -3699,10 +3699,10 @@ patch_margin_bottom = 5
 
 [node name="FavoriteSlot7" type="Button" parent="UI/Canvas/ColorPicker"]
 layout_mode = 0
-offset_left = 189.68994
-offset_top = 209.41998
-offset_right = 211.68994
-offset_bottom = 231.41998
+offset_left = 189.69
+offset_top = 209.42
+offset_right = 211.69
+offset_bottom = 231.42
 pivot_offset = Vector2(11, 11)
 tooltip_text = "Select this favorite color, click again to apply, right-click to delete."
 focus_mode = 0
@@ -3714,10 +3714,10 @@ flat = true
 
 [node name="FavoriteEmpty8" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
 layout_mode = 0
-offset_left = 214.68994
-offset_top = 209.41998
-offset_right = 236.68994
-offset_bottom = 231.41998
+offset_left = 214.69
+offset_top = 209.42
+offset_right = 236.69
+offset_bottom = 231.42
 texture = ExtResource("73_omhns")
 patch_margin_left = 4
 patch_margin_top = 4
@@ -3727,19 +3727,19 @@ patch_margin_bottom = 5
 [node name="FavoriteColor8" type="ColorRect" parent="UI/Canvas/ColorPicker"]
 visible = false
 layout_mode = 0
-offset_left = 214.68994
-offset_top = 209.41998
-offset_right = 236.68994
-offset_bottom = 231.41998
+offset_left = 214.69
+offset_top = 209.42
+offset_right = 236.69
+offset_bottom = 231.42
 mouse_filter = 2
 
 [node name="FavoriteFocus8" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
 visible = false
 layout_mode = 0
-offset_left = 214.68994
-offset_top = 209.41998
-offset_right = 236.68994
-offset_bottom = 231.41998
+offset_left = 214.69
+offset_top = 209.42
+offset_right = 236.69
+offset_bottom = 231.42
 texture = ExtResource("74_pseod")
 patch_margin_left = 4
 patch_margin_top = 4
@@ -3748,10 +3748,10 @@ patch_margin_bottom = 5
 
 [node name="FavoriteSlot8" type="Button" parent="UI/Canvas/ColorPicker"]
 layout_mode = 0
-offset_left = 214.68994
-offset_top = 209.41998
-offset_right = 236.68994
-offset_bottom = 231.41998
+offset_left = 214.69
+offset_top = 209.42
+offset_right = 236.69
+offset_bottom = 231.42
 pivot_offset = Vector2(11, 11)
 tooltip_text = "Select this favorite color, click again to apply, right-click to delete."
 focus_mode = 0
@@ -3763,10 +3763,10 @@ flat = true
 
 [node name="FavoriteEmpty9" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
 layout_mode = 0
-offset_left = 239.68994
-offset_top = 209.41998
-offset_right = 261.68994
-offset_bottom = 231.41998
+offset_left = 239.69
+offset_top = 209.42
+offset_right = 261.69
+offset_bottom = 231.42
 texture = ExtResource("73_omhns")
 patch_margin_left = 4
 patch_margin_top = 4
@@ -3776,19 +3776,19 @@ patch_margin_bottom = 5
 [node name="FavoriteColor9" type="ColorRect" parent="UI/Canvas/ColorPicker"]
 visible = false
 layout_mode = 0
-offset_left = 239.68994
-offset_top = 209.41998
-offset_right = 261.68994
-offset_bottom = 231.41998
+offset_left = 239.69
+offset_top = 209.42
+offset_right = 261.69
+offset_bottom = 231.42
 mouse_filter = 2
 
 [node name="FavoriteFocus9" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
 visible = false
 layout_mode = 0
-offset_left = 239.68994
-offset_top = 209.41998
-offset_right = 261.68994
-offset_bottom = 231.41998
+offset_left = 239.69
+offset_top = 209.42
+offset_right = 261.69
+offset_bottom = 231.42
 texture = ExtResource("74_pseod")
 patch_margin_left = 4
 patch_margin_top = 4
@@ -3797,10 +3797,10 @@ patch_margin_bottom = 5
 
 [node name="FavoriteSlot9" type="Button" parent="UI/Canvas/ColorPicker"]
 layout_mode = 0
-offset_left = 239.68994
-offset_top = 209.41998
-offset_right = 261.68994
-offset_bottom = 231.41998
+offset_left = 239.69
+offset_top = 209.42
+offset_right = 261.69
+offset_bottom = 231.42
 pivot_offset = Vector2(11, 11)
 tooltip_text = "Select this favorite color, click again to apply, right-click to delete."
 focus_mode = 0
@@ -3812,10 +3812,10 @@ flat = true
 
 [node name="FavoriteEmpty10" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
 layout_mode = 0
-offset_left = 14.689941
-offset_top = 234.41998
-offset_right = 36.68994
-offset_bottom = 256.41998
+offset_left = 14.6899
+offset_top = 234.42
+offset_right = 36.6899
+offset_bottom = 256.42
 texture = ExtResource("73_omhns")
 patch_margin_left = 4
 patch_margin_top = 4
@@ -3825,19 +3825,19 @@ patch_margin_bottom = 5
 [node name="FavoriteColor10" type="ColorRect" parent="UI/Canvas/ColorPicker"]
 visible = false
 layout_mode = 0
-offset_left = 14.689941
-offset_top = 234.41998
-offset_right = 36.68994
-offset_bottom = 256.41998
+offset_left = 14.6899
+offset_top = 234.42
+offset_right = 36.6899
+offset_bottom = 256.42
 mouse_filter = 2
 
 [node name="FavoriteFocus10" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
 visible = false
 layout_mode = 0
-offset_left = 14.689941
-offset_top = 234.41998
-offset_right = 36.68994
-offset_bottom = 256.41998
+offset_left = 14.6899
+offset_top = 234.42
+offset_right = 36.6899
+offset_bottom = 256.42
 texture = ExtResource("74_pseod")
 patch_margin_left = 4
 patch_margin_top = 4
@@ -3846,10 +3846,10 @@ patch_margin_bottom = 5
 
 [node name="FavoriteSlot10" type="Button" parent="UI/Canvas/ColorPicker"]
 layout_mode = 0
-offset_left = 14.689941
-offset_top = 234.41998
-offset_right = 36.68994
-offset_bottom = 256.41998
+offset_left = 14.6899
+offset_top = 234.42
+offset_right = 36.6899
+offset_bottom = 256.42
 pivot_offset = Vector2(11, 11)
 tooltip_text = "Select this favorite color, click again to apply, right-click to delete."
 focus_mode = 0
@@ -3861,10 +3861,10 @@ flat = true
 
 [node name="FavoriteEmpty11" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
 layout_mode = 0
-offset_left = 39.68994
-offset_top = 234.41998
-offset_right = 61.68994
-offset_bottom = 256.41998
+offset_left = 39.6899
+offset_top = 234.42
+offset_right = 61.6899
+offset_bottom = 256.42
 texture = ExtResource("73_omhns")
 patch_margin_left = 4
 patch_margin_top = 4
@@ -3874,19 +3874,19 @@ patch_margin_bottom = 5
 [node name="FavoriteColor11" type="ColorRect" parent="UI/Canvas/ColorPicker"]
 visible = false
 layout_mode = 0
-offset_left = 39.68994
-offset_top = 234.41998
-offset_right = 61.68994
-offset_bottom = 256.41998
+offset_left = 39.6899
+offset_top = 234.42
+offset_right = 61.6899
+offset_bottom = 256.42
 mouse_filter = 2
 
 [node name="FavoriteFocus11" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
 visible = false
 layout_mode = 0
-offset_left = 39.68994
-offset_top = 234.41998
-offset_right = 61.68994
-offset_bottom = 256.41998
+offset_left = 39.6899
+offset_top = 234.42
+offset_right = 61.6899
+offset_bottom = 256.42
 texture = ExtResource("74_pseod")
 patch_margin_left = 4
 patch_margin_top = 4
@@ -3895,10 +3895,10 @@ patch_margin_bottom = 5
 
 [node name="FavoriteSlot11" type="Button" parent="UI/Canvas/ColorPicker"]
 layout_mode = 0
-offset_left = 39.68994
-offset_top = 234.41998
-offset_right = 61.68994
-offset_bottom = 256.41998
+offset_left = 39.6899
+offset_top = 234.42
+offset_right = 61.6899
+offset_bottom = 256.42
 pivot_offset = Vector2(11, 11)
 tooltip_text = "Select this favorite color, click again to apply, right-click to delete."
 focus_mode = 0
@@ -3910,10 +3910,10 @@ flat = true
 
 [node name="FavoriteEmpty12" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
 layout_mode = 0
-offset_left = 64.68994
-offset_top = 234.41998
-offset_right = 86.68994
-offset_bottom = 256.41998
+offset_left = 64.6899
+offset_top = 234.42
+offset_right = 86.6899
+offset_bottom = 256.42
 texture = ExtResource("73_omhns")
 patch_margin_left = 4
 patch_margin_top = 4
@@ -3923,19 +3923,19 @@ patch_margin_bottom = 5
 [node name="FavoriteColor12" type="ColorRect" parent="UI/Canvas/ColorPicker"]
 visible = false
 layout_mode = 0
-offset_left = 64.68994
-offset_top = 234.41998
-offset_right = 86.68994
-offset_bottom = 256.41998
+offset_left = 64.6899
+offset_top = 234.42
+offset_right = 86.6899
+offset_bottom = 256.42
 mouse_filter = 2
 
 [node name="FavoriteFocus12" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
 visible = false
 layout_mode = 0
-offset_left = 64.68994
-offset_top = 234.41998
-offset_right = 86.68994
-offset_bottom = 256.41998
+offset_left = 64.6899
+offset_top = 234.42
+offset_right = 86.6899
+offset_bottom = 256.42
 texture = ExtResource("74_pseod")
 patch_margin_left = 4
 patch_margin_top = 4
@@ -3944,10 +3944,10 @@ patch_margin_bottom = 5
 
 [node name="FavoriteSlot12" type="Button" parent="UI/Canvas/ColorPicker"]
 layout_mode = 0
-offset_left = 64.68994
-offset_top = 234.41998
-offset_right = 86.68994
-offset_bottom = 256.41998
+offset_left = 64.6899
+offset_top = 234.42
+offset_right = 86.6899
+offset_bottom = 256.42
 pivot_offset = Vector2(11, 11)
 tooltip_text = "Select this favorite color, click again to apply, right-click to delete."
 focus_mode = 0
@@ -3959,10 +3959,10 @@ flat = true
 
 [node name="FavoriteEmpty13" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
 layout_mode = 0
-offset_left = 89.68994
-offset_top = 234.41998
-offset_right = 111.68994
-offset_bottom = 256.41998
+offset_left = 89.6899
+offset_top = 234.42
+offset_right = 111.69
+offset_bottom = 256.42
 texture = ExtResource("73_omhns")
 patch_margin_left = 4
 patch_margin_top = 4
@@ -3972,19 +3972,19 @@ patch_margin_bottom = 5
 [node name="FavoriteColor13" type="ColorRect" parent="UI/Canvas/ColorPicker"]
 visible = false
 layout_mode = 0
-offset_left = 89.68994
-offset_top = 234.41998
-offset_right = 111.68994
-offset_bottom = 256.41998
+offset_left = 89.6899
+offset_top = 234.42
+offset_right = 111.69
+offset_bottom = 256.42
 mouse_filter = 2
 
 [node name="FavoriteFocus13" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
 visible = false
 layout_mode = 0
-offset_left = 89.68994
-offset_top = 234.41998
-offset_right = 111.68994
-offset_bottom = 256.41998
+offset_left = 89.6899
+offset_top = 234.42
+offset_right = 111.69
+offset_bottom = 256.42
 texture = ExtResource("74_pseod")
 patch_margin_left = 4
 patch_margin_top = 4
@@ -3993,10 +3993,10 @@ patch_margin_bottom = 5
 
 [node name="FavoriteSlot13" type="Button" parent="UI/Canvas/ColorPicker"]
 layout_mode = 0
-offset_left = 89.68994
-offset_top = 234.41998
-offset_right = 111.68994
-offset_bottom = 256.41998
+offset_left = 89.6899
+offset_top = 234.42
+offset_right = 111.69
+offset_bottom = 256.42
 pivot_offset = Vector2(11, 11)
 tooltip_text = "Select this favorite color, click again to apply, right-click to delete."
 focus_mode = 0
@@ -4008,10 +4008,10 @@ flat = true
 
 [node name="FavoriteEmpty14" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
 layout_mode = 0
-offset_left = 114.68994
-offset_top = 234.41998
-offset_right = 136.68994
-offset_bottom = 256.41998
+offset_left = 114.69
+offset_top = 234.42
+offset_right = 136.69
+offset_bottom = 256.42
 texture = ExtResource("73_omhns")
 patch_margin_left = 4
 patch_margin_top = 4
@@ -4021,19 +4021,19 @@ patch_margin_bottom = 5
 [node name="FavoriteColor14" type="ColorRect" parent="UI/Canvas/ColorPicker"]
 visible = false
 layout_mode = 0
-offset_left = 114.68994
-offset_top = 234.41998
-offset_right = 136.68994
-offset_bottom = 256.41998
+offset_left = 114.69
+offset_top = 234.42
+offset_right = 136.69
+offset_bottom = 256.42
 mouse_filter = 2
 
 [node name="FavoriteFocus14" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
 visible = false
 layout_mode = 0
-offset_left = 114.68994
-offset_top = 234.41998
-offset_right = 136.68994
-offset_bottom = 256.41998
+offset_left = 114.69
+offset_top = 234.42
+offset_right = 136.69
+offset_bottom = 256.42
 texture = ExtResource("74_pseod")
 patch_margin_left = 4
 patch_margin_top = 4
@@ -4042,10 +4042,10 @@ patch_margin_bottom = 5
 
 [node name="FavoriteSlot14" type="Button" parent="UI/Canvas/ColorPicker"]
 layout_mode = 0
-offset_left = 114.68994
-offset_top = 234.41998
-offset_right = 136.68994
-offset_bottom = 256.41998
+offset_left = 114.69
+offset_top = 234.42
+offset_right = 136.69
+offset_bottom = 256.42
 pivot_offset = Vector2(11, 11)
 tooltip_text = "Select this favorite color, click again to apply, right-click to delete."
 focus_mode = 0
@@ -4057,10 +4057,10 @@ flat = true
 
 [node name="FavoriteEmpty15" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
 layout_mode = 0
-offset_left = 139.68994
-offset_top = 234.41998
-offset_right = 161.68994
-offset_bottom = 256.41998
+offset_left = 139.69
+offset_top = 234.42
+offset_right = 161.69
+offset_bottom = 256.42
 texture = ExtResource("73_omhns")
 patch_margin_left = 4
 patch_margin_top = 4
@@ -4070,19 +4070,19 @@ patch_margin_bottom = 5
 [node name="FavoriteColor15" type="ColorRect" parent="UI/Canvas/ColorPicker"]
 visible = false
 layout_mode = 0
-offset_left = 139.68994
-offset_top = 234.41998
-offset_right = 161.68994
-offset_bottom = 256.41998
+offset_left = 139.69
+offset_top = 234.42
+offset_right = 161.69
+offset_bottom = 256.42
 mouse_filter = 2
 
 [node name="FavoriteFocus15" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
 visible = false
 layout_mode = 0
-offset_left = 139.68994
-offset_top = 234.41998
-offset_right = 161.68994
-offset_bottom = 256.41998
+offset_left = 139.69
+offset_top = 234.42
+offset_right = 161.69
+offset_bottom = 256.42
 texture = ExtResource("74_pseod")
 patch_margin_left = 4
 patch_margin_top = 4
@@ -4091,10 +4091,10 @@ patch_margin_bottom = 5
 
 [node name="FavoriteSlot15" type="Button" parent="UI/Canvas/ColorPicker"]
 layout_mode = 0
-offset_left = 139.68994
-offset_top = 234.41998
-offset_right = 161.68994
-offset_bottom = 256.41998
+offset_left = 139.69
+offset_top = 234.42
+offset_right = 161.69
+offset_bottom = 256.42
 pivot_offset = Vector2(11, 11)
 tooltip_text = "Select this favorite color, click again to apply, right-click to delete."
 focus_mode = 0
@@ -4106,10 +4106,10 @@ flat = true
 
 [node name="FavoriteEmpty16" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
 layout_mode = 0
-offset_left = 164.68994
-offset_top = 234.41998
-offset_right = 186.68994
-offset_bottom = 256.41998
+offset_left = 164.69
+offset_top = 234.42
+offset_right = 186.69
+offset_bottom = 256.42
 texture = ExtResource("73_omhns")
 patch_margin_left = 4
 patch_margin_top = 4
@@ -4119,19 +4119,19 @@ patch_margin_bottom = 5
 [node name="FavoriteColor16" type="ColorRect" parent="UI/Canvas/ColorPicker"]
 visible = false
 layout_mode = 0
-offset_left = 164.68994
-offset_top = 234.41998
-offset_right = 186.68994
-offset_bottom = 256.41998
+offset_left = 164.69
+offset_top = 234.42
+offset_right = 186.69
+offset_bottom = 256.42
 mouse_filter = 2
 
 [node name="FavoriteFocus16" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
 visible = false
 layout_mode = 0
-offset_left = 164.68994
-offset_top = 234.41998
-offset_right = 186.68994
-offset_bottom = 256.41998
+offset_left = 164.69
+offset_top = 234.42
+offset_right = 186.69
+offset_bottom = 256.42
 texture = ExtResource("74_pseod")
 patch_margin_left = 4
 patch_margin_top = 4
@@ -4140,10 +4140,10 @@ patch_margin_bottom = 5
 
 [node name="FavoriteSlot16" type="Button" parent="UI/Canvas/ColorPicker"]
 layout_mode = 0
-offset_left = 164.68994
-offset_top = 234.41998
-offset_right = 186.68994
-offset_bottom = 256.41998
+offset_left = 164.69
+offset_top = 234.42
+offset_right = 186.69
+offset_bottom = 256.42
 pivot_offset = Vector2(11, 11)
 tooltip_text = "Select this favorite color, click again to apply, right-click to delete."
 focus_mode = 0
@@ -4155,10 +4155,10 @@ flat = true
 
 [node name="FavoriteEmpty17" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
 layout_mode = 0
-offset_left = 189.68994
-offset_top = 234.41998
-offset_right = 211.68994
-offset_bottom = 256.41998
+offset_left = 189.69
+offset_top = 234.42
+offset_right = 211.69
+offset_bottom = 256.42
 texture = ExtResource("73_omhns")
 patch_margin_left = 4
 patch_margin_top = 4
@@ -4168,19 +4168,19 @@ patch_margin_bottom = 5
 [node name="FavoriteColor17" type="ColorRect" parent="UI/Canvas/ColorPicker"]
 visible = false
 layout_mode = 0
-offset_left = 189.68994
-offset_top = 234.41998
-offset_right = 211.68994
-offset_bottom = 256.41998
+offset_left = 189.69
+offset_top = 234.42
+offset_right = 211.69
+offset_bottom = 256.42
 mouse_filter = 2
 
 [node name="FavoriteFocus17" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
 visible = false
 layout_mode = 0
-offset_left = 189.68994
-offset_top = 234.41998
-offset_right = 211.68994
-offset_bottom = 256.41998
+offset_left = 189.69
+offset_top = 234.42
+offset_right = 211.69
+offset_bottom = 256.42
 texture = ExtResource("74_pseod")
 patch_margin_left = 4
 patch_margin_top = 4
@@ -4189,10 +4189,10 @@ patch_margin_bottom = 5
 
 [node name="FavoriteSlot17" type="Button" parent="UI/Canvas/ColorPicker"]
 layout_mode = 0
-offset_left = 189.68994
-offset_top = 234.41998
-offset_right = 211.68994
-offset_bottom = 256.41998
+offset_left = 189.69
+offset_top = 234.42
+offset_right = 211.69
+offset_bottom = 256.42
 pivot_offset = Vector2(11, 11)
 tooltip_text = "Select this favorite color, click again to apply, right-click to delete."
 focus_mode = 0
@@ -4204,10 +4204,10 @@ flat = true
 
 [node name="FavoriteEmpty18" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
 layout_mode = 0
-offset_left = 214.68994
-offset_top = 234.41998
-offset_right = 236.68994
-offset_bottom = 256.41998
+offset_left = 214.69
+offset_top = 234.42
+offset_right = 236.69
+offset_bottom = 256.42
 texture = ExtResource("73_omhns")
 patch_margin_left = 4
 patch_margin_top = 4
@@ -4217,19 +4217,19 @@ patch_margin_bottom = 5
 [node name="FavoriteColor18" type="ColorRect" parent="UI/Canvas/ColorPicker"]
 visible = false
 layout_mode = 0
-offset_left = 214.68994
-offset_top = 234.41998
-offset_right = 236.68994
-offset_bottom = 256.41998
+offset_left = 214.69
+offset_top = 234.42
+offset_right = 236.69
+offset_bottom = 256.42
 mouse_filter = 2
 
 [node name="FavoriteFocus18" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
 visible = false
 layout_mode = 0
-offset_left = 214.68994
-offset_top = 234.41998
-offset_right = 236.68994
-offset_bottom = 256.41998
+offset_left = 214.69
+offset_top = 234.42
+offset_right = 236.69
+offset_bottom = 256.42
 texture = ExtResource("74_pseod")
 patch_margin_left = 4
 patch_margin_top = 4
@@ -4238,10 +4238,10 @@ patch_margin_bottom = 5
 
 [node name="FavoriteSlot18" type="Button" parent="UI/Canvas/ColorPicker"]
 layout_mode = 0
-offset_left = 214.68994
-offset_top = 234.41998
-offset_right = 236.68994
-offset_bottom = 256.41998
+offset_left = 214.69
+offset_top = 234.42
+offset_right = 236.69
+offset_bottom = 256.42
 pivot_offset = Vector2(11, 11)
 tooltip_text = "Select this favorite color, click again to apply, right-click to delete."
 focus_mode = 0
@@ -4253,10 +4253,10 @@ flat = true
 
 [node name="FavoriteEmpty19" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
 layout_mode = 0
-offset_left = 239.68994
-offset_top = 234.41998
-offset_right = 261.68994
-offset_bottom = 256.41998
+offset_left = 239.69
+offset_top = 234.42
+offset_right = 261.69
+offset_bottom = 256.42
 texture = ExtResource("73_omhns")
 patch_margin_left = 4
 patch_margin_top = 4
@@ -4266,19 +4266,19 @@ patch_margin_bottom = 5
 [node name="FavoriteColor19" type="ColorRect" parent="UI/Canvas/ColorPicker"]
 visible = false
 layout_mode = 0
-offset_left = 239.68994
-offset_top = 234.41998
-offset_right = 261.68994
-offset_bottom = 256.41998
+offset_left = 239.69
+offset_top = 234.42
+offset_right = 261.69
+offset_bottom = 256.42
 mouse_filter = 2
 
 [node name="FavoriteFocus19" type="NinePatchRect" parent="UI/Canvas/ColorPicker"]
 visible = false
 layout_mode = 0
-offset_left = 239.68994
-offset_top = 234.41998
-offset_right = 261.68994
-offset_bottom = 256.41998
+offset_left = 239.69
+offset_top = 234.42
+offset_right = 261.69
+offset_bottom = 256.42
 texture = ExtResource("74_pseod")
 patch_margin_left = 4
 patch_margin_top = 4
@@ -4287,10 +4287,10 @@ patch_margin_bottom = 5
 
 [node name="FavoriteSlot19" type="Button" parent="UI/Canvas/ColorPicker"]
 layout_mode = 0
-offset_left = 239.68994
-offset_top = 234.41998
-offset_right = 261.68994
-offset_bottom = 256.41998
+offset_left = 239.69
+offset_top = 234.42
+offset_right = 261.69
+offset_bottom = 256.42
 pivot_offset = Vector2(11, 11)
 tooltip_text = "Select this favorite color, click again to apply, right-click to delete."
 focus_mode = 0
@@ -4305,7 +4305,7 @@ layout_mode = 0
 offset_left = 109.11
 offset_top = 405.77
 offset_right = 240.15
-offset_bottom = 436.22998
+offset_bottom = 436.23
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
@@ -4372,8 +4372,8 @@ layout_mode = 0
 offset_left = 30.73
 offset_top = 489.79
 offset_right = 170.73
-offset_bottom = 527.79004
-pivot_offset = Vector2(70, 19.000015)
+offset_bottom = 527.79
+pivot_offset = Vector2(70, 19)
 tooltip_text = "Play the Attack animation."
 focus_mode = 0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
@@ -4396,8 +4396,8 @@ layout_mode = 0
 offset_left = 176.53
 offset_top = 489.79
 offset_right = 316.53
-offset_bottom = 527.79004
-pivot_offset = Vector2(70, 19.000015)
+offset_bottom = 527.79
+pivot_offset = Vector2(70, 19)
 tooltip_text = "Play the Skill animation."
 focus_mode = 0
 theme_override_colors/font_color = Color(1, 1, 1, 1)

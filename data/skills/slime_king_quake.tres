@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/skill_data.gd" id="1_wx5ir"]
+
+[resource]
+script = ExtResource("1_wx5ir")
+id = &"slime_king_quake"
+display_name = "Động đất"
+kind = 1
+class_tags = PackedStringArray("monster")
+when = 0
+chance = 0.0
+threshold = 0.3
+cooldown = 12.0
+start_cooldown = 6.0
+mana_cost = 0.0
+cast_time = 2.5
+cast_range = 0.0
+target = &"all_enemies"
+target_count = 0
+radius = 0.0
+effects = Array[Dictionary]([{
+"scale": 2.2,
+"type": "damage"
+}])
+break_power = 0.0
+animation = &"Attack"
+levels = Array[Dictionary]([])

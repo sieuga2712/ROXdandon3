@@ -1,37 +1,37 @@
-[gd_scene load_steps=33 format=3]
+[gd_scene load_steps=33 format=3 uid="uid://ce30pb60mo6q2"]
 
-[ext_resource type="Script" path="res://addons/layer_lab/minimal_character_maker/runtime/minimal_character.gd" id="1_runtime"]
-[ext_resource type="AnimationLibrary" path="res://addons/layer_lab/minimal_character_maker/character/animations.tres" id="2_animations"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/other/ghost.png" id="Texture_1"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/parts/hand_right/crossbow/crossbow_line_down.png" id="Texture_2"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/character/default/body.png" id="Texture_3"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/parts/helmet/fa_helmet_001_brown.png" id="Texture_4"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/parts/hand_right/crossbow/crossbow_line_up.png" id="Texture_5"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/other/gravestone.png" id="Texture_6"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/character/default/shadow.png" id="Texture_7"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/parts/hand_left/sub_item/fa_wp_sub_artifact_001_green.png" id="Texture_8"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/character/beard/body_beard_001.png" id="Texture_9"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/parts/hand_right/bow/fa_wp_main_bow_001_wood_green.png" id="Texture_10"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/parts/hand_right/crossbow/fa_wp_main_crossbow_001_wood_white_down.png" id="Texture_11"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/parts/hand_right/arrow/fa_consumable_arrow_001_yellow_wood.png" id="Texture_12"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/other/bone.png" id="Texture_13"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/other/eye_stun.png" id="Texture_14"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/parts/hand_right/bow/bow_line_down.png" id="Texture_15"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/parts/hand_right/sword/fa_wp_main_sword_001_blue.png" id="Texture_16"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/parts/hand_right/crossbow/fa_wp_main_crossbow_001_wood_white.png" id="Texture_17"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/character/eye/body_eye_001.png" id="Texture_18"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/parts/hand_right/staff/fa_wp_main_staff_001_wood.png" id="Texture_19"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/parts/hand_right/bow/bow_line_up.png" id="Texture_20"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/parts/hand_right/spear/fa_wp_main_spear_001_wood.png" id="Texture_21"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/other/eye_defeat.png" id="Texture_22"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/parts/chest/fa_chest_001_silver.png" id="Texture_23"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/character/hair/body_hair_001.png" id="Texture_24"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/parts/hand_right/blunt/fa_wp_main_blunt_001_wood.png" id="Texture_25"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/parts/hand_right/axe/fa_wp_main_axe_001_wood_gray.png" id="Texture_26"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/parts/hand_right/wand/fa_wp_main_wand_001_gray_green.png" id="Texture_27"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/parts/hand_left/shield/fa_wp_sub_shield_001_wood_yellow.png" id="Texture_28"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/character/helmet_hair/body_helmet_hair_001.png" id="Texture_29"]
-[ext_resource type="Texture2D" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/character/default/head.png" id="Texture_30"]
+[ext_resource type="Script" uid="uid://b0f0hnu7eqhql" path="res://addons/layer_lab/minimal_character_maker/runtime/minimal_character.gd" id="1_runtime"]
+[ext_resource type="AnimationLibrary" uid="uid://cfg0l1h2uvgxm" path="res://addons/layer_lab/minimal_character_maker/character/animations.tres" id="2_animations"]
+[ext_resource type="Texture2D" uid="uid://bm547b7axjec5" path="res://addons/layer_lab/minimal_character_maker/textures/other/ghost.png" id="Texture_1"]
+[ext_resource type="Texture2D" uid="uid://cpcn1wqdicwoe" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/parts/hand_right/crossbow/crossbow_line_down.png" id="Texture_2"]
+[ext_resource type="Texture2D" uid="uid://breqchhautypx" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/character/default/body.png" id="Texture_3"]
+[ext_resource type="Texture2D" uid="uid://bybqniknamn8c" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/parts/helmet/fa_helmet_001_brown.png" id="Texture_4"]
+[ext_resource type="Texture2D" uid="uid://b2lyoy1y7yrnn" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/parts/hand_right/crossbow/crossbow_line_up.png" id="Texture_5"]
+[ext_resource type="Texture2D" uid="uid://cgahkp8eyyhvf" path="res://addons/layer_lab/minimal_character_maker/textures/other/gravestone.png" id="Texture_6"]
+[ext_resource type="Texture2D" uid="uid://bwyyg8cu3cph8" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/character/default/shadow.png" id="Texture_7"]
+[ext_resource type="Texture2D" uid="uid://bai46gqm3cs4g" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/parts/hand_left/sub_item/fa_wp_sub_artifact_001_green.png" id="Texture_8"]
+[ext_resource type="Texture2D" uid="uid://dhpn6qt7uj50s" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/character/beard/body_beard_001.png" id="Texture_9"]
+[ext_resource type="Texture2D" uid="uid://d3js5fn4hs8bj" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/parts/hand_right/bow/fa_wp_main_bow_001_wood_green.png" id="Texture_10"]
+[ext_resource type="Texture2D" uid="uid://bse6csy734nsg" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/parts/hand_right/crossbow/fa_wp_main_crossbow_001_wood_white_down.png" id="Texture_11"]
+[ext_resource type="Texture2D" uid="uid://csfkhnfk4axuj" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/parts/hand_right/arrow/fa_consumable_arrow_001_yellow_wood.png" id="Texture_12"]
+[ext_resource type="Texture2D" uid="uid://31mjghapaeun" path="res://addons/layer_lab/minimal_character_maker/textures/other/bone.png" id="Texture_13"]
+[ext_resource type="Texture2D" uid="uid://c2qcnuacfkw4" path="res://addons/layer_lab/minimal_character_maker/textures/other/eye_stun.png" id="Texture_14"]
+[ext_resource type="Texture2D" uid="uid://cjd4waulyhnxw" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/parts/hand_right/bow/bow_line_down.png" id="Texture_15"]
+[ext_resource type="Texture2D" uid="uid://dfjjm5d8mnl7b" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/parts/hand_right/sword/fa_wp_main_sword_001_blue.png" id="Texture_16"]
+[ext_resource type="Texture2D" uid="uid://bybpb4akeyhg0" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/parts/hand_right/crossbow/fa_wp_main_crossbow_001_wood_white.png" id="Texture_17"]
+[ext_resource type="Texture2D" uid="uid://bpgm8jwctj08a" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/character/eye/body_eye_001.png" id="Texture_18"]
+[ext_resource type="Texture2D" uid="uid://dsia6myrsfkd2" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/parts/hand_right/staff/fa_wp_main_staff_001_wood.png" id="Texture_19"]
+[ext_resource type="Texture2D" uid="uid://cojr4elmuqulj" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/parts/hand_right/bow/bow_line_up.png" id="Texture_20"]
+[ext_resource type="Texture2D" uid="uid://cpo0seahjuxq5" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/parts/hand_right/spear/fa_wp_main_spear_001_wood.png" id="Texture_21"]
+[ext_resource type="Texture2D" uid="uid://cgafuv7ctfrko" path="res://addons/layer_lab/minimal_character_maker/textures/other/eye_defeat.png" id="Texture_22"]
+[ext_resource type="Texture2D" uid="uid://b184sw6xaovqo" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/parts/chest/fa_chest_001_silver.png" id="Texture_23"]
+[ext_resource type="Texture2D" uid="uid://b108sxpdfgdlu" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/character/hair/body_hair_001.png" id="Texture_24"]
+[ext_resource type="Texture2D" uid="uid://brhypuh3pot46" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/parts/hand_right/blunt/fa_wp_main_blunt_001_wood.png" id="Texture_25"]
+[ext_resource type="Texture2D" uid="uid://c8kndfjsjd10a" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/parts/hand_right/axe/fa_wp_main_axe_001_wood_gray.png" id="Texture_26"]
+[ext_resource type="Texture2D" uid="uid://blt4qhv43tevw" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/parts/hand_right/wand/fa_wp_main_wand_001_gray_green.png" id="Texture_27"]
+[ext_resource type="Texture2D" uid="uid://bx6lk7dkmur0" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/parts/hand_left/shield/fa_wp_sub_shield_001_wood_yellow.png" id="Texture_28"]
+[ext_resource type="Texture2D" uid="uid://uy1adrch5wcl" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/character/helmet_hair/body_helmet_hair_001.png" id="Texture_29"]
+[ext_resource type="Texture2D" uid="uid://dd5jfvn28c7qp" path="res://addons/layer_lab/minimal_character_maker/textures/packs/parts_pack_base/character/default/head.png" id="Texture_30"]
 
 [node name="MinimalCharacter" type="Node2D"]
 script = ExtResource("1_runtime")
@@ -74,7 +74,7 @@ modulate = Color(1, 1, 1, 0)
 [node name="HandRight" type="Node2D" parent="."]
 
 [node name="Bow" type="Node2D" parent="HandRight"]
-position = Vector2(-4.399988, -8.099997)
+position = Vector2(-4.39999, -8.1)
 
 [node name="Bow" type="Sprite2D" parent="HandRight/Bow"]
 z_index = 12
@@ -88,44 +88,44 @@ texture = ExtResource("Texture_20")
 visible = false
 
 [node name="Bow_Line_Down" type="Sprite2D" parent="HandRight/Bow"]
-position = Vector2(-16.50001, -10)
+position = Vector2(-16.5, -10)
 z_index = 11
 texture = ExtResource("Texture_15")
 visible = false
 
 [node name="Arrow" type="Sprite2D" parent="HandRight/Bow"]
 position = Vector2(0.5, 21.1)
-rotation = 1.570796
+rotation = 1.5708
 z_index = 13
 texture = ExtResource("Texture_12")
 modulate = Color(1, 1, 1, 0)
 visible = false
 
 [node name="Axe" type="Sprite2D" parent="HandRight"]
-position = Vector2(-5.89999, -8.599997)
-rotation = 0.2617995
+position = Vector2(-5.89999, -8.6)
+rotation = 0.2618
 z_index = 10
 texture = ExtResource("Texture_26")
 visible = false
 
 [node name="Crossbow" type="Node2D" parent="HandRight"]
-position = Vector2(6.100002, -5.599999)
-rotation = 0.5235987
+position = Vector2(6.1, -5.6)
+rotation = 0.523599
 
 [node name="Crossbow_Line_Up" type="Sprite2D" parent="HandRight/Crossbow"]
-position = Vector2(8.500001, -12.5)
+position = Vector2(8.5, -12.5)
 z_index = 11
 texture = ExtResource("Texture_5")
 visible = false
 
 [node name="Crossbow_Line_Down" type="Sprite2D" parent="HandRight/Crossbow"]
-position = Vector2(4.000005, 5.000001)
+position = Vector2(4, 5)
 z_index = 11
 texture = ExtResource("Texture_2")
 visible = false
 
 [node name="Crossbow" type="Sprite2D" parent="HandRight/Crossbow"]
-position = Vector2(16.00001, -2.499998)
+position = Vector2(16, -2.5)
 z_index = 12
 texture = ExtResource("Texture_17")
 visible = false
@@ -137,41 +137,41 @@ visible = false
 
 [node name="Bolt" type="Sprite2D" parent="HandRight/Crossbow"]
 position = Vector2(34.8, -1.7)
-rotation = 0.07545993
+rotation = 0.0754599
 z_index = 13
 texture = ExtResource("Texture_12")
 modulate = Color(1, 1, 1, 0)
 visible = false
 
 [node name="Sword" type="Sprite2D" parent="HandRight"]
-position = Vector2(4.100007, -2.599996)
-rotation = 0.2617995
+position = Vector2(4.10001, -2.6)
+rotation = 0.2618
 z_index = 10
 texture = ExtResource("Texture_16")
 
 [node name="Blunt" type="Sprite2D" parent="HandRight"]
-position = Vector2(-2.399993, -7.599997)
-rotation = 0.2617995
+position = Vector2(-2.39999, -7.6)
+rotation = 0.2618
 z_index = 10
 texture = ExtResource("Texture_25")
 visible = false
 
 [node name="Spear" type="Sprite2D" parent="HandRight"]
-position = Vector2(5.600005, -8.599997)
-rotation = 0.2617995
+position = Vector2(5.60001, -8.6)
+rotation = 0.2618
 z_index = 10
 texture = ExtResource("Texture_21")
 visible = false
 
 [node name="Staff" type="Sprite2D" parent="HandRight"]
-position = Vector2(-16.5, -50.99999)
+position = Vector2(-16.5, -51)
 z_index = 10
 texture = ExtResource("Texture_19")
 visible = false
 
 [node name="Wand" type="Sprite2D" parent="HandRight"]
-position = Vector2(-3.000003, -6.5)
-rotation = 0.5235987
+position = Vector2(-3, -6.5)
+rotation = 0.523599
 z_index = 10
 texture = ExtResource("Texture_27")
 visible = false
@@ -179,18 +179,18 @@ visible = false
 [node name="HandLeft" type="Node2D" parent="."]
 
 [node name="Shield" type="Sprite2D" parent="HandLeft"]
-position = Vector2(29.10001, -13.1)
+position = Vector2(29.1, -13.1)
 z_index = 9
 texture = ExtResource("Texture_28")
 
 [node name="Sub_Item" type="Sprite2D" parent="HandLeft"]
-position = Vector2(31.10001, -18.1)
+position = Vector2(31.1, -18.1)
 z_index = 9
 texture = ExtResource("Texture_8")
 visible = false
 
 [node name="Body" type="Sprite2D" parent="."]
-position = Vector2(0.6000102, -17.59999)
+position = Vector2(0.60001, -17.6)
 z_index = 2
 texture = ExtResource("Texture_3")
 
@@ -199,28 +199,28 @@ z_index = 1
 texture = ExtResource("Texture_23")
 
 [node name="Head" type="Sprite2D" parent="Body"]
-position = Vector2(-3.000003, -31.5)
+position = Vector2(-3, -31.5)
 z_index = 2
 texture = ExtResource("Texture_30")
 
 [node name="Eye" type="Sprite2D" parent="Body/Head"]
-position = Vector2(13.5, 5.499995)
+position = Vector2(13.5, 5.5)
 z_index = 1
 texture = ExtResource("Texture_18")
 
 [node name="Hair" type="Sprite2D" parent="Body/Head"]
-position = Vector2(2.500004, -2.499998)
+position = Vector2(2.5, -2.5)
 z_index = 2
 texture = ExtResource("Texture_24")
 visible = false
 
 [node name="Hair_Helmet" type="Sprite2D" parent="Body/Head"]
-position = Vector2(2.500004, -2.499998)
+position = Vector2(2.5, -2.5)
 z_index = 2
 texture = ExtResource("Texture_29")
 
 [node name="Helmet" type="Sprite2D" parent="Body/Head"]
-position = Vector2(4.000002, -6.500006)
+position = Vector2(4, -6.50001)
 z_index = 4
 texture = ExtResource("Texture_4")
 
@@ -230,7 +230,7 @@ z_index = 3
 texture = ExtResource("Texture_9")
 
 [node name="Ani_Eye" type="Node2D" parent="Body/Head"]
-position = Vector2(13.39999, 5.89999)
+position = Vector2(13.4, 5.89999)
 
 [node name="Eye_Defeat" type="Sprite2D" parent="Body/Head/Ani_Eye"]
 position = Vector2(-6.5, -1.2)
@@ -245,23 +245,25 @@ texture = ExtResource("Texture_22")
 modulate = Color(1, 1, 1, 0)
 
 [node name="Eye_Stun" type="Sprite2D" parent="Body/Head/Ani_Eye"]
-position = Vector2(-8.2, -1.099998)
+position = Vector2(-8.2, -1.1)
 z_index = 1
 texture = ExtResource("Texture_14")
 modulate = Color(1, 1, 1, 0)
 
 [node name="Eye_Stun2" type="Sprite2D" parent="Body/Head/Ani_Eye"]
-position = Vector2(9.200001, 0)
+position = Vector2(9.2, 0)
 z_index = 1
 texture = ExtResource("Texture_14")
 modulate = Color(1, 1, 1, 0)
 
 [node name="Shadow" type="Sprite2D" parent="."]
-position = Vector2(0.1000106, -0.09999871)
+position = Vector2(0.100011, -0.0999987)
 z_index = 1
 texture = ExtResource("Texture_7")
-modulate = Color(1, 1, 1, 0.3333333)
+modulate = Color(1, 1, 1, 0.333333)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-libraries = {"": ExtResource("2_animations")}
+libraries = {
+"": ExtResource("2_animations")
+}
 callback_mode_method = 1

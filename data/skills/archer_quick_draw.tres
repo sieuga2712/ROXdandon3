@@ -1,0 +1,32 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/skill_data.gd" id="1_lkax1"]
+
+[resource]
+script = ExtResource("1_lkax1")
+id = &"archer_quick_draw"
+display_name = "Tăng tốc đánh bất chợt"
+kind = 0
+class_tags = PackedStringArray("archer")
+when = 1
+chance = 0.15
+threshold = 0.3
+cooldown = 0.0
+start_cooldown = 0.0
+mana_cost = 0.0
+cast_time = 0.0
+cast_range = 0.0
+target = &"self"
+target_count = 1
+radius = 0.0
+effects = Array[Dictionary]([{
+"duration": 3.0,
+"mode": "percent",
+"stack_rule": "highest",
+"stat": "atsp",
+"type": "modify_stat",
+"value": 0.3
+}])
+break_power = 0.0
+animation = &"Attack"
+levels = Array[Dictionary]([])

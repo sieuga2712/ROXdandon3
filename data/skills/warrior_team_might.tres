@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/skill_data.gd" id="1_je8bu"]
+
+[resource]
+script = ExtResource("1_je8bu")
+id = &"warrior_team_might"
+display_name = "Tăng sát thương (team)"
+kind = 0
+class_tags = PackedStringArray("warrior")
+when = 0
+chance = 0.0
+threshold = 0.3
+cooldown = 0.0
+start_cooldown = 0.0
+mana_cost = 0.0
+cast_time = 0.0
+cast_range = 0.0
+target = &"all_allies"
+target_count = 0
+radius = 0.0
+effects = Array[Dictionary]([{
+"mode": "percent",
+"stat": "atk",
+"type": "modify_stat",
+"value": 0.08
+}, {
+"mode": "percent",
+"stat": "matk",
+"type": "modify_stat",
+"value": 0.08
+}])
+break_power = 0.0
+animation = &"Attack"
+levels = Array[Dictionary]([])

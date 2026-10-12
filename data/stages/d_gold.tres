@@ -1,0 +1,32 @@
+[gd_resource type="Resource" script_class="StageData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/stage_data.gd" id="1_1fjam"]
+
+[resource]
+script = ExtResource("1_1fjam")
+id = &"d_gold"
+display_name = "Hầm vàng"
+chapter = 0
+is_daily = true
+waves = Array[Dictionary]([{
+"monsters": [{
+"id": "slime_orange",
+"row": 0
+}, {
+"id": "slime_orange",
+"row": 0
+}, {
+"id": "slime_orange",
+"row": 1
+}]
+}])
+rules = Array[Dictionary]([{
+"mode": "percent",
+"stat": "hp",
+"type": "enemy_modifier",
+"value": 1.0
+}])
+rewards = {
+"gold": 800
+}
+idle_rate = {}

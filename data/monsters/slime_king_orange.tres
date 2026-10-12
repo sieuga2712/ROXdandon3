@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="MonsterData" load_steps=3 format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/monsters/slime/slime_king_orange.tscn" id="1_atc76"]
+[ext_resource type="Script" path="res://scripts/data/monster_data.gd" id="2_7v6w7"]
+
+[resource]
+script = ExtResource("2_7v6w7")
+id = &"slime_king_orange"
+display_name = "Vua slime cam"
+base_stats = {
+"atk": 110.0,
+"atsp": 0.75,
+"def": 60.0,
+"hp": 14000.0,
+"mdef": 40.0
+}
+move_speed = 50.0
+attack_range = 70.0
+attack_type = "physical"
+skills = PackedStringArray("slime_bash", "slime_king_quake")
+scene = ExtResource("1_atc76")
+is_boss = true
+break_max = 140.0
+break_lock = 4.0

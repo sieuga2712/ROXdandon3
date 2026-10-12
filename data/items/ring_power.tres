@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/item_data.gd" id="1_m0gls"]
+
+[resource]
+script = ExtResource("1_m0gls")
+id = &"ring_power"
+display_name = "Nhẫn sức mạnh"
+slot = "accessory"
+equip_tag = "accessory"
+stats = {
+"atk": 10.0,
+"matk": 10.0
+}

@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/skill_data.gd" id="1_ey1he"]
+
+[resource]
+script = ExtResource("1_ey1he")
+id = &"slime_bash"
+display_name = "Húc"
+kind = 1
+class_tags = PackedStringArray("monster")
+when = 0
+chance = 0.0
+threshold = 0.3
+cooldown = 6.0
+start_cooldown = 3.0
+mana_cost = 0.0
+cast_time = 0.0
+cast_range = 0.0
+target = &"current_target"
+target_count = 1
+radius = 0.0
+effects = Array[Dictionary]([{
+"scale": 1.3,
+"type": "damage"
+}])
+break_power = 0.0
+animation = &"Attack"
+levels = Array[Dictionary]([])

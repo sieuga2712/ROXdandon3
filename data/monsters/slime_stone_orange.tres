@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="MonsterData" load_steps=3 format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/monsters/slime/slime_stone_orange.tscn" id="1_x8ph5"]
+[ext_resource type="Script" path="res://scripts/data/monster_data.gd" id="2_hgl1r"]
+
+[resource]
+script = ExtResource("2_hgl1r")
+id = &"slime_stone_orange"
+display_name = "Slime đá cam"
+base_stats = {
+"atk": 70.0,
+"atsp": 0.75,
+"def": 50.0,
+"hp": 750.0,
+"mdef": 14.0
+}
+move_speed = 55.0
+attack_range = 220.0
+attack_type = "physical"
+skills = PackedStringArray("stone_throw")
+scene = ExtResource("1_x8ph5")
+is_boss = false
+break_max = 0.0
+break_lock = 4.0

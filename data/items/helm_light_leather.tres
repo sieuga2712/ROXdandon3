@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/item_data.gd" id="1_lawlc"]
+
+[resource]
+script = ExtResource("1_lawlc")
+id = &"helm_light_leather"
+display_name = "Mũ da"
+slot = "helmet"
+equip_tag = "armor_light"
+stats = {
+"def": 6.0,
+"hp": 50.0
+}

@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="GameConfig" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/game_config.gd" id="1_e2sft"]
+
+[resource]
+script = ExtResource("1_e2sft")
+defense_k = 100.0
+break_stun = 1.0
+stat_caps = {}
+enhance_bonus = 0.05
+enhance_excluded_stats = PackedStringArray()
+idle_max_hours = 12.0
+daily_attempts = 3
+daily_schedule = {
+0: ["d_gold", "d_gem"],
+1: ["d_gold"],
+2: ["d_gem"],
+3: ["d_gold"],
+4: ["d_gem"],
+5: ["d_gold"],
+6: ["d_gold", "d_gem"]
+}

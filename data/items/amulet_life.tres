@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/item_data.gd" id="1_do7cl"]
+
+[resource]
+script = ExtResource("1_do7cl")
+id = &"amulet_life"
+display_name = "Bùa sinh mệnh"
+slot = "accessory"
+equip_tag = "accessory"
+stats = {
+"hp": 120.0
+}

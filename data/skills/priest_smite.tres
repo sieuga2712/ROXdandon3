@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/skill_data.gd" id="1_enbct"]
+
+[resource]
+script = ExtResource("1_enbct")
+id = &"priest_smite"
+display_name = "Sát thương 2 lần + hồi máu"
+kind = 0
+class_tags = PackedStringArray("priest")
+when = 1
+chance = 0.2
+threshold = 0.3
+cooldown = 0.0
+start_cooldown = 0.0
+mana_cost = 0.0
+cast_time = 0.0
+cast_range = 0.0
+target = &"current_target"
+target_count = 1
+radius = 0.0
+effects = Array[Dictionary]([{
+"damage_type": "magic",
+"hits": 2,
+"scale": 0.5,
+"type": "damage"
+}, {
+"basis": "max_hp",
+"scale": 0.08,
+"target": "lowest_hp_ally",
+"type": "heal"
+}])
+break_power = 0.0
+animation = &"Attack"
+levels = Array[Dictionary]([])

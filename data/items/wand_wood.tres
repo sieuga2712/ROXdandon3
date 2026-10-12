@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/item_data.gd" id="1_fc4qq"]
+
+[resource]
+script = ExtResource("1_fc4qq")
+id = &"wand_wood"
+display_name = "Đũa gỗ"
+slot = "weapon"
+equip_tag = "wand"
+stats = {
+"hp": 60.0,
+"matk": 22.0
+}

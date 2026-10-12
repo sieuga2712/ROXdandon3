@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/skill_data.gd" id="1_or1xo"]
+
+[resource]
+script = ExtResource("1_or1xo")
+id = &"mage_arcane_burst"
+display_name = "Sát thương AoE"
+kind = 0
+class_tags = PackedStringArray("mage")
+when = 1
+chance = 0.15
+threshold = 0.3
+cooldown = 0.0
+start_cooldown = 0.0
+mana_cost = 0.0
+cast_time = 0.0
+cast_range = 0.0
+target = &"enemies_near_target"
+target_count = 0
+radius = 80.0
+effects = Array[Dictionary]([{
+"damage_type": "magic",
+"scale": 0.4,
+"type": "damage"
+}])
+break_power = 0.0
+animation = &"Attack"
+levels = Array[Dictionary]([])

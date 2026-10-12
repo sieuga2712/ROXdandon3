@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="ClassData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/class_data.gd" id="1_pptha"]
+
+[resource]
+script = ExtResource("1_pptha")
+id = &"knight"
+display_name = "Hiệp sĩ"
+base_stats = {
+"atk": 80.0,
+"atsp": 0.8,
+"crit": 0.05,
+"def": 60.0,
+"hp": 1800.0,
+"mana_regen": 1.0,
+"matk": 20.0,
+"mdef": 40.0
+}
+move_speed = 90.0
+attack_range = 60.0
+attack_type = "physical"
+mana_max = 100.0
+mana_per_attack = 5.0
+mana_per_hit_taken = 3.0
+equip_tags = PackedStringArray("sword", "armor_balanced", "accessory")
+weapon_part = "Sword"
+offhand_part = "Shield"
+default_passives = PackedStringArray("knight_barrier", "knight_team_guard")
+default_actives = PackedStringArray("knight_taunt")
+default_ultimate = &"knight_fortress"

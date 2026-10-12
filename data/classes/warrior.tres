@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="ClassData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/class_data.gd" id="1_74vqn"]
+
+[resource]
+script = ExtResource("1_74vqn")
+id = &"warrior"
+display_name = "Chiến binh"
+base_stats = {
+"atk": 115.0,
+"atsp": 1.0,
+"crit": 0.08,
+"def": 40.0,
+"hp": 1400.0,
+"mana_regen": 1.0,
+"matk": 20.0,
+"mdef": 25.0
+}
+move_speed = 100.0
+attack_range = 60.0
+attack_type = "physical"
+mana_max = 100.0
+mana_per_attack = 5.0
+mana_per_hit_taken = 3.0
+equip_tags = PackedStringArray("sword", "armor_balanced", "accessory")
+weapon_part = "Sword"
+offhand_part = ""
+default_passives = PackedStringArray("warrior_bloodlust", "warrior_team_might")
+default_actives = PackedStringArray("warrior_whirlwind")
+default_ultimate = &"warrior_rage"

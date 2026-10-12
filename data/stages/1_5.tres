@@ -1,0 +1,50 @@
+[gd_resource type="Resource" script_class="StageData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/stage_data.gd" id="1_a2e14"]
+
+[resource]
+script = ExtResource("1_a2e14")
+id = &"1_5"
+display_name = "1-5 Đầm lầy"
+chapter = 1
+is_daily = false
+waves = Array[Dictionary]([{
+"monsters": [{
+"id": "slime_orange",
+"row": 0
+}, {
+"id": "slime_orange",
+"row": 0
+}, {
+"id": "slime_stone_orange",
+"row": 2
+}]
+}, {
+"monsters": [{
+"id": "slime_orange",
+"row": 0
+}, {
+"id": "slime_orange",
+"row": 1
+}, {
+"id": "slime_stone_orange",
+"row": 2
+}]
+}])
+rules = Array[Dictionary]([{
+"classes": ["mage"],
+"type": "ban_class"
+}, {
+"seconds": 75,
+"type": "time_limit"
+}])
+rewards = {
+"gem_0": 8,
+"gem_1": 1,
+"gold": 260
+}
+idle_rate = {
+"gem_0": 6,
+"gem_1": 0.5,
+"gold": 150
+}

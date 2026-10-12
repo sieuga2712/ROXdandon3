@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="StageData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/stage_data.gd" id="1_cc7mn"]
+
+[resource]
+script = ExtResource("1_cc7mn")
+id = &"1_1"
+display_name = "1-1 Đồng cỏ"
+chapter = 1
+is_daily = false
+waves = Array[Dictionary]([{
+"monsters": [{
+"id": "slime_green",
+"row": 0
+}, {
+"id": "slime_green",
+"row": 0
+}, {
+"id": "slime_green",
+"row": 1
+}]
+}])
+rules = Array[Dictionary]([])
+rewards = {
+"gem_0": 3,
+"gold": 120
+}
+idle_rate = {
+"gem_0": 2,
+"gold": 60
+}

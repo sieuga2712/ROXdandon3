@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/skill_data.gd" id="1_h1wcq"]
+
+[resource]
+script = ExtResource("1_h1wcq")
+id = &"warrior_bloodlust"
+display_name = "Hút máu, 3 đòn liên tiếp"
+kind = 0
+class_tags = PackedStringArray("warrior")
+when = 1
+chance = 0.12
+threshold = 0.3
+cooldown = 0.0
+start_cooldown = 0.0
+mana_cost = 0.0
+cast_time = 0.0
+cast_range = 0.0
+target = &"self"
+target_count = 1
+radius = 0.0
+effects = Array[Dictionary]([{
+"duration": 3.0,
+"stack_rule": "highest",
+"stat": "lifesteal",
+"type": "modify_stat",
+"value": 0.2
+}, {
+"count": 2,
+"type": "extra_attacks"
+}])
+break_power = 0.0
+animation = &"Attack"
+levels = Array[Dictionary]([])

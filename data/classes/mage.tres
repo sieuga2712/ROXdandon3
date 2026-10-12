@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="ClassData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/class_data.gd" id="1_sxcey"]
+
+[resource]
+script = ExtResource("1_sxcey")
+id = &"mage"
+display_name = "Pháp sư"
+base_stats = {
+"atk": 30.0,
+"atsp": 0.8,
+"crit": 0.05,
+"def": 15.0,
+"hp": 850.0,
+"mana_regen": 1.0,
+"matk": 125.0,
+"mdef": 45.0
+}
+move_speed = 95.0
+attack_range = 280.0
+attack_type = "magic"
+mana_max = 100.0
+mana_per_attack = 5.0
+mana_per_hit_taken = 3.0
+equip_tags = PackedStringArray("staff", "armor_magic", "accessory")
+weapon_part = "Staff"
+offhand_part = ""
+default_passives = PackedStringArray("mage_arcane_burst", "mage_team_focus")
+default_actives = PackedStringArray("mage_frost")
+default_ultimate = &"mage_meteor"

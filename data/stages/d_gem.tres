@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="StageData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/stage_data.gd" id="1_ot4mk"]
+
+[resource]
+script = ExtResource("1_ot4mk")
+id = &"d_gem"
+display_name = "Hang đá quý"
+chapter = 0
+is_daily = true
+waves = Array[Dictionary]([{
+"monsters": [{
+"id": "slime_stone_orange",
+"row": 0
+}, {
+"id": "slime_stone_orange",
+"row": 0
+}, {
+"id": "slime_orange",
+"row": 1
+}]
+}])
+rules = Array[Dictionary]([{
+"damage_type": "magic",
+"type": "enemy_immune"
+}])
+rewards = {
+"gem_0": 15,
+"gem_1": 2
+}
+idle_rate = {}

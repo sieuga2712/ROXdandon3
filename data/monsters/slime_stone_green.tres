@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="MonsterData" load_steps=3 format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/monsters/slime/slime_stone_green.tscn" id="1_cokdg"]
+[ext_resource type="Script" path="res://scripts/data/monster_data.gd" id="2_h2qc6"]
+
+[resource]
+script = ExtResource("2_h2qc6")
+id = &"slime_stone_green"
+display_name = "Slime đá xanh"
+base_stats = {
+"atk": 55.0,
+"atsp": 0.7,
+"def": 40.0,
+"hp": 550.0,
+"mdef": 10.0
+}
+move_speed = 55.0
+attack_range = 220.0
+attack_type = "physical"
+skills = PackedStringArray("stone_throw")
+scene = ExtResource("1_cokdg")
+is_boss = false
+break_max = 0.0
+break_lock = 4.0

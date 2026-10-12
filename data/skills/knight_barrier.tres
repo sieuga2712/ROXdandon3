@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/skill_data.gd" id="1_aqjoj"]
+
+[resource]
+script = ExtResource("1_aqjoj")
+id = &"knight_barrier"
+display_name = "Tạo giáp ảo"
+kind = 0
+class_tags = PackedStringArray("knight")
+when = 1
+chance = 0.15
+threshold = 0.3
+cooldown = 0.0
+start_cooldown = 0.0
+mana_cost = 0.0
+cast_time = 0.0
+cast_range = 0.0
+target = &"self"
+target_count = 1
+radius = 0.0
+effects = Array[Dictionary]([{
+"basis": "caster_max_hp",
+"duration": 4.0,
+"scale": 0.08,
+"type": "shield"
+}])
+break_power = 0.0
+animation = &"Attack"
+levels = Array[Dictionary]([])
